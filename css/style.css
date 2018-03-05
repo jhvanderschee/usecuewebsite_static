@@ -45,7 +45,7 @@
   
 * {margin: 0; padding: 0;}
 img {border: 0;}
-
+strong, b {font-weight: 700;}
 body, html {height: 100%; overflow-x: hidden;}
 body {overflow-y: auto;}
 body {font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 15px; line-height: 1.3em; background: #fff url('/img/preloader1.gif') center center no-repeat;background: #fff;}
