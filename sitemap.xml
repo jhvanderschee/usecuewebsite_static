@@ -43,23 +43,7 @@
   
   
       <url>
-        <loc>https://www.usecue.com/blog/index.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-  
-  
-      <url>
         <loc>https://www.usecue.com/contact/index.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-  
-  
-      <url>
-        <loc>https://www.usecue.com/portfolio/index.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
@@ -75,20 +59,28 @@
   
   
       <url>
+        <loc>https://www.usecue.com/portfolio/index.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+  
+  
+      <url>
+        <loc>https://www.usecue.com/blog/index.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+  
+  
+      <url>
         <loc>https://www.usecue.com/linux.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
   
-  
-  
-  
-      <url>
-        <loc>https://www.usecue.com/stackoverflow.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
   
   
   
