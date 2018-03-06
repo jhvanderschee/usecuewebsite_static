@@ -40,3 +40,5 @@ Header set X-XSS-Protection "1; mode=block"
 # Unset Server Technology header
 Header unset X-Powered-By
 </IfModule>
+
+ErrorDocument 404 /404.html
