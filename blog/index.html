@@ -112,58 +112,41 @@
 <script src="/js/jquery-1.7.2.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="/css/style.css">
-<script>
 
+<script>
 function next() {
-	if(document.getElementById('body').className == 'menu') {
-		document.getElementById('body').className = '';
-		setTimeout(function(){next()}, 400);
-		return false;
-	}
-	document.getElementById('controls').style.display = 'none'; 
-	document.getElementById('innerpage').className = 'next'; 
-	setTimeout(function(){
-		document.location.href='/contact/index.html';
-	}, 350);
-	return false;
+    if($('body').hasClass('menu')) {
+        $('body').removeClass('menu');
+        setTimeout(function(){next()}, 400);
+        return false;
+    }
+    document.location.href='/contact/index.html';
+    return false;
 }
 function prev() {
-	if(document.getElementById('body').className == 'menu') {
-		document.getElementById('body').className = '';
-		setTimeout(function(){prev()}, 400);
-		return false;
-	}
-	document.getElementById('controls').style.display = 'none'; 
-	document.getElementById('innerpage').className = 'prev'; 
-	setTimeout(function(){
-		document.location.href='/portfolio/bibivandervelden.html';
-	}, 350);
-	return false;
+    if($('body').hasClass('menu')) {
+        $('body').removeClass('menu');
+        setTimeout(function(){prev()}, 400);
+        return false;
+    }
+    document.location.href='/portfolio/bibivandervelden.html';
+    return false;
 }
 var timeout;
 function menu() {
-	clearTimeout(timeout);
-	if(document.getElementById('body').className == 'menu') {
-		document.getElementById('body').className = '';
-		timeout = setTimeout(function(){document.getElementById('menu').style.zIndex = '-5'}, 600);
-	}
-	else {
-		document.getElementById('menu').style.zIndex = '5'
-		document.getElementById('body').className = 'menu'; 
-	}
-	return false;
+    clearTimeout(timeout);
+    if($('body').hasClass('menu')) {
+        $('body').removeClass('menu'); 
+        timeout = setTimeout(function(){$('#menu').css('z-index','-5');}, 600);
+    }
+    else {
+        $('#menu').css('z-index','5')
+        $('body').addClass('menu'); 
+    }
+    return false;
 }
 $(document).ready( function() {
     $("#page").addClass("loaded");
-    setInterval(function () {
-        $("#loading span").toggle();
-    },500);
-    $('iframe').load(function(){
-        setTimeout(function () {
-            endloading();
-        }, 300)
-    });
-
     
     
     
@@ -223,9 +206,9 @@ $(window).resize( function() {
     }
     if($(window).width()<600) {
         $('#title').css('margin-top','45px');
-        var extramargin = $('body').height() - ($('#content').height()-35);
-        if (extramargin>45) $('#title').css('margin-top',extramargin+'px');
-        else $('#title').css('margin-top','45px');
+        //var extramargin = $('body').height() - ($('#content').height()-35);
+        //if (extramargin>45) $('#title').css('margin-top',extramargin+'px');
+        //else $('#title').css('margin-top','45px');
     }
     
 });
@@ -233,18 +216,19 @@ $(window).resize( function() {
 </script>
 </head>
 
-<body id="body">
-<div id="page" class="blog">
-	<div id="innerpage" style="background-color: #ffffff;">
-	<div id="particles-js" style="z-index:0;"></div>
-    <div id="border"></div>
+<body id="body" style="background-color: #ffffff;" class="blog">
+	<div id="particles-js"></div>
 	
-		<table cellpadding="0" cellspacing="0"><tr><td><div id="content">
+    
+    <div class="outercontent"><div class="content">
+        
     <div id="innercontrols" class="showmobile">
         <a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
         <a href="#" onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
         
     </div>
+
+    <div class="innercontent">
 
 <h1>Blog.</h1>
 
@@ -257,17 +241,18 @@ In this blog I write about technical innovations, news items and opinions in web
 
 
 <div id="title" class="showmobile">Usecue <span>&nbsp;web development</span></div>
-</div></td></tr></table>
-	</div>
+
+</div></div></div>
 	
-	<div id="menu"><table cellpadding="0" cellspacing="0"><tr><td><div id="content">
+	<div id="menu"><div class="outercontent"><div class="content">
 		    <a href="/">home.</a><br />
 		    <a href="/about-me/">about me.</a><br />
 		    <a href="/portfolio/">portfolio.</a><br />
 		    <a href="/blog/">blog.</a><br />
 		    <a href="/contact/">contact.</a><br />		
-	</div></td></tr></table></div>
-</div>
+  </div></div></div>
+
+
 <div id="controls" class="showdesktop blog">
 	<div id="innercontrols">
 		<a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
@@ -296,7 +281,8 @@ In this blog I write about technical innovations, news items and opinions in web
   ga('send', 'pageview');
 
 </script>
-<script src="/js/particles.min.js"></script>
+
+
 </body>
 
 </html>
