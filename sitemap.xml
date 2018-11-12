@@ -43,7 +43,7 @@
   
   
       <url>
-        <loc>https://www.usecue.com/about-me/index.html</loc>
+        <loc>https://www.usecue.com/portfolio/index.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
@@ -59,7 +59,7 @@
   
   
       <url>
-        <loc>https://www.usecue.com/portfolio/index.html</loc>
+        <loc>https://www.usecue.com/contact/index.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
@@ -67,7 +67,7 @@
   
   
       <url>
-        <loc>https://www.usecue.com/contact/index.html</loc>
+        <loc>https://www.usecue.com/about-me/index.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
@@ -83,6 +83,12 @@
   
   
   
+  
+      <url>
+        <loc>https://www.usecue.com/2018/11/11/goodbye-google.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
   
       <url>
         <loc>https://www.usecue.com/2018/02/25/the-need-for-speed-on-the-web.html</loc>
