@@ -71,8 +71,8 @@ body #menu {
     transition: opacity 0.4s ease, left 0.6s ease;
 }
 
-body[class^='home'] #particles-js {background: url('../img/linux.png') 90% center !important; background-size: cover!important; height: calc(100% - 4px);}
-body.home2 #particles-js {background: url('../img/firefox.jpg') 40% center !important; background-size: cover!important; height: 100%;}
+body.home #particles-js {background: url('../img/linux.png') 90% center !important; background-size: cover!important; height: calc(100% - 4px);}
+body.home.firefox #particles-js {background: url('../img/firefox.jpg') 40% center !important; background-size: cover!important; height: 100%;}
 
 body.menu #menu {opacity: 1;}
 body #menu .content {text-align: center;}
@@ -83,7 +83,7 @@ body #menu .content {
     text-align: center;
 }
 
-[class^='home'] p {text-align: center; font-size: 19px; line-height: 1.5em; font-weight: 300;}
+.home p {text-align: center; font-size: 19px; line-height: 1.5em; font-weight: 300;}
 
 #loading {margin-left: 500px; position: absolute; margin-top: -220px;}
 #textcell, #imgoverlay, iframe {opacity: 0;
@@ -241,9 +241,9 @@ body.page h2:first-child {padding-top: 0;}
 .menu #innercontrols a#openmenu {display: none;}
 
 img.white {display: none;}
-.home2 img.white,
+.home.firefox img.white,
 .portfolio img.white {display: inline;}
-.home2 img.black,
+.home.firefox img.black,
 .portfolio img.black {display: none;}
 body.menu img.white {display: inline;}
 body.menu img.black {display: none;}
@@ -268,10 +268,10 @@ body.menu img.black {display: none;}
     font-size: 23px!important;
 }
 #title span {font-weight: 300; font-size: 22px;}
-.home2 .innercontent, .home2 .innercontent a, 
-.home2 #title,
+.home.firefox .innercontent, .home.firefox .innercontent a, 
+.home.firefox #title,
 .portfolio #title {color: white;}
-.home2 .innercontent a {border-bottom: 1px solid rgba(255,255,255,0.4);}
+.home.firefox .innercontent a {border-bottom: 1px solid rgba(255,255,255,0.4);}
 body.menu #title {color: white;}
 #pagenumber {display: none; position: absolute; bottom: 40px;}
 #title.showdesktop {display: block;}
@@ -394,7 +394,7 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
 .content > div {text-align: left!important;}
 .showmobile {display: initial;}
 .showdesktop {display: none;}
-.home2 #title,
+.home.firefox #title,
 #title {
   position: relative;
   -ms-transform: rotate(-0deg); /* IE 9 */
@@ -416,8 +416,8 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
     display: block;
 }
 .post #innercontrols {padding-bottom: 20px;}
-.home2 img.white {display: none;}
-.home2 img.black {display: inline;}
+.home.firefox img.white {display: none;}
+.home.firefox img.black {display: inline;}
 #innercontrols a#openmenu, 
 #innercontrols a {display: inline-block; margin-right: 20px!important;}
 #innercontrols a:nth-child(3),
@@ -441,7 +441,7 @@ body[class^='home'] {background: white!important; color: black!important;}
 }
 #innerpage > .table tr .td {text-align: left;}
 #page {height: auto; min-height: 100%;}
-.home2 .innercontent, .home2 .innercontent a {color: black;}
-.home2 .innercontent a {border-bottom: 1px solid silver;}
+.home.firefox .innercontent, .home.firefox .innercontent a {color: black;}
+.home.firefox .innercontent a {border-bottom: 1px solid silver;}
 #title {margin-top: 45px}
 }
