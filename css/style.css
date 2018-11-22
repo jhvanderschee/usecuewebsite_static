@@ -49,6 +49,7 @@ a {cursor: pointer;}
 
 body, html {height: 100%;}
 body {font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 15px; line-height: 1.3em; background: #fff url(/img/bg.png) center center / 700px auto repeat; background-attachment: fixed;}
+body.blog, body.post,
 body.portfolio {background-image: none;}
 body #menu {
     opacity: 0; 
