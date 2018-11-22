@@ -1,64 +1,7 @@
 
-
-
-
-
-
-		
-		
-		
-
-		
-		
-		
-
-		
-
-		
-		
-		
-
-		
-		
-		
-
-		
-		
-		
-
-		
-		
-		
-
-		
-		
-		
-
-		
-		
-		
-
-		
-		
-		
-
-
-
-    
-    	
-    	
-    	
-    	
-    	
-	
-
     
 
-    
 
-    
-
-    
 
     
 
@@ -114,7 +57,7 @@ function next() {
         setTimeout(function(){next()}, 400);
         return false;
     }
-    document.location.href='/sitemap.xml';
+    document.location.href='/portfolio/luca-s-services/';
     return false;
 }
 function prev() {
@@ -123,7 +66,7 @@ function prev() {
         setTimeout(function(){prev()}, 400);
         return false;
     }
-    document.location.href='/contact/index.html';
+    document.location.href='';
     return false;
 }
 var timeout;
@@ -221,27 +164,21 @@ $(window).resize( function() {
     else { 
       document.getElementById("viewport").setAttribute("content", "width=device-width");
     }
-    if($(window).width()<600) {
-        $('#title').css('margin-top','45px');
-        //var extramargin = $('body').height() - ($('#content').height()-35);
-        //if (extramargin>45) $('#title').css('margin-top',extramargin+'px');
-        //else $('#title').css('margin-top','45px');
-    }
-    
+   
 });
 
 </script>
 </head>
 
-<body id="body" style="background-color: ;" class="home">
+<body id="body"  class="home">
 	<div id="particles-js"></div>
 	
     
     <div class="outercontent"><div class="content">
         
     <div id="innercontrols" class="showmobile">
-        <a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
-        <a href="#" onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+        <a onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+        <a onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
         
     </div>
 
@@ -270,8 +207,8 @@ $(window).resize( function() {
 
 <div id="controls" class="showdesktop home">
 	<div id="innercontrols">
-		<a href="#" onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
-		<a href="#" onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+		<a onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+		<a onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
 		
 	</div>
 	<div id="title" class="showdesktop">Usecue <span>&nbsp;web development</span></div>

@@ -45,10 +45,11 @@
 * {margin: 0; padding: 0;}
 img {border: 0;}
 strong, b {font-weight: 700;}
+a {cursor: pointer;}
 
 body, html {height: 100%;}
-body {font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 15px; line-height: 1.3em; background: #fff;}
-
+body {font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 15px; line-height: 1.3em; background: #fff url(/img/bg.png) center center / 700px auto repeat; background-attachment: fixed;}
+body.portfolio {background-image: none;}
 body #menu {
     opacity: 0; 
     background-color: rgba(0,0,0,0.95); 
@@ -188,7 +189,7 @@ h2 {font-size: 110%; line-height: 1.5em; margin-top: 2em!important;}
 [class^='home'] h1 {text-transform: none; font-size: 82px; margin-bottom: 2px; line-height: 1em;}
 .blog h1:after,
 .post h1:after,
-.text h1:after {display: block; content: ""; width: 40px; height: 3px; background: black; margin: 25px auto 10px; }
+.page h1:after {display: block; content: ""; width: 40px; height: 3px; background: black; margin: 25px auto 10px; }
 .content div {text-transform: none; font-size: 15px; line-height: 1.6em; font-weight: 300;}
 
 .post h1 {text-transform: none; text-align: left;}
@@ -212,7 +213,7 @@ blockquote p {margin: 0!important;}
 
 p {margin-bottom: 1.5em;}
 body.blog .content .innercontent > div,
-body.text .content .innercontent > div {
+body.page .content .innercontent > div {
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
@@ -221,13 +222,13 @@ body.text .content .innercontent > div {
     -moz-column-gap: 40px; /* Firefox */
     column-gap: 40px;
 }
-body.text h2 {font-size: 15px; padding-top: 1.3em;}
-body.text h2:first-child {padding-top: 0;}
+body.page h2 {font-size: 15px; padding-top: 1.3em;}
+body.page h2:first-child {padding-top: 0;}
 
 #innerpage.next {left: -100%!important; opacity: 0!important;}
 #innerpage.prev {left: 100%!important; opacity: 0!important;}
 #controls, #innercontrols {min-width: 90px; width: 90px;}
-#controls {text-align: center; position: absolute; left: 5px; height: 100%; top: 0; color: black; z-index: 6;}
+#controls {text-align: center; position: fixed; left: 5px; height: 100%; top: 0; color: black; z-index: 6;}
 #innercontrols {position: absolute; top: 29px;}
 #innercontrols a {color: black; display: block; text-decoration: none; font-size: 50px; line-height: 1.3em; margin: 0!important; border: 0!important;}
 #innercontrols a img {width: 40px!important; position: relative!important; right: auto!important;}
@@ -351,7 +352,7 @@ a {color: black;}
 @media screen and (max-width: 800px) {
   #triangle-topleft, #backgroundtriangle {display: none;}
   body.blog .content .innercontent > div, 
-  body.text .content .innercontent > div {
+  body.page .content .innercontent > div {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
@@ -429,7 +430,7 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
 .table .td {vertical-align: top; padding: 10px 0 20px 0;}
 #page #menu .table .td {vertical-align: middle;}
 h1 {text-align: left;}
-.blog h1:after, .post h1:after, .text h1:after {margin-left: 0;}
+.blog h1:after, .post h1:after, .page h1:after {margin-left: 0;}
 body[class^='home'] {background: white!important; color: black!important;}
 [class^='home'] h1:after {display: block; content: ""; width: 40px; height: 3px; background: black; margin: 25px 0 10px;}
 #particles-js{ display: none;}
@@ -442,4 +443,5 @@ body[class^='home'] {background: white!important; color: black!important;}
 #page {height: auto; min-height: 100%;}
 .home2 .innercontent, .home2 .innercontent a {color: black;}
 .home2 .innercontent a {border-bottom: 1px solid silver;}
+#title {margin-top: 45px}
 }

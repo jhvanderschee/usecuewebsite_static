@@ -10,14 +10,20 @@
     
 
     
+    	
+    	
+    	
+    	
+    	
+	
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" /> 
-<title>Blog. | Usecue web development</title>
+<title>rims like new. | Usecue web development</title>
 
-<meta name="description" content="In this blog I write about technical innovations, news items and opinions in web development. This can be a ‘best-practise’ or a personal discovery I think i...">
+<meta name="description" content="This is a website for Dirk Ihmer, who restores rims ‘like new’ by sanding them down, coating them and finishing them. The website is less than 1 MB in size a...">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -26,24 +32,24 @@
 <meta id="viewport" name="viewport" content="width=device-width">
 
 <!-- Facebook and Twitter integration -->
-<meta property="og:title" content="Blog."/>
-
-<meta property="og:url" content="https://www.usecue.com/blog/index.html"/>
+<meta property="og:title" content="rims like new."/>
+<meta property="og:image" content="/uploads/fwn.jpg"/>
+<meta property="og:url" content="https://www.usecue.com/portfolio/rims-like-new/"/>
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://www.usecue.com"/>
+<meta property="og:image" content="https://www.usecue.com/uploads/fwn.jpg"/>
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="In this blog I write about technical innovations, news items and opinions in web development. This can be a ‘best-practise’ or a personal discovery I think i..."/>
+<meta property="og:description" content="This is a website for Dirk Ihmer, who restores rims ‘like new’ by sanding them down, coating them and finishing them. The website is less than 1 MB in size a..."/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
-<meta name="twitter:title" content="Blog." />
-
-<meta name="twitter:url" content="https://www.usecue.com/blog/index.html" />
-<meta name="twitter:description" content="In this blog I write about technical innovations, news items and opinions in web development. This can be a ‘best-practise’ or a personal discovery I think i..." />
+<meta name="twitter:title" content="rims like new." />
+<meta name="twitter:image" content="https://www.usecue.com/uploads/fwn.jpg" />
+<meta name="twitter:url" content="https://www.usecue.com/portfolio/rims-like-new/" />
+<meta name="twitter:description" content="This is a website for Dirk Ihmer, who restores rims ‘like new’ by sanding them down, coating them and finishing them. The website is less than 1 MB in size a..." />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
-<link rel="canonical" href="https://www.usecue.com/blog/">
+<link rel="canonical" href="https://www.usecue.com/portfolio/rims-like-new/">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
 
 <script src="/js/jquery-1.7.2.min.js"></script>
@@ -66,7 +72,7 @@ function prev() {
         setTimeout(function(){prev()}, 400);
         return false;
     }
-    document.location.href='';
+    document.location.href='/portfolio/advertising-that-works/';
     return false;
 }
 var timeout;
@@ -88,6 +94,15 @@ function choose(choices) {
 }
 $(document).ready( function() {
     $("#page").addClass("loaded");
+    
+    setInterval(function () {
+        $("#loading span").toggle();
+    },500);
+    $('iframe').load(function(){
+        setTimeout(function () {
+            endloading();
+        }, 300)
+    });
     
     
     
@@ -151,9 +166,9 @@ $(window).resize( function() {
 </script>
 </head>
 
-<body id="body" style="background: #ffffff;" class="blog">
+<body id="body" style="background: #5b6669;" class="portfolio">
 	
-	
+	<div id="backgroundtriangle" style="background-image: url(//images.weserv.nl/?url=www.usecue.com/uploads/fwn.jpg&w=500&h=1000&t=squaredown);"><div id="triangle-topleft" style="border-top-color: #5b6669;"></div></div>
     
     <div class="outercontent"><div class="content">
         
@@ -161,19 +176,27 @@ $(window).resize( function() {
         <a onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
         <a onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
         
+        <a onclick="prev();"><img src="/img/back2.png" class="black"  alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
+        <a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
+        
     </div>
 
     <div class="innercontent">
 
 
-<h1>Blog.</h1>
+<div class="col50">
+<div class="desktop"><iframe src="//swift-goldfish.cloudvent.net/" scrolling="no" style="background-color: #5b6669;"></iframe></div>
+<div class="mobile width450" style="background-color: #5b6669;"><iframe src="//swift-goldfish.cloudvent.net/" scrolling="no" style="background-color: #5b6669;"></iframe></div>
+<div id="bezel" style="background-color: #5b6669;"></div>
+<img id="imgoverlay" src="/img/devices.png" alt="devices" />
+<div id="loading">Loading..<span>.</span></div>
+</div><div class="col50" id="textcell">
+<h1>rims like new.</h1>
+<p>This is a website for Dirk Ihmer, who restores rims ‘like new’ by sanding them down, coating them and finishing them. The website is less than 1 MB in size and has a beautiful subtle Ken Burns slider. This site is powered by Jekyll and the CloudCannon CMS.</p>
 
-<div>
-In this blog I write about technical innovations, news items and opinions in web development. This can be a 'best-practise' or a personal discovery I think is worth sharing.
-<br /><br />
-<p><span class="showdesktop">11.11.2018 - </span><a href="/blog/goodbye-google/">Goodbye Google</a><br /><span class="showdesktop">25.02.2018 - </span><a href="/blog/the-need-for-speed-on-the-web/">The need for speed on the web</a><br /><span class="showdesktop">06.11.2017 - </span><a href="/blog/the-new-nokia-3310-could-give-you-your-life-back/">The new Nokia 3310 could give you your life back</a><br /><span class="showdesktop">22.08.2017 - </span><a href="/blog/running-jekyll-on-cloud9/">Running Jekyll on Cloud9</a><br /><span class="showdesktop">19.07.2017 - </span><a href="/blog/why-you-should-upgrade-your-website-to-ssl/">Why you should upgrade your website to SSL</a><br /><span class="showdesktop">23.03.2017 - </span><a href="/blog/smashing-new-technology/">Smashing new technology</a><br /><span class="showdesktop">11.12.2016 - </span><a href="/blog/turbolinks5-is-awesome/">Turbolinks5 is awesome</a><br /><span class="showdesktop">21.09.2016 - </span><a href="/blog/getting-started-with-jekyll/">Getting started with Jekyll</a><br /><span class="showdesktop">17.08.2016 - </span><a href="/blog/jekyll-against-the-rest-of-the-world/">Jekyll against the rest of the world</a><br /><span class="showdesktop">07.08.2016 - </span><a href="/blog/hover-is-dead/">Hover is dead</a><br /><span class="showdesktop">03.07.2016 - </span><a href="/blog/from-wordpress-to-cloudcannon/">From Wordpress to Cloud&shy;Cannon</a><br /><span class="showdesktop">21.04.2016 - </span><a href="/blog/two-viewports-to-rule-them-all/">Two viewports to rule them all</a><br /><span class="showdesktop">04.01.2016 - </span><a href="/blog/no-javascript-please/">No Java&shy;script Please!</a><br /><span class="showdesktop">04.11.2015 - </span><a href="/blog/why-static-website-generators-are-the-next-big-thing/">Why Static Website Generators Are The Next Big Thing</a><br /><span class="showdesktop">14.08.2015 - </span><a href="/blog/the-race-to-zero-in-webhosting/">The race to zero in web&shy;hosting</a><br /><span class="showdesktop">30.05.2015 - </span><a href="/blog/the-viewport-meta-tag-on-desktop/">The viewport meta tag on desktop</a><br /><span class="showdesktop">30.05.2015 - </span><a href="/blog/flash-scaling-in-html/">Flash scaling in HTML</a><br /><span class="showdesktop">05.05.2015 - </span><a href="/blog/the-web-notifications-api/">The Web Notifications API</a><br /><span class="showdesktop">03.05.2015 - </span><a href="/blog/developing-web-applications-on-a-chromebook/">Develop&shy;ing web applica&shy;tions on a Chrome&shy;book</a><br /><span class="showdesktop">09.04.2015 - </span><a href="/blog/usecues-also-known-as-affordances/">About 'usecues', also known as affordan&shy;ces</a><br /></p>
+<br />
+<a href="//swift-goldfish.cloudvent.net/" target="_blank" class="btn">View website</a>
 </div>
-
 
 
 <div id="title" class="showmobile">Usecue <span>&nbsp;web development</span></div>
@@ -189,11 +212,14 @@ In this blog I write about technical innovations, news items and opinions in web
   </div></div></div>
 
 
-<div id="controls" class="showdesktop blog">
+<div id="controls" class="showdesktop portfolio">
 	<div id="innercontrols">
 		<a onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
 		<a onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
 		
+    <a onclick="prev();"><img src="/img/back2.png" class="black" alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
+		<a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
+    
 	</div>
 	<div id="title" class="showdesktop">Usecue <span>&nbsp;web development</span></div>
 </div>
