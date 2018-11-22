@@ -71,8 +71,8 @@ body #menu {
     transition: opacity 0.4s ease, left 0.6s ease;
 }
 
-body[class^='home'] #particles-js {background: url('../img/penguin.png') 90% center !important; background-size: cover!important; height: calc(100% - 4px);}
-body.home2 #particles-js {background: url('../img/fox2.jpg') 40% center !important; background-size: cover!important; height: 100%;}
+body[class^='home'] #particles-js {background: url('../img/linux.png') 90% center !important; background-size: cover!important; height: calc(100% - 4px);}
+body.home2 #particles-js {background: url('../img/firefox.jpg') 40% center !important; background-size: cover!important; height: 100%;}
 
 body.menu #menu {opacity: 1;}
 body #menu .content {text-align: center;}
