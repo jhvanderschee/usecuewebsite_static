@@ -160,6 +160,7 @@ $(document).ready( function() {
     
     
     
+    
     var choice = choose(['linux.html','firefox.html']) ;
     if (choice == 'linux.html') {
     	if($(window).width()>600) $(".element").typed({
@@ -174,6 +175,7 @@ $(document).ready( function() {
         	callback: function(){ $(".typed-cursor").css('visibility','hidden');}
     	});
     }
+    
     
     $(window).resize();
 
