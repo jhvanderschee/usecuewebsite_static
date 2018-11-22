@@ -4,26 +4,12 @@
 
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    	
+    	
+    	
+    	
+    	
+	
 
     
     	
@@ -34,28 +20,28 @@
 	
 
     
+    	
+    	
+    	
+    	
+    	
+	
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    	
+    	
+    	
+    	
+    	
+	
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" /> 
-<title>Two viewports to rule them all | Usecue web development</title>
+<title>Luca's services. | Usecue web development</title>
 
-<meta name="description" content="The amount of available screen sizes is exploding. That is why we need responsive design. But what if I told you you only needed two sizes? Impossible, I hea...">
+<meta name="description" content="The new website of this company is ‘less and more’. The site is responsive and has a simple yet consistent design. The site is powered by Jekyll and the Clou...">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -64,23 +50,23 @@
 <meta id="viewport" name="viewport" content="width=device-width">
 
 <!-- Facebook and Twitter integration -->
-<meta property="og:title" content="Two viewports to rule them all"/>
-
-<meta property="og:url" content="https://www.usecue.com/blog/two-viewports-to-rule-them-all/"/>
+<meta property="og:title" content="Luca's services."/>
+<meta property="og:image" content="https://www.usecue.com/uploads/lucass.jpg"/>
+<meta property="og:url" content="https://www.usecue.com/:name/"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="The amount of available screen sizes is exploding. That is why we need responsive design. But what if I told you you only needed two sizes? Impossible, I hea..."/>
+<meta property="og:description" content="The new website of this company is ‘less and more’. The site is responsive and has a simple yet consistent design. The site is powered by Jekyll and the Clou..."/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
-<meta name="twitter:title" content="Two viewports to rule them all" />
-
-<meta name="twitter:url" content="https://www.usecue.com/blog/two-viewports-to-rule-them-all/" />
-<meta name="twitter:description" content="The amount of available screen sizes is exploding. That is why we need responsive design. But what if I told you you only needed two sizes? Impossible, I hea..." />
+<meta name="twitter:title" content="Luca's services." />
+<meta name="twitter:image" content="https://www.usecue.com/uploads/lucass.jpg" />
+<meta name="twitter:url" content="https://www.usecue.com/:name/" />
+<meta name="twitter:description" content="The new website of this company is ‘less and more’. The site is responsive and has a simple yet consistent design. The site is powered by Jekyll and the Clou..." />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
-<link rel="canonical" href="https://www.usecue.com/blog/two-viewports-to-rule-them-all/">
+<link rel="canonical" href="https://www.usecue.com/:name/">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
 
 <script src="/js/jquery-1.7.2.min.js"></script>
@@ -94,7 +80,7 @@ function next() {
         setTimeout(function(){next()}, 400);
         return false;
     }
-    document.location.href='/blog/no-javascript-please/';
+    document.location.href='/:name/';
     return false;
 }
 function prev() {
@@ -103,7 +89,7 @@ function prev() {
         setTimeout(function(){prev()}, 400);
         return false;
     }
-    document.location.href='/blog/from-wordpress-to-cloudcannon/';
+    document.location.href='/:name/';
     return false;
 }
 var timeout;
@@ -125,6 +111,15 @@ function choose(choices) {
 }
 $(document).ready( function() {
     $("#page").addClass("loaded");
+    
+    setInterval(function () {
+        $("#loading span").toggle();
+    },500);
+    $('iframe').load(function(){
+        setTimeout(function () {
+            endloading();
+        }, 300)
+    });
     
     
     
@@ -188,9 +183,9 @@ $(window).resize( function() {
 </script>
 </head>
 
-<body id="body"  class="post">
+<body id="body" style="background: #46906b;" class="portfolio">
 	
-	
+	<div id="backgroundtriangle" style="background-image: url(//images.weserv.nl/?url=www.usecue.com/uploads/lucass.jpg&w=500&h=1000&t=squaredown);"><div id="triangle-topleft" style="border-top-color: #46906b;"></div></div>
     
     <div class="outercontent"><div class="content">
         
@@ -206,30 +201,19 @@ $(window).resize( function() {
     <div class="innercontent">
 
 
-<h3>21.04.2016</h3>
-<h1>Two viewports to rule them all</h1>
+<div class="col50">
+<div class="desktop"><iframe src="//whispering-wallaby.cloudvent.net" scrolling="no" style="background-color: #46906b;"></iframe></div>
+<div class="mobile" style="background-color: #46906b;"><iframe src="//whispering-wallaby.cloudvent.net" scrolling="no" style="background-color: #46906b;"></iframe></div>
+<div id="bezel" style="background-color: #46906b;"></div>
+<img id="imgoverlay" src="/img/devices.png" alt="devices" />
+<div id="loading">Loading..<span>.</span></div>
+</div><div class="col50" id="textcell">
+<h1>Luca's services.</h1>
+<p>The new website of this company is ‘less and more’. The site is responsive and has a simple yet consistent design. The site is powered by Jekyll and the CloudCannon CMS.</p>
 
-<div data-cms-content-wrapper="/_layouts/post.html">
-<p>The amount of available screen sizes is exploding. That is why we need responsive design. But what if I told you you only needed two sizes? Impossible, I hear you think. But you may be wrong. I came up with a technique that requires just two sizes and saves you a huge amount of time. </p>
-
-<p>I have been experimenting with responsive web design a lot lately. This is mainly due to my side project called ‘Without Coding’. In this project I enable graphic designers to create websites on a Photoshop-like canvas. This canvas is based on absolute positioning, making normal responsive techniques unfit. To fix this problem, I came up with the concept of ‘fixed viewports’ (as opposed to fluid responsiveness).</p>
-
-<p>The concept of ‘fixed viewports’ is based on the premise that all screens have viewport scaling, unless they have a certain minimum width. This minimum width is what we call the ‘desktop version’. This is nowadays about 1200 pixels. This desktop version can be shown on tablets through viewport scaling. Using this width on a phone, would result in an illegible website. Therefore we need a second width, the ‘phone version’. Using 400 pixels for this width works best for me.</p>
-
-<p>How it works is that you build a fixed-width website for each of these versions. This is done purely in CSS. You can start with the 1200 pixels version and switch to the 400 pixel version at about 600 pixels screen width. The switch can be made by using a CSS media query and rewriting the meta viewport tag with Javascript. </p>
-
-<p>This means that the CSS for the desktop version does not need to have any responsive features. You can use simple floats and all sizes can be measured in pixels. The CSS for the phone version will override these sizes where needed. Most of the time this means applying ‘float: none’ and ‘width: 100%’ to these elements. Simple, right?</p>
-
-<blockquote>
-  <p>“After 14h straight I think it’s time I call it a day… responsive design is hard”</p>
-</blockquote>
-
-<p>I found the above quote on Twitter. Do you feel the same? Try this technique! ‘Fixed viewports’ makes building responsive websites very easy. In my experience it allows you to make ANY website responsive in less than 3 hours.</p>
-
-<p>PRO TIP: Feeling fancy? Add an in-between version for portrait tablets or enable <a href="/2015/05/30/the-viewport-meta-tag-on-desktop.html">the viewport meta tag on desktop</a>.</p>
-
+<br />
+<a href="//whispering-wallaby.cloudvent.net" target="_blank" class="btn">View website</a>
 </div>
-
 
 
 <div id="title" class="showmobile">Usecue <span>&nbsp;web development</span></div>
@@ -245,7 +229,7 @@ $(window).resize( function() {
   </div></div></div>
 
 
-<div id="controls" class="showdesktop post">
+<div id="controls" class="showdesktop portfolio">
 	<div id="innercontrols">
 		<a onclick="menu();" id="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
 		<a onclick="menu();" id="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
