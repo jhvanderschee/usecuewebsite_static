@@ -249,7 +249,7 @@ img.white {display: none;}
 body.menu img.white {display: inline;}
 body.menu img.black {display: none;}
 
-#title {color: black; 
+.title {color: black; 
     -ms-transform: rotate(-90deg); /* IE 9 */
     -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
     transform: rotate(-90deg);
@@ -268,14 +268,14 @@ body.menu img.black {display: none;}
     font-weight: 700!important;
     font-size: 23px!important;
 }
-#title span {font-weight: 300; font-size: 22px;}
+.title span {font-weight: 300; font-size: 22px;}
 .home.firefox .innercontent, .home.firefox .innercontent a, 
-.home.firefox #title,
-.portfolio #title {color: white;}
+.home.firefox .title,
+.portfolio .title {color: white;}
 .home.firefox .innercontent a {border-bottom: 1px solid rgba(255,255,255,0.4);}
-body.menu #title {color: white;}
+body.menu .title {color: white;}
 #pagenumber {display: none; position: absolute; bottom: 40px;}
-#title.showdesktop {display: block;}
+.title.showdesktop {display: block;}
 
 a {color: black;}
 .btn {display: inline-block; border: 1px solid black; padding: 5px 30px; text-transform: uppercase; text-decoration: none; font-size: 13px; font-weight: 400; letter-spacing: 1px;}
@@ -395,8 +395,8 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
 .content > div {text-align: left!important;}
 .showmobile {display: initial;}
 .showdesktop {display: none;}
-.home.firefox #title,
-#title {
+.home.firefox .title,
+.title {
   position: relative;
   -ms-transform: rotate(-0deg); /* IE 9 */
     -webkit-transform: rotate(-0deg); /* Chrome, Safari, Opera */
@@ -407,7 +407,7 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
     display: block!important;
     color: black;
 }
-#title.showdesktop {display: none;}
+.title.showdesktop {display: none;}
 .innercontrols {
     position: relative;
     min-width: 0px;
@@ -444,5 +444,5 @@ body[class^='home'] {background: white!important; color: black!important;}
 #page {height: auto; min-height: 100%;}
 .home.firefox .innercontent, .home.firefox .innercontent a {color: black;}
 .home.firefox .innercontent a {border-bottom: 1px solid silver;}
-#title {margin-top: 45px}
+.title {margin-top: 45px}
 }
