@@ -235,11 +235,11 @@ body.page h2:first-child {padding-top: 0;}
 .innercontrols a img {width: 40px!important; position: relative!important; right: auto!important;}
 
 
-.innercontrols a#closemenu {display: none;}
+.innercontrols a.closemenu {display: none;}
 .menu .innercontrols a {display: none;}
-.menu .innercontrols a#closemenu {display: block;}
-.innercontrols a#openmenu {display: block;}
-.menu .innercontrols a#openmenu {display: none;}
+.menu .innercontrols a.closemenu {display: block;}
+.innercontrols a.openmenu {display: block;}
+.menu .innercontrols a.openmenu {display: none;}
 
 img.white {display: none;}
 .home.firefox img.white,
