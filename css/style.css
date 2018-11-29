@@ -228,18 +228,18 @@ body.page h2:first-child {padding-top: 0;}
 
 #innerpage.next {left: -100%!important; opacity: 0!important;}
 #innerpage.prev {left: 100%!important; opacity: 0!important;}
-#controls, #innercontrols {min-width: 90px; width: 90px;}
+#controls, .innercontrols {min-width: 90px; width: 90px;}
 #controls {text-align: center; position: fixed; left: 5px; height: 100%; top: 0; color: black; z-index: 6;}
-#innercontrols {position: absolute; top: 29px;}
-#innercontrols a {color: black; display: block; text-decoration: none; font-size: 50px; line-height: 1.3em; margin: 0!important; border: 0!important;}
-#innercontrols a img {width: 40px!important; position: relative!important; right: auto!important;}
+.innercontrols {position: absolute; top: 29px;}
+.innercontrols a {color: black; display: block; text-decoration: none; font-size: 50px; line-height: 1.3em; margin: 0!important; border: 0!important;}
+.innercontrols a img {width: 40px!important; position: relative!important; right: auto!important;}
 
 
-#innercontrols a#closemenu {display: none;}
-.menu #innercontrols a {display: none;}
-.menu #innercontrols a#closemenu {display: block;}
-#innercontrols a#openmenu {display: block;}
-.menu #innercontrols a#openmenu {display: none;}
+.innercontrols a#closemenu {display: none;}
+.menu .innercontrols a {display: none;}
+.menu .innercontrols a#closemenu {display: block;}
+.innercontrols a#openmenu {display: block;}
+.menu .innercontrols a#openmenu {display: none;}
 
 img.white {display: none;}
 .home.firefox img.white,
@@ -408,7 +408,7 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
     color: black;
 }
 #title.showdesktop {display: none;}
-#innercontrols {
+.innercontrols {
     position: relative;
     min-width: 0px;
     width: auto;
@@ -416,18 +416,18 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
     padding-bottom: 0px;
     display: block;
 }
-.post #innercontrols {padding-bottom: 20px;}
+.post .innercontrols {padding-bottom: 20px;}
 .home.firefox img.white {display: none;}
 .home.firefox img.black {display: inline;}
-#innercontrols a#openmenu, 
-#innercontrols a {display: inline-block; margin-right: 20px!important;}
-#innercontrols a:nth-child(3),
-#innercontrols a:nth-child(4) {display: none;}
-.post #innercontrols a:nth-child(3),
-.post #innercontrols a:nth-child(4) {display: inline-block; position: relative; bottom: 3px;}
-.portfolio #innercontrols a:nth-child(3),
-.portfolio #innercontrols a:nth-child(4) {display: inline-block; position: relative; bottom: 3px;}
-#innercontrols a:nth-child(2) {position: absolute; z-index: 999;}
+.innercontrols a#openmenu, 
+.innercontrols a {display: inline-block; margin-right: 20px!important;}
+.innercontrols a:nth-child(3),
+.innercontrols a:nth-child(4) {display: none;}
+.post .innercontrols a:nth-child(3),
+.post .innercontrols a:nth-child(4) {display: inline-block; position: relative; bottom: 3px;}
+.portfolio .innercontrols a:nth-child(3),
+.portfolio .innercontrols a:nth-child(4) {display: inline-block; position: relative; bottom: 3px;}
+.innercontrols a:nth-child(2) {position: absolute; z-index: 999;}
 .table .td {vertical-align: top; padding: 10px 0 20px 0;}
 #page #menu .table .td {vertical-align: middle;}
 h1 {text-align: left;}
