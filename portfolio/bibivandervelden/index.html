@@ -99,7 +99,7 @@ $(document).ready( function() {
     setInterval(function () {
         $("#loading span").toggle();
     },500);
-    $('iframe').load(function(){
+    $('iframe').one("load", function() {
         setTimeout(function () {
             endloading();
         }, 300)
