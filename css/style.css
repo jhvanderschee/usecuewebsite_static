@@ -419,7 +419,7 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
 .post .innercontrols {padding-bottom: 20px;}
 .home.firefox img.white {display: none;}
 .home.firefox img.black {display: inline;}
-.innercontrols a#openmenu, 
+.innercontrols a.openmenu, 
 .innercontrols a {display: inline-block; margin-right: 20px!important;}
 .innercontrols a:nth-child(3),
 .innercontrols a:nth-child(4) {display: none;}
