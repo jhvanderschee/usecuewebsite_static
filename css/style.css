@@ -74,6 +74,7 @@ body #menu {
 
 body.home #particles-js {background: url('../img/linux.png') 90% center !important; background-size: cover!important; height: calc(100% - 4px);}
 body.home.firefox #particles-js {background: url('../img/firefox.jpg') 40% center !important; background-size: cover!important; height: 100%;}
+body.home.datacenter #particles-js {background: url('../img/datacenter.jpg') 90% center !important; background-size: cover!important; height: calc(100% - 4px);}
 
 body.menu #menu {opacity: 1;}
 body #menu .content {text-align: center;}
@@ -242,8 +243,10 @@ body.page h2:first-child {padding-top: 0;}
 .menu .innercontrols a.openmenu {display: none;}
 
 img.white {display: none;}
+.home.datacenter img.white,
 .home.firefox img.white,
 .portfolio img.white {display: inline;}
+.home.datacenter img.black,
 .home.firefox img.black,
 .portfolio img.black {display: none;}
 body.menu img.white {display: inline;}
@@ -269,9 +272,12 @@ body.menu img.black {display: none;}
     font-size: 23px!important;
 }
 .title span {font-weight: 300; font-size: 22px;}
+.home.datacenter .innercontent, .home.datacenter .innercontent a, 
+.home.datacenter .title,
 .home.firefox .innercontent, .home.firefox .innercontent a, 
 .home.firefox .title,
 .portfolio .title {color: white;}
+.home.datacenter .innercontent a,
 .home.firefox .innercontent a {border-bottom: 1px solid rgba(255,255,255,0.4);}
 body.menu .title {color: white;}
 #pagenumber {display: none; position: absolute; bottom: 40px;}
@@ -395,6 +401,7 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
 .content > div {text-align: left!important;}
 .showmobile {display: initial;}
 .showdesktop {display: none;}
+.home.datacenter .title,
 .home.firefox .title,
 .title {
   position: relative;
@@ -417,7 +424,9 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
     display: block;
 }
 .post .innercontrols {padding-bottom: 20px;}
+.home.datacenter img.white,
 .home.firefox img.white {display: none;}
+.home.datacenter img.black,
 .home.firefox img.black {display: inline;}
 .innercontrols a.openmenu, 
 .innercontrols a {display: inline-block; margin-right: 20px!important;}
@@ -442,7 +451,9 @@ body[class^='home'] {background: white!important; color: black!important;}
 }
 #innerpage > .table tr .td {text-align: left;}
 #page {height: auto; min-height: 100%;}
+.home.datacenter .innercontent, .home.datacenter .innercontent a,
 .home.firefox .innercontent, .home.firefox .innercontent a {color: black;}
+.home.datacenter .innercontent a,
 .home.firefox .innercontent a {border-bottom: 1px solid silver;}
 .title {margin-top: 45px}
 }
