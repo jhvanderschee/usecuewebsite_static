@@ -184,14 +184,13 @@ body.portfolio .content h1 {width: 324px; text-align: left; line-height: 1em;}
     vertical-align: middle;
 }
 body #menu .content {padding: 45px 0!important; text-align: center; font-weight: 900;}
-.innercontent {padding: 45px 0;}
+.innercontent {padding: 105px 0 50px 0;}
 h1 {text-align: center; font-weight: 900; font-size: 62px; line-height: 1em; padding-bottom: 20px; text-transform: lowercase;}
 h3 {text-align: left; padding-bottom: 10px; line-height: 1.5em;}
 h2 {font-size: 110%; line-height: 1.5em; margin-top: 2em!important;}
 [class^='home'] h1 {text-transform: none; font-size: 82px; margin-bottom: 2px; line-height: 1em;}
-.blog h1:after,
-.post h1:after,
-.page h1:after {display: block; content: ""; width: 40px; height: 3px; background: black; margin: 25px auto 10px; }
+h1:after {display: block; content: ""; width: 40px; height: 3px; background: black; margin: 25px auto 10px; }
+.home h1:after {display: none;}
 .content div {text-transform: none; font-size: 15px; line-height: 1.6em; font-weight: 300;}
 
 .post h1 {text-transform: none; text-align: left;}
@@ -277,6 +276,8 @@ body.menu img.black {display: none;}
 .home.firefox .innercontent, .home.firefox .innercontent a, 
 .home.firefox .title,
 .portfolio .title {color: white;}
+.home.firefox h1:after,
+.home.datacenter h1:after {background: white;}
 .home.datacenter .innercontent a,
 .home.firefox .innercontent a {border-bottom: 1px solid rgba(255,255,255,0.4);}
 body.menu .title {color: white;}
@@ -389,6 +390,7 @@ a {color: black;}
 
 
 @media screen and (max-width: 600px) {
+.home h1:after {display: block;}
 body.portfolio .content {margin-left: 0px;}
 body.portfolio #innerpage .table .td .content h1,
 body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 100%!important;}
@@ -401,8 +403,6 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
 .content > div {text-align: left!important;}
 .showmobile {display: initial;}
 .showdesktop {display: none;}
-.home.datacenter .title,
-.home.firefox .title,
 .title {
   position: relative;
   -ms-transform: rotate(-0deg); /* IE 9 */
@@ -416,7 +416,7 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
 }
 .title.showdesktop {display: none;}
 .innercontrols {
-    position: relative;
+    position: absolute;
     min-width: 0px;
     width: auto;
     top: 5px;
@@ -424,10 +424,6 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
     display: block;
 }
 .post .innercontrols {padding-bottom: 20px;}
-.home.datacenter img.white,
-.home.firefox img.white {display: none;}
-.home.datacenter img.black,
-.home.firefox img.black {display: inline;}
 .innercontrols a.openmenu, 
 .innercontrols a {display: inline-block; margin-right: 20px!important;}
 .innercontrols a:nth-child(3),
@@ -440,10 +436,7 @@ body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 1
 .table .td {vertical-align: top; padding: 10px 0 20px 0;}
 #page #menu .table .td {vertical-align: middle;}
 h1 {text-align: left;}
-.blog h1:after, .post h1:after, .page h1:after {margin-left: 0;}
-body[class^='home'] {background: white!important; color: black!important;}
-[class^='home'] h1:after {display: block; content: ""; width: 40px; height: 3px; background: black; margin: 25px 0 10px;}
-#particles-js{ display: none;}
+h1:after {margin-left: 0;}
 [class^='home'] p {
     font-size: 15px;
     line-height: 1.6em;
@@ -451,9 +444,5 @@ body[class^='home'] {background: white!important; color: black!important;}
 }
 #innerpage > .table tr .td {text-align: left;}
 #page {height: auto; min-height: 100%;}
-.home.datacenter .innercontent, .home.datacenter .innercontent a,
-.home.firefox .innercontent, .home.firefox .innercontent a {color: black;}
-.home.datacenter .innercontent a,
-.home.firefox .innercontent a {border-bottom: 1px solid silver;}
 .title {margin-top: 45px}
 }
