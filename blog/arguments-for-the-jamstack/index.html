@@ -86,10 +86,109 @@
 
 <link rel="canonical" href="https://www.usecue.com/blog/arguments-for-the-jamstack/">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 
+</head>
+
+<body id="body"  class="post">
+	
+	
+    
+    <div class="outercontent"><div class="content">
+        
+    <div class="innercontrols showmobile">
+        <a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+        <a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+        
+        <a onclick="prev();"><img src="/img/back2.png" class="black"  alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
+        <a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
+        
+    </div>
+
+    <div class="innercontent">
+
+
+<h3>23.11.2018</h3>
+<h1>Arguments for the JAMstack</h1>
+
+<div data-cms-content-wrapper="/_layouts/post.html">
+<p>I have built more than 100 JAMstack websites in the past few years and I am a <a href="https://www.usecue.com/blog/jekyll-against-the-rest-of-the-world/">big</a> <a href="https://www.usecue.com/blog/from-wordpress-to-cloudcannon/">fan</a>. However, I hear a lot of unnuanced opinions about the JAMstack from people around me. To set that straight I will try to make an honest comparison between the JAMstack and WordPress.</p>
+
+<p>First of all: <a href="https://jamstack.org/" title="https://jamstack.org/">What are JAMstack websites?</a> It is easier to explain what they are NOT. JAMstack websites are website that typically do NOT fetch real-time data from a database to assemble the content on the page. JAMstack websites serve pre-generated pages that can be enriched by data from API’s fetched by Javascript. WordPress websites fetch their page content real-time from their own database and are therefore NOT JAMstack websites.</p>
+
+<p>Popular arguments in favor of the JAMstack are:</p>
+
+<ul>
+  <li>better performance</li>
+  <li>safer</li>
+  <li>better scalability</li>
+  <li>cheaper</li>
+  <li>better developer experience</li>
+</ul>
+
+<h2 id="better-performance">Better performance</h2>
+
+<p>With performance people refer to the speed at which the site loads. A normal WordPress website is slower than a normal JAMstack website, because WordPress has to fetch his page content real-time from the database. However, when you enhance WordPress with caching and a CDN, you will get almost equal performance, as your WordPress website with caching sort-of became a static/JAMstack website. Note that generating a preview of your edits is typically much slower on a JAMstack website, compared to Wordpress (often a factor 10, so 2 versus 20 seconds).</p>
+
+<h2 id="safer">Safer</h2>
+
+<p>A JAMstack has no ‘moving parts’. This means that a JAMstack website requires no PHP or database. PHP in combination with a database is known for its vulnerability, while HTML, Javascript en CSS (the languages of the JAMstack) are safe ‘by design’, because they are being executed client-side (on the visitors computer). However, when you require a contact form or comments you will need a third party application. This third party has the same security issues as any WordPress website. The JAMstack might have fewer moving parts, thus less ‘attack surface’, but it often requires you to out-source your security to multiple third parties. Their security should better be all right. It is also good to know that WordPress also has the option to out-source your security, by choosing for Managed WordPress Hosting. The relative high cost of these services make them impopular, which is a shame, as sleeping sound should be valued higher.</p>
+
+<h2 id="better-scalability">Better scalability</h2>
+
+<p>JAMstack website are typically being served by a CDN. CDN’s can cope with lots of visitors at the same time. A huge amount of visitors will not take down your server. As argued before, a CDN can also be added to a WordPress website, marginalising the performance differnce in this field. Additionally, when you really need to, you can easily migrate your WordPress website to a bigger/faster/better server.</p>
+
+<h2 id="cheaper">Cheaper</h2>
+
+<p>Regular JAMstack websites have no moving parts, which causes a lower load for the server, compared to regular WordPress websites. This makes hosting a JAMstack website a lot cheaper. There is a catch though… When you want to extend your JAMstack website with a good CMS, automatic image scaling or sending contact forms, you need a third party. This third party will more often than not ask a fee for its service. These costs might completely deminish your initial financial advantage.</p>
+
+<h2 id="better-developer-experience">Better developer experience</h2>
+
+<p>‘Simple is simply better’ and JAMstack websites are by design very simple. Therefore it is easier and quicker to create a JAMstack website. However, when you want something beyond the scope of the JAMstack, things get complicated really fast. For example: a fail-over. Running a fail-over on a WordPress website is relatively easy. You ‘simply’ duplicate the server and use a fail-over DNS. When you want to do the same for a JAMstack website, it is not so easy. You will have to configure alternative solutions for all your (third party) services. The complexity of the solution increases rapidly, which defenitely not leads to a better developer experience. So ‘developer experience’ is mainly dependent on the complexity of the website.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The nuanced story is: the JAMstack is a logical and fun choice for a simple website, as in that case, it is often cheaper and less complex. However, as soon as you have more advanced wishes, JAMstack websites become easily more expensive and more complex than their WordPress counterparts. The JAMstack is not the best solution for any project. Do you want to know if a JAMstack website is a good choice for your project? <a href="https://www.usecue.com/contact/">Contact me!</a> I would love to give you some free advice.</p>
+
+</div>
+
+
+
+<div class="title showmobile">Usecue <span>&nbsp;web development</span></div>
+
+</div></div></div>
+	
+	<div id="menu"><div class="outercontent"><div class="content">
+        <a href="/" style="margin-top: 33px; display: inline-block;">home.</a><br />
+		    <a href="/about-me/">about me.</a><br />
+		    <a href="/portfolio/">portfolio.</a><br />
+		    <a href="/blog/">blog.</a><br />
+        <a href="/contact/">contact.</a><br />		
+        
+        <span style="font-size: 35%;"><a href="/">EN</a> &bull; <a href="https://www.usecue.nl/" rel="noopener">NL</a></span>
+  </div></div></div>
+
+<div id="controls" class="showdesktop post">
+	<div class="innercontrols">
+		<a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+		<a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+		
+    <a onclick="prev();"><img src="/img/back2.png" class="black" alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
+		<a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
+    
+	</div>
+	<div class="title showdesktop">Usecue <span>&nbsp;web development</span></div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/css/fonts.css">
+<script>
+  /*! modernizr 3.6.0 (Custom Build) | MIT *
+   * https://modernizr.com/download/?-webp-setclasses !*/
+  !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+  </script>
 <script src="/js/jquery-3.3.1.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="/css/style.css">
+
 
 <script>
 function next() {
@@ -190,97 +289,7 @@ $(window).resize( function() {
 });
 
 </script>
-</head>
 
-<body id="body"  class="post">
-	
-	
-    
-    <div class="outercontent"><div class="content">
-        
-    <div class="innercontrols showmobile">
-        <a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
-        <a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
-        
-        <a onclick="prev();"><img src="/img/back2.png" class="black"  alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
-        <a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
-        
-    </div>
-
-    <div class="innercontent">
-
-
-<h3>23.11.2018</h3>
-<h1>Arguments for the JAMstack</h1>
-
-<div data-cms-content-wrapper="/_layouts/post.html">
-<p>I have built more than 100 JAMstack websites in the past few years and I am a <a href="https://www.usecue.com/blog/jekyll-against-the-rest-of-the-world/">big</a> <a href="https://www.usecue.com/blog/from-wordpress-to-cloudcannon/">fan</a>. However, I hear a lot of unnuanced opinions about the JAMstack from people around me. To set that straight I will try to make an honest comparison between the JAMstack and WordPress.</p>
-
-<p>First of all: <a href="https://jamstack.org/" title="https://jamstack.org/">What are JAMstack websites?</a> It is easier to explain what they are NOT. JAMstack websites are website that typically do NOT fetch real-time data from a database to assemble the content on the page. JAMstack websites serve pre-generated pages that can be enriched by data from API’s fetched by Javascript. WordPress websites fetch their page content real-time from their own database and are therefore NOT JAMstack websites.</p>
-
-<p>Popular arguments in favor of the JAMstack are:</p>
-
-<ul>
-  <li>better performance</li>
-  <li>safer</li>
-  <li>better scalability</li>
-  <li>cheaper</li>
-  <li>better developer experience</li>
-</ul>
-
-<h2 id="better-performance">Better performance</h2>
-
-<p>With performance people refer to the speed at which the site loads. A normal WordPress website is slower than a normal JAMstack website, because WordPress has to fetch his page content real-time from the database. However, when you enhance WordPress with caching and a CDN, you will get almost equal performance, as your WordPress website with caching sort-of became a static/JAMstack website. Note that generating a preview of your edits is typically much slower on a JAMstack website, compared to Wordpress (often a factor 10, so 2 versus 20 seconds).</p>
-
-<h2 id="safer">Safer</h2>
-
-<p>A JAMstack has no ‘moving parts’. This means that a JAMstack website requires no PHP or database. PHP in combination with a database is known for its vulnerability, while HTML, Javascript en CSS (the languages of the JAMstack) are safe ‘by design’, because they are being executed client-side (on the visitors computer). However, when you require a contact form or comments you will need a third party application. This third party has the same security issues as any WordPress website. The JAMstack might have fewer moving parts, thus less ‘attack surface’, but it often requires you to out-source your security to multiple third parties. Their security should better be all right. It is also good to know that WordPress also has the option to out-source your security, by choosing for Managed WordPress Hosting. The relative high cost of these services make them impopular, which is a shame, as sleeping sound should be valued higher.</p>
-
-<h2 id="better-scalability">Better scalability</h2>
-
-<p>JAMstack website are typically being served by a CDN. CDN’s can cope with lots of visitors at the same time. A huge amount of visitors will not take down your server. As argued before, a CDN can also be added to a WordPress website, marginalising the performance differnce in this field. Additionally, when you really need to, you can easily migrate your WordPress website to a bigger/faster/better server.</p>
-
-<h2 id="cheaper">Cheaper</h2>
-
-<p>Regular JAMstack websites have no moving parts, which causes a lower load for the server, compared to regular WordPress websites. This makes hosting a JAMstack website a lot cheaper. There is a catch though… When you want to extend your JAMstack website with a good CMS, automatic image scaling or sending contact forms, you need a third party. This third party will more often than not ask a fee for its service. These costs might completely deminish your initial financial advantage.</p>
-
-<h2 id="better-developer-experience">Better developer experience</h2>
-
-<p>‘Simple is simply better’ and JAMstack websites are by design very simple. Therefore it is easier and quicker to create a JAMstack website. However, when you want something beyond the scope of the JAMstack, things get complicated really fast. For example: a fail-over. Running a fail-over on a WordPress website is relatively easy. You ‘simply’ duplicate the server and use a fail-over DNS. When you want to do the same for a JAMstack website, it is not so easy. You will have to configure alternative solutions for all your (third party) services. The complexity of the solution increases rapidly, which defenitely not leads to a better developer experience. So ‘developer experience’ is mainly dependent on the complexity of the website.</p>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>The nuanced story is: the JAMstack is a logical and fun choice for a simple website, as in that case, it is often cheaper and less complex. However, as soon as you have more advanced wishes, JAMstack websites become easily more expensive and more complex than their WordPress counterparts. The JAMstack is not the best solution for any project. Do you want to know if a JAMstack website is a good choice for your project? <a href="https://www.usecue.com/contact/">Contact me!</a> I would love to give you some free advice.</p>
-
-</div>
-
-
-
-<div class="title showmobile">Usecue <span>&nbsp;web development</span></div>
-
-</div></div></div>
-	
-	<div id="menu"><div class="outercontent"><div class="content">
-        <a href="/" style="margin-top: 33px; display: inline-block;">home.</a><br />
-		    <a href="/about-me/">about me.</a><br />
-		    <a href="/portfolio/">portfolio.</a><br />
-		    <a href="/blog/">blog.</a><br />
-        <a href="/contact/">contact.</a><br />		
-        
-        <span style="font-size: 35%;"><a href="/">EN</a> &bull; <a href="https://www.usecue.nl/" rel="noopener">NL</a></span>
-  </div></div></div>
-
-<div id="controls" class="showdesktop post">
-	<div class="innercontrols">
-		<a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
-		<a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
-		
-    <a onclick="prev();"><img src="/img/back2.png" class="black" alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
-		<a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
-    
-	</div>
-	<div class="title showdesktop">Usecue <span>&nbsp;web development</span></div>
-</div>
     <script>
     //open external links in a new window
     function externalLinks() {

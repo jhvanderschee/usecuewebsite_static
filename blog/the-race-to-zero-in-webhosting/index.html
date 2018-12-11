@@ -86,10 +86,103 @@
 
 <link rel="canonical" href="https://www.usecue.com/blog/the-race-to-zero-in-webhosting/">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 
+</head>
+
+<body id="body"  class="post">
+	
+	
+    
+    <div class="outercontent"><div class="content">
+        
+    <div class="innercontrols showmobile">
+        <a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+        <a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+        
+        <a onclick="prev();"><img src="/img/back2.png" class="black"  alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
+        <a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
+        
+    </div>
+
+    <div class="innercontent">
+
+
+<h3>14.08.2015</h3>
+<h1>The race to zero in web&shy;hosting</h1>
+
+<div data-cms-content-wrapper="/_layouts/post.html">
+<p>If you are a small business owner and you need a website, you will probably end up renting some cheap shared webspace at a big hosting company. Prices of these services are constantly under attack. XS4ALL used to ask 25 euro a month, but prices like 5 euro are more common these days.</p>
+
+<p>It is the well-known ‘race to zero’… and we are waiting for the first company that offers this service for free. I have good news for you: Zero is here! Github offers free webhosting.</p>
+
+<h2 id="too-good-to-be-true">Too good to be true</h2>
+
+<p>But… if life has taught me one thing, it is that if something sounds too good to be true, it probably is. So let us find out what this is really about. Who are these guys and why are they offering this service for free? Github hosts programming code and there main goal is to offer ‘version control’. So storing (multiple versions of) your code is what they do. Hosting this stored code over HTTP is an additional service, that consists of mainly the same ingredients. They offer this additional service for free because they want you to host your project website and your project code in the same account, which makes sense in a way. But if we want to host a commercial website, without storing any project code… would that be allowed? I looked it up in the terms and you ARE allowed to host your commercial website on Github. Furthermore, there seems to be no restrictions, other than that the website needs to contain YOUR company pages. I emphasized ‘your’, but that is just a matter of interpretation. This might mean you are not allowed to host somebody elses company page in your account.</p>
+
+<h2 id="only-static-files">Only static files</h2>
+
+<p>There is another restriction however, and this is a big one. The hosting only allows for static files. This makes it impossible to run a website that requires a database, like a WordPress installation. So… are we back to editing plain HTML? No! Let me explain…</p>
+
+<h2 id="cloudcannon-your-online-cms">CloudCannon, your online CMS</h2>
+
+<p>CMS systems that rely on static files have recently grown in popularity. One of the more elegant solutions is Jekyll, which is (not accidentally) supported by Github. The popularity of Jekyll inspired the guys behind CloudCannon to build an online CMS for static files. This means you simply log into a online backend, that is owned and hosted by CloudCannon. CloudCannon then syncronizes your files with Github on every update. This means you will never need to login to Github at all. Your customers will only see the user friendly CloudCannon environment.</p>
+
+<h2 id="your-own-domain-name">Your own domain name</h2>
+
+<p>Github made it super simple to connect your domain name. Just upload a CNAME file to the root of your directory and you are done. No show stopper here.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>So… you need to use Jekyll and the clients website must be relatively simple. Meaning this might not be a solution for everyone. There is also the dependency on CloudCannon and Github, which might be a threat. However, there are 3 compelling reasons to choose for this solution over WordPress:</p>
+
+<ol>
+  <li>Minimal costs for your client</li>
+  <li>Solid backups/version control through Github</li>
+  <li>A user friendly CMS (CloudCannon), that needs no updates</li>
+</ol>
+
+<p>Hard to resist, right?</p>
+
+</div>
+
+
+
+<div class="title showmobile">Usecue <span>&nbsp;web development</span></div>
+
+</div></div></div>
+	
+	<div id="menu"><div class="outercontent"><div class="content">
+        <a href="/" style="margin-top: 33px; display: inline-block;">home.</a><br />
+		    <a href="/about-me/">about me.</a><br />
+		    <a href="/portfolio/">portfolio.</a><br />
+		    <a href="/blog/">blog.</a><br />
+        <a href="/contact/">contact.</a><br />		
+        
+        <span style="font-size: 35%;"><a href="/">EN</a> &bull; <a href="https://www.usecue.nl/" rel="noopener">NL</a></span>
+  </div></div></div>
+
+<div id="controls" class="showdesktop post">
+	<div class="innercontrols">
+		<a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+		<a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+		
+    <a onclick="prev();"><img src="/img/back2.png" class="black" alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
+		<a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
+    
+	</div>
+	<div class="title showdesktop">Usecue <span>&nbsp;web development</span></div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/css/fonts.css">
+<script>
+  /*! modernizr 3.6.0 (Custom Build) | MIT *
+   * https://modernizr.com/download/?-webp-setclasses !*/
+  !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+  </script>
 <script src="/js/jquery-3.3.1.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="/css/style.css">
+
 
 <script>
 function next() {
@@ -190,91 +283,7 @@ $(window).resize( function() {
 });
 
 </script>
-</head>
 
-<body id="body"  class="post">
-	
-	
-    
-    <div class="outercontent"><div class="content">
-        
-    <div class="innercontrols showmobile">
-        <a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
-        <a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
-        
-        <a onclick="prev();"><img src="/img/back2.png" class="black"  alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
-        <a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
-        
-    </div>
-
-    <div class="innercontent">
-
-
-<h3>14.08.2015</h3>
-<h1>The race to zero in web&shy;hosting</h1>
-
-<div data-cms-content-wrapper="/_layouts/post.html">
-<p>If you are a small business owner and you need a website, you will probably end up renting some cheap shared webspace at a big hosting company. Prices of these services are constantly under attack. XS4ALL used to ask 25 euro a month, but prices like 5 euro are more common these days.</p>
-
-<p>It is the well-known ‘race to zero’… and we are waiting for the first company that offers this service for free. I have good news for you: Zero is here! Github offers free webhosting.</p>
-
-<h2 id="too-good-to-be-true">Too good to be true</h2>
-
-<p>But… if life has taught me one thing, it is that if something sounds too good to be true, it probably is. So let us find out what this is really about. Who are these guys and why are they offering this service for free? Github hosts programming code and there main goal is to offer ‘version control’. So storing (multiple versions of) your code is what they do. Hosting this stored code over HTTP is an additional service, that consists of mainly the same ingredients. They offer this additional service for free because they want you to host your project website and your project code in the same account, which makes sense in a way. But if we want to host a commercial website, without storing any project code… would that be allowed? I looked it up in the terms and you ARE allowed to host your commercial website on Github. Furthermore, there seems to be no restrictions, other than that the website needs to contain YOUR company pages. I emphasized ‘your’, but that is just a matter of interpretation. This might mean you are not allowed to host somebody elses company page in your account.</p>
-
-<h2 id="only-static-files">Only static files</h2>
-
-<p>There is another restriction however, and this is a big one. The hosting only allows for static files. This makes it impossible to run a website that requires a database, like a WordPress installation. So… are we back to editing plain HTML? No! Let me explain…</p>
-
-<h2 id="cloudcannon-your-online-cms">CloudCannon, your online CMS</h2>
-
-<p>CMS systems that rely on static files have recently grown in popularity. One of the more elegant solutions is Jekyll, which is (not accidentally) supported by Github. The popularity of Jekyll inspired the guys behind CloudCannon to build an online CMS for static files. This means you simply log into a online backend, that is owned and hosted by CloudCannon. CloudCannon then syncronizes your files with Github on every update. This means you will never need to login to Github at all. Your customers will only see the user friendly CloudCannon environment.</p>
-
-<h2 id="your-own-domain-name">Your own domain name</h2>
-
-<p>Github made it super simple to connect your domain name. Just upload a CNAME file to the root of your directory and you are done. No show stopper here.</p>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>So… you need to use Jekyll and the clients website must be relatively simple. Meaning this might not be a solution for everyone. There is also the dependency on CloudCannon and Github, which might be a threat. However, there are 3 compelling reasons to choose for this solution over WordPress:</p>
-
-<ol>
-  <li>Minimal costs for your client</li>
-  <li>Solid backups/version control through Github</li>
-  <li>A user friendly CMS (CloudCannon), that needs no updates</li>
-</ol>
-
-<p>Hard to resist, right?</p>
-
-</div>
-
-
-
-<div class="title showmobile">Usecue <span>&nbsp;web development</span></div>
-
-</div></div></div>
-	
-	<div id="menu"><div class="outercontent"><div class="content">
-        <a href="/" style="margin-top: 33px; display: inline-block;">home.</a><br />
-		    <a href="/about-me/">about me.</a><br />
-		    <a href="/portfolio/">portfolio.</a><br />
-		    <a href="/blog/">blog.</a><br />
-        <a href="/contact/">contact.</a><br />		
-        
-        <span style="font-size: 35%;"><a href="/">EN</a> &bull; <a href="https://www.usecue.nl/" rel="noopener">NL</a></span>
-  </div></div></div>
-
-<div id="controls" class="showdesktop post">
-	<div class="innercontrols">
-		<a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
-		<a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
-		
-    <a onclick="prev();"><img src="/img/back2.png" class="black" alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
-		<a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
-    
-	</div>
-	<div class="title showdesktop">Usecue <span>&nbsp;web development</span></div>
-</div>
     <script>
     //open external links in a new window
     function externalLinks() {

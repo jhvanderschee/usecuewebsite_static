@@ -86,10 +86,89 @@
 
 <link rel="canonical" href="https://www.usecue.com/blog/two-viewports-to-rule-them-all/">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 
+</head>
+
+<body id="body"  class="post">
+	
+	
+    
+    <div class="outercontent"><div class="content">
+        
+    <div class="innercontrols showmobile">
+        <a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+        <a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+        
+        <a onclick="prev();"><img src="/img/back2.png" class="black"  alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
+        <a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
+        
+    </div>
+
+    <div class="innercontent">
+
+
+<h3>21.04.2016</h3>
+<h1>Two viewports to rule them all</h1>
+
+<div data-cms-content-wrapper="/_layouts/post.html">
+<p>The amount of available screen sizes is exploding. That is why we need responsive design. But what if I told you you only needed two sizes? Impossible, I hear you think. But you may be wrong. I came up with a technique that requires just two sizes and saves you a huge amount of time. </p>
+
+<p>I have been experimenting with responsive web design a lot lately. This is mainly due to my side project called ‘Without Coding’. In this project I enable graphic designers to create websites on a Photoshop-like canvas. This canvas is based on absolute positioning, making normal responsive techniques unfit. To fix this problem, I came up with the concept of ‘fixed viewports’ (as opposed to fluid responsiveness).</p>
+
+<p>The concept of ‘fixed viewports’ is based on the premise that all screens have viewport scaling, unless they have a certain minimum width. This minimum width is what we call the ‘desktop version’. This is nowadays about 1200 pixels. This desktop version can be shown on tablets through viewport scaling. Using this width on a phone, would result in an illegible website. Therefore we need a second width, the ‘phone version’. Using 400 pixels for this width works best for me.</p>
+
+<p>How it works is that you build a fixed-width website for each of these versions. This is done purely in CSS. You can start with the 1200 pixels version and switch to the 400 pixel version at about 600 pixels screen width. The switch can be made by using a CSS media query and rewriting the meta viewport tag with Javascript. </p>
+
+<p>This means that the CSS for the desktop version does not need to have any responsive features. You can use simple floats and all sizes can be measured in pixels. The CSS for the phone version will override these sizes where needed. Most of the time this means applying ‘float: none’ and ‘width: 100%’ to these elements. Simple, right?</p>
+
+<blockquote>
+  <p>“After 14h straight I think it’s time I call it a day… responsive design is hard”</p>
+</blockquote>
+
+<p>I found the above quote on Twitter. Do you feel the same? Try this technique! ‘Fixed viewports’ makes building responsive websites very easy. In my experience it allows you to make ANY website responsive in less than 3 hours.</p>
+
+<p>PRO TIP: Feeling fancy? Add an in-between version for portrait tablets or enable <a href="/2015/05/30/the-viewport-meta-tag-on-desktop.html">the viewport meta tag on desktop</a>.</p>
+
+</div>
+
+
+
+<div class="title showmobile">Usecue <span>&nbsp;web development</span></div>
+
+</div></div></div>
+	
+	<div id="menu"><div class="outercontent"><div class="content">
+        <a href="/" style="margin-top: 33px; display: inline-block;">home.</a><br />
+		    <a href="/about-me/">about me.</a><br />
+		    <a href="/portfolio/">portfolio.</a><br />
+		    <a href="/blog/">blog.</a><br />
+        <a href="/contact/">contact.</a><br />		
+        
+        <span style="font-size: 35%;"><a href="/">EN</a> &bull; <a href="https://www.usecue.nl/" rel="noopener">NL</a></span>
+  </div></div></div>
+
+<div id="controls" class="showdesktop post">
+	<div class="innercontrols">
+		<a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+		<a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+		
+    <a onclick="prev();"><img src="/img/back2.png" class="black" alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
+		<a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
+    
+	</div>
+	<div class="title showdesktop">Usecue <span>&nbsp;web development</span></div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/css/fonts.css">
+<script>
+  /*! modernizr 3.6.0 (Custom Build) | MIT *
+   * https://modernizr.com/download/?-webp-setclasses !*/
+  !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+  </script>
 <script src="/js/jquery-3.3.1.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="/css/style.css">
+
 
 <script>
 function next() {
@@ -190,77 +269,7 @@ $(window).resize( function() {
 });
 
 </script>
-</head>
 
-<body id="body"  class="post">
-	
-	
-    
-    <div class="outercontent"><div class="content">
-        
-    <div class="innercontrols showmobile">
-        <a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
-        <a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
-        
-        <a onclick="prev();"><img src="/img/back2.png" class="black"  alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
-        <a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
-        
-    </div>
-
-    <div class="innercontent">
-
-
-<h3>21.04.2016</h3>
-<h1>Two viewports to rule them all</h1>
-
-<div data-cms-content-wrapper="/_layouts/post.html">
-<p>The amount of available screen sizes is exploding. That is why we need responsive design. But what if I told you you only needed two sizes? Impossible, I hear you think. But you may be wrong. I came up with a technique that requires just two sizes and saves you a huge amount of time. </p>
-
-<p>I have been experimenting with responsive web design a lot lately. This is mainly due to my side project called ‘Without Coding’. In this project I enable graphic designers to create websites on a Photoshop-like canvas. This canvas is based on absolute positioning, making normal responsive techniques unfit. To fix this problem, I came up with the concept of ‘fixed viewports’ (as opposed to fluid responsiveness).</p>
-
-<p>The concept of ‘fixed viewports’ is based on the premise that all screens have viewport scaling, unless they have a certain minimum width. This minimum width is what we call the ‘desktop version’. This is nowadays about 1200 pixels. This desktop version can be shown on tablets through viewport scaling. Using this width on a phone, would result in an illegible website. Therefore we need a second width, the ‘phone version’. Using 400 pixels for this width works best for me.</p>
-
-<p>How it works is that you build a fixed-width website for each of these versions. This is done purely in CSS. You can start with the 1200 pixels version and switch to the 400 pixel version at about 600 pixels screen width. The switch can be made by using a CSS media query and rewriting the meta viewport tag with Javascript. </p>
-
-<p>This means that the CSS for the desktop version does not need to have any responsive features. You can use simple floats and all sizes can be measured in pixels. The CSS for the phone version will override these sizes where needed. Most of the time this means applying ‘float: none’ and ‘width: 100%’ to these elements. Simple, right?</p>
-
-<blockquote>
-  <p>“After 14h straight I think it’s time I call it a day… responsive design is hard”</p>
-</blockquote>
-
-<p>I found the above quote on Twitter. Do you feel the same? Try this technique! ‘Fixed viewports’ makes building responsive websites very easy. In my experience it allows you to make ANY website responsive in less than 3 hours.</p>
-
-<p>PRO TIP: Feeling fancy? Add an in-between version for portrait tablets or enable <a href="/2015/05/30/the-viewport-meta-tag-on-desktop.html">the viewport meta tag on desktop</a>.</p>
-
-</div>
-
-
-
-<div class="title showmobile">Usecue <span>&nbsp;web development</span></div>
-
-</div></div></div>
-	
-	<div id="menu"><div class="outercontent"><div class="content">
-        <a href="/" style="margin-top: 33px; display: inline-block;">home.</a><br />
-		    <a href="/about-me/">about me.</a><br />
-		    <a href="/portfolio/">portfolio.</a><br />
-		    <a href="/blog/">blog.</a><br />
-        <a href="/contact/">contact.</a><br />		
-        
-        <span style="font-size: 35%;"><a href="/">EN</a> &bull; <a href="https://www.usecue.nl/" rel="noopener">NL</a></span>
-  </div></div></div>
-
-<div id="controls" class="showdesktop post">
-	<div class="innercontrols">
-		<a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
-		<a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
-		
-    <a onclick="prev();"><img src="/img/back2.png" class="black" alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
-		<a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
-    
-	</div>
-	<div class="title showdesktop">Usecue <span>&nbsp;web development</span></div>
-</div>
     <script>
     //open external links in a new window
     function externalLinks() {

@@ -86,10 +86,91 @@
 
 <link rel="canonical" href="https://www.usecue.com/blog/goodbye-google/">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 
+</head>
+
+<body id="body"  class="post">
+	
+	
+    
+    <div class="outercontent"><div class="content">
+        
+    <div class="innercontrols showmobile">
+        <a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+        <a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+        
+        <a onclick="prev();"><img src="/img/back2.png" class="black"  alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
+        <a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
+        
+    </div>
+
+    <div class="innercontent">
+
+
+<h3>11.11.2018</h3>
+<h1>Goodbye Google</h1>
+
+<div data-cms-content-wrapper="/_layouts/post.html">
+<p>Today I found out that Google Maps on my website showed a dark ‘for development purposes only’ overlay. As a website developer and host I am responsible for hundreds of websites, so, as you can understand, I panicked.</p>
+
+<p>I soon found out that I was in good company. The website of the Communal Transportation Company of the capital of the Netherlands, used by half a million people a day, was broken too. You can see this here:</p>
+
+<p><a href="/uploads/gvb.png" style="display: block;"><img src="/uploads/gvb.png" style="display: block;" /></a></p>
+
+<p>My browsers development console showed red errors and a pop-up was shown. It were messages from Google for the owner of the website, and they read: ‘The request is missing an API key, billing has not been enabled on your account, the provided billing method is invalid (for example an expired credit card) or a self-imposed daily limit has been exceeded’. Googling for ‘Google Maps API billing’ led to a page headed ‘Pricing that scale to fit your needs’. I read that I could continue to use Google Maps if I entered my billing information.</p>
+
+<blockquote>
+  <p>This was Google saying: We broke your website without warning, and we will hold it hostage until you give us a credit card number.</p>
+</blockquote>
+
+<p>What to do? Send my client an email? Begging for money? And for how much? Or worse… ask them for their credit card number?</p>
+
+<p>I was angry. I did not want my websites to stop working, but could not ask my clients for money as a result of my poor judgement. And with ‘poor judgement’ I mean ‘choosing Google as a partner in software development’. Google had stabbed me in the back. I had not expected them to be this unreliable, but here I was, facing the ugly truth. I had read that Google was losing ground (advertising income) to Amazon and Facebook, but I never thought that that would influence their loyalty towards developers. The once so popular company (amongst developers) had become greedy and irresponsible. I do not know what I found more appalling: that they had broken millions of websites or that they were blaming us with their ‘for development purposes only’ message.</p>
+
+<p>I did the only thing I could do: I replaced Google Maps on every single website I hosted. It costed me thousands of dollars in lost income. I replaced Google Maps by <a href="https://leafletjs.com/">the open-source Leaflet library</a> and Open Street Maps or by a self-rolled SVG maps solution (see: <a href="https://beukenbuurt.amsterdam/">beukenbuurt.amsterdam</a>). It has an up-side: Leaflet has much better documentation than Google Maps and my self-rolled SVG solution is fully GDPR complaint.</p>
+
+<p>Google as a partner in web development? Never again! Google, you can stick your over-priced Compute Engine and all its API’s in a place where the sun does not shine… Yes… I mean one of those unused data centers you own. Goodbye Google.</p>
+
+</div>
+
+
+
+<div class="title showmobile">Usecue <span>&nbsp;web development</span></div>
+
+</div></div></div>
+	
+	<div id="menu"><div class="outercontent"><div class="content">
+        <a href="/" style="margin-top: 33px; display: inline-block;">home.</a><br />
+		    <a href="/about-me/">about me.</a><br />
+		    <a href="/portfolio/">portfolio.</a><br />
+		    <a href="/blog/">blog.</a><br />
+        <a href="/contact/">contact.</a><br />		
+        
+        <span style="font-size: 35%;"><a href="/">EN</a> &bull; <a href="https://www.usecue.nl/" rel="noopener">NL</a></span>
+  </div></div></div>
+
+<div id="controls" class="showdesktop post">
+	<div class="innercontrols">
+		<a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
+		<a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
+		
+    <a onclick="prev();"><img src="/img/back2.png" class="black" alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
+		<a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
+    
+	</div>
+	<div class="title showdesktop">Usecue <span>&nbsp;web development</span></div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/css/fonts.css">
+<script>
+  /*! modernizr 3.6.0 (Custom Build) | MIT *
+   * https://modernizr.com/download/?-webp-setclasses !*/
+  !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+  </script>
 <script src="/js/jquery-3.3.1.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="/css/style.css">
+
 
 <script>
 function next() {
@@ -190,79 +271,7 @@ $(window).resize( function() {
 });
 
 </script>
-</head>
 
-<body id="body"  class="post">
-	
-	
-    
-    <div class="outercontent"><div class="content">
-        
-    <div class="innercontrols showmobile">
-        <a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
-        <a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
-        
-        <a onclick="prev();"><img src="/img/back2.png" class="black"  alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
-        <a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
-        
-    </div>
-
-    <div class="innercontent">
-
-
-<h3>11.11.2018</h3>
-<h1>Goodbye Google</h1>
-
-<div data-cms-content-wrapper="/_layouts/post.html">
-<p>Today I found out that Google Maps on my website showed a dark ‘for development purposes only’ overlay. As a website developer and host I am responsible for hundreds of websites, so, as you can understand, I panicked.</p>
-
-<p>I soon found out that I was in good company. The website of the Communal Transportation Company of the capital of the Netherlands, used by half a million people a day, was broken too. You can see this here:</p>
-
-<p><a href="/uploads/gvb.png" style="display: block;"><img src="/uploads/gvb.png" style="display: block;" /></a></p>
-
-<p>My browsers development console showed red errors and a pop-up was shown. It were messages from Google for the owner of the website, and they read: ‘The request is missing an API key, billing has not been enabled on your account, the provided billing method is invalid (for example an expired credit card) or a self-imposed daily limit has been exceeded’. Googling for ‘Google Maps API billing’ led to a page headed ‘Pricing that scale to fit your needs’. I read that I could continue to use Google Maps if I entered my billing information.</p>
-
-<blockquote>
-  <p>This was Google saying: We broke your website without warning, and we will hold it hostage until you give us a credit card number.</p>
-</blockquote>
-
-<p>What to do? Send my client an email? Begging for money? And for how much? Or worse… ask them for their credit card number?</p>
-
-<p>I was angry. I did not want my websites to stop working, but could not ask my clients for money as a result of my poor judgement. And with ‘poor judgement’ I mean ‘choosing Google as a partner in software development’. Google had stabbed me in the back. I had not expected them to be this unreliable, but here I was, facing the ugly truth. I had read that Google was losing ground (advertising income) to Amazon and Facebook, but I never thought that that would influence their loyalty towards developers. The once so popular company (amongst developers) had become greedy and irresponsible. I do not know what I found more appalling: that they had broken millions of websites or that they were blaming us with their ‘for development purposes only’ message.</p>
-
-<p>I did the only thing I could do: I replaced Google Maps on every single website I hosted. It costed me thousands of dollars in lost income. I replaced Google Maps by <a href="https://leafletjs.com/">the open-source Leaflet library</a> and Open Street Maps or by a self-rolled SVG maps solution (see: <a href="https://beukenbuurt.amsterdam/">beukenbuurt.amsterdam</a>). It has an up-side: Leaflet has much better documentation than Google Maps and my self-rolled SVG solution is fully GDPR complaint.</p>
-
-<p>Google as a partner in web development? Never again! Google, you can stick your over-priced Compute Engine and all its API’s in a place where the sun does not shine… Yes… I mean one of those unused data centers you own. Goodbye Google.</p>
-
-</div>
-
-
-
-<div class="title showmobile">Usecue <span>&nbsp;web development</span></div>
-
-</div></div></div>
-	
-	<div id="menu"><div class="outercontent"><div class="content">
-        <a href="/" style="margin-top: 33px; display: inline-block;">home.</a><br />
-		    <a href="/about-me/">about me.</a><br />
-		    <a href="/portfolio/">portfolio.</a><br />
-		    <a href="/blog/">blog.</a><br />
-        <a href="/contact/">contact.</a><br />		
-        
-        <span style="font-size: 35%;"><a href="/">EN</a> &bull; <a href="https://www.usecue.nl/" rel="noopener">NL</a></span>
-  </div></div></div>
-
-<div id="controls" class="showdesktop post">
-	<div class="innercontrols">
-		<a onclick="menu();" class="openmenu"><img src="/img/menu2.png" class="black" alt="menu" /><img src="/img/menu.png" class="white" alt="menu" /></a>
-		<a onclick="menu();" class="closemenu"><img src="/img/close2.png" class="black" alt="close" /><img src="/img/close.png" class="white" alt="close" /></a>
-		
-    <a onclick="prev();"><img src="/img/back2.png" class="black" alt="previous" /><img src="/img/back.png" class="white" alt="previous" /></a>
-		<a onclick="next();"><img src="/img/next2.png" class="black" alt="next" /><img src="/img/next.png" class="white" alt="next" /></a>
-    
-	</div>
-	<div class="title showdesktop">Usecue <span>&nbsp;web development</span></div>
-</div>
     <script>
     //open external links in a new window
     function externalLinks() {
