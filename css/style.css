@@ -351,59 +351,59 @@ a {color: black;}
 
 
 @media screen and (max-width: 600px) {
-.home h1:after {display: block;}
-body.portfolio .content {margin-left: 0px;}
-body.portfolio #innerpage .table .td .content h1,
-body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 100%!important;}
-.table .table, .table .table .td, .table .table tbody, .table .table tr {height: auto; display: block;}
-[class^='home'] h1 {font-size: 62px; font-weight: 900; letter-spacing: 1px; line-height: 1em;}
-[class^='home'] p {text-align: left;}
-.outercontent {display: block;}
-.outercontent:before {content: none;}
-.content {padding: 0 15px!important; display: block;}
-.content > div {text-align: left!important;}
-.showmobile {display: initial;}
-.showdesktop {display: none;}
-.title {
-  position: relative;
-  -ms-transform: rotate(-0deg); /* IE 9 */
-    -webkit-transform: rotate(-0deg); /* Chrome, Safari, Opera */
-    transform: rotate(-0deg);
-    bottom: auto;
-    margin-left: 0;
-    margin-top: 45px;
-    display: block!important;
-    color: black;
-}
-.title.showdesktop {display: none;}
-.innercontrols {
-    position: absolute;
-    min-width: 0px;
-    width: auto;
-    top: 5px;
-    padding-bottom: 0px;
-    display: block;
-}
-.post .innercontrols {padding-bottom: 20px;}
-.innercontrols a.openmenu, 
-.innercontrols a {display: inline-block; margin-right: 20px!important;}
-.innercontrols a:nth-child(3),
-.innercontrols a:nth-child(4) {display: none;}
-.post .innercontrols a:nth-child(3),
-.post .innercontrols a:nth-child(4) {display: inline-block; position: relative; bottom: 3px;}
-.portfolio .innercontrols a:nth-child(3),
-.portfolio .innercontrols a:nth-child(4) {display: inline-block; position: relative; bottom: 3px;}
-.innercontrols a:nth-child(2) {position: absolute; z-index: 999;}
-.table .td {vertical-align: top; padding: 10px 0 20px 0;}
-#page #menu .table .td {vertical-align: middle;}
-h1 {text-align: left;}
-h1:after {margin-left: 0;}
-[class^='home'] p {
-    font-size: 15px;
-    line-height: 1.6em;
-    font-weight: 300;
-}
-#innerpage > .table tr .td {text-align: left;}
-#page {height: auto; min-height: 100%;}
-.title {margin-top: 45px}
+    .home h1:after {display: block;}
+    body.portfolio .content {margin-left: 0px;}
+    body.portfolio #innerpage .table .td .content h1,
+    body.portfolio #innerpage .table .td .col50 {max-width: 100%!important; width: 100%!important;}
+    .table .table, .table .table .td, .table .table tbody, .table .table tr {height: auto; display: block;}
+    [class^='home'] h1 {font-size: 62px; font-weight: 900; letter-spacing: 1px; line-height: 1em;}
+    [class^='home'] p {text-align: left;}
+    .outercontent {display: block;}
+    .outercontent:before {content: none;}
+    .content {padding: 0 15px!important; display: block;}
+    .content > div {text-align: left!important;}
+    .showmobile {display: initial;}
+    .showdesktop {display: none;}
+    .title {
+    position: relative;
+    -ms-transform: rotate(-0deg); /* IE 9 */
+        -webkit-transform: rotate(-0deg); /* Chrome, Safari, Opera */
+        transform: rotate(-0deg);
+        bottom: auto;
+        margin-left: 0;
+        margin-top: 45px;
+        display: block!important;
+        color: black;
+    }
+    .title.showdesktop {display: none;}
+    .innercontrols {
+        position: absolute;
+        min-width: 0px;
+        width: auto;
+        top: 5px;
+        padding-bottom: 0px;
+        display: block;
+    }
+    .post .innercontrols {padding-bottom: 20px;}
+    .innercontrols a.openmenu, 
+    .innercontrols a {display: inline-block; margin-right: 20px!important;}
+    .innercontrols a:nth-child(3),
+    .innercontrols a:nth-child(4) {display: none;}
+    .post .innercontrols a:nth-child(3),
+    .post .innercontrols a:nth-child(4) {display: inline-block; position: relative; bottom: 3px;}
+    .portfolio .innercontrols a:nth-child(3),
+    .portfolio .innercontrols a:nth-child(4) {display: inline-block; position: relative; bottom: 3px;}
+    .innercontrols a:nth-child(2) {position: absolute; z-index: 999;}
+    .table .td {vertical-align: top; padding: 10px 0 20px 0;}
+    #page #menu .table .td {vertical-align: middle;}
+    h1 {text-align: left;}
+    h1:after {margin-left: 0;}
+    [class^='home'] p {
+        font-size: 15px;
+        line-height: 1.6em;
+        font-weight: 300;
+    }
+    #innerpage > .table tr .td {text-align: left;}
+    #page {height: auto; min-height: 100%;}
+    .title {margin-top: 45px}
 }
