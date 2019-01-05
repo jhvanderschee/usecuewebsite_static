@@ -33,9 +33,7 @@ body #menu {
 body.home #particles-js {background: url('../img/linux.webp') 90% center !important; background-size: cover!important; height: calc(100% - 4px);}
 .no-webp body.home #particles-js {background: url('../img/linux.png') 90% center !important; background-size: cover!important; height: calc(100% - 4px);}
 body.home.firefox #particles-js {background: url('../img/firefox.jpg') 40% center !important; background-size: cover!important; height: 100%;}
-body.home.datacenter #particles-js {background: url('../img/datacenter.jpg') 90% center !important; background-size: cover!important; height: 100%;
-    box-shadow: inset 0px 0px 300px 200px rgba(0,0,0,1);
-}
+body.home.datacenter #particles-js {background: url('../img/datacenter.jpg') 90% center !important; background-size: cover!important; height: 100%;}
 
 body.menu #menu {opacity: 1;}
 body #menu .content {text-align: center;}
