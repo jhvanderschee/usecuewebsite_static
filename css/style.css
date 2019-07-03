@@ -29,7 +29,14 @@ body.black a {color: black;}
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
-#splash > div {padding-bottom: 2em;}
+#splash > div {padding-bottom: 2em;
+    animation-name: fadeout; 
+    animation-delay: 1.7s; 
+    animation-duration: 0.3s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
 #splash .medium {display: inline-block; margin-right: 0.15em;}
 #splash .medium span {display: inline-block; margin: 0 0.07em 0 0;}
 #splash .medium span:first-child {margin-right: 0.1em;}
