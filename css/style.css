@@ -23,7 +23,7 @@ body.black a {color: black;}
 body, .small {font-size: 1.5vw; line-height: 1.25;}
 .post #content p:first-of-type, blockquote, .smallmedium {font-size: 2.1vw;}
 blockquote {padding-left: 2.1vw;}
-.medium, h1 {font-size: 5vw; line-height: 1.05;}
+.medium, h1 {font-size: 5vw; line-height: 1;}
 h1 {padding-bottom: 0.4em;}
 h2 {padding-bottom: 0.6em; padding-top: 0.6em;}
 .large {font-size: 10vw;}
