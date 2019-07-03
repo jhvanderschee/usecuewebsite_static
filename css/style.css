@@ -20,8 +20,8 @@ body.black a {color: black;}
 
 
 /* FONT SIZES */
-body {font-size: 1.5vw; line-height: 1.25;}
-.post #content p:first-of-type, blockquote {font-size: 2.1vw;}
+body, .small {font-size: 1.5vw; line-height: 1.25;}
+.post #content p:first-of-type, blockquote, .smallmedium {font-size: 2.1vw;}
 blockquote {padding-left: 2.1vw;}
 .medium, h1 {font-size: 5vw; line-height: 1.05;}
 h1 {padding-bottom: 0.4em;}
@@ -57,13 +57,13 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
 .portfolio #content {padding-top: 0;}
 .portfolio #content .svg {width: 50vw;}
 .portfolio #content .svg svg {width: 100%; height: 100%; position: relative; right: 2vw;}
-#scrolldown {position: absolute; transform: rotate(180deg) scaleX(2); font-weight: bold; left: 50%; margin-top: -15vh;}
-
+#scrolldown {position: absolute; transform: rotate(180deg) scaleX(1.75) scale(2); left: 50%; margin-top: -15vh;}
+#postdate {font-style: italic; padding-bottom: 0.7em;}
 
 @media screen and (min-width: 2000px) {
     /* FONT SIZES */
-    body {font-size: 30px;} /*  0.015*2000  */
-    .post #content p:first-of-type, blockquote {font-size: 42px;} /*  0.021*2000  */
+    body, .small {font-size: 30px;} /*  0.015*2000  */
+    .post #content p:first-of-type, blockquote, .smallmedium {font-size: 42px;} /*  0.021*2000  */
     blockquote {padding-left: 42px;}
     .medium, h1 {font-size: 110px;} /*  0.05*2000  */
     .large {font-size: 200px;} /*  0.1*2000  */
@@ -76,8 +76,8 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
 
 @media screen and (max-width: 1600px) {
     /* FONT SIZES */
-    body {font-size: 24px;} /*  0.015*1600  */
-    .post #content p:first-of-type, blockquote {font-size: 34px;} /*  0.021*1600  */
+    body, .small {font-size: 24px;} /*  0.015*1600  */
+    .post #content p:first-of-type, blockquote, .smallmedium {font-size: 34px;} /*  0.021*1600  */
     blockquote {padding-left: 34px;}
     .medium, h1 {font-size: 80px;} /*  0.05*1600  */
     .large {font-size: 10vw;} /*  0.1*1600  */
