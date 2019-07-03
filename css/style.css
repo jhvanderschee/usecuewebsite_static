@@ -94,12 +94,14 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     #content ul {margin-left: 22px;}
 }
 
-
+.mobile {display: none;}
 @media screen and (max-width: 1100px) {
     #logo, #scrolltotop {position: absolute;}
     .large {font-size: 80px;} /*  0.10*1600  */
     .portfolio h1 {margin: 0;}
     .post .fullscreen h1 {margin: 0; padding: 2em 0 2em!important;}
+    #nextlink .mobile {display: inline;}
+    #nextlink .desktop {display: none;}
 }
 
 
