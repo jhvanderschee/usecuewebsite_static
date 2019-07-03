@@ -1,3 +1,0 @@
-# hootsmans
-
-readme

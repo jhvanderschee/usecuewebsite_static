@@ -11,14 +11,6 @@
   
   
       <url>
-        <loc>https://www.usecue.com/about-me/index.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-  
-  
-      <url>
         <loc>https://www.usecue.com/index.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -42,7 +34,29 @@
   
   
   
+      <url>
+        <loc>https://www.usecue.com/about/index.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
   
+  
+  
+      <url>
+        <loc>https://www.usecue.com/js/javascript.js</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+  
+  
+  
+  
+      <url>
+        <loc>https://www.usecue.com/blog/website-done-right/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
   
       <url>
         <loc>https://www.usecue.com/blog/code-warriors/</loc>
@@ -202,7 +216,7 @@
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/studioinhout/</loc>
+        <loc>https://www.usecue.com/portfolio/studio-inhout/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
