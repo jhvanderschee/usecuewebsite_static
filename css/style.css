@@ -57,7 +57,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
 .portfolio #content {padding-top: 0;}
 .portfolio #content .svg {width: 50vw;}
 .portfolio #content .svg svg {width: 100%; height: 100%; position: relative; right: 2vw;}
-#scrolldown {position: absolute; transform: rotate(180deg) scaleX(2.4); font-weight: bold; left: 50%; margin-top: -15vh;}
+#scrolldown {position: absolute; transform: rotate(180deg) scaleX(2); font-weight: bold; left: 50%; margin-top: -15vh;}
 
 
 @media screen and (min-width: 2000px) {
