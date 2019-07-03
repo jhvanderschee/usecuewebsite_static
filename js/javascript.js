@@ -86,10 +86,12 @@ function documentReady() {
         });
     });
 
-    var elements = document.querySelectorAll('.fullscreen');
-    elements.forEach(element => {
-        element.style.minHeight = element.offsetHeight + 'px';
-    });
+    setTimeout(function(){ 
+        var elements = document.querySelectorAll('.fullscreen');
+        elements.forEach(element => {
+            element.style.minHeight = element.offsetHeight + 'px';
+        });
+    }, 150);
 }
 
 document.addEventListener("DOMContentLoaded", documentReady);
