@@ -52,7 +52,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
 .portfolio h1 {margin: 0 -15vw; padding: 0!important;}
 .portfolio h1 + p {margin-top: 2em;}
 .post .fullscreen h1 {position: relative; margin: 0 -15vw; padding: 1.2em 0 1.4em!important;}
-#content .fullscreen > a {display: block; margin: 150px 0 200px 0;}
+#content .fullscreen > a {display: block; margin: 175px 0 175px 0;}
 .post #content,
 .portfolio #content {padding-top: 0;}
 .portfolio #content .svg {width: 50vw;}
