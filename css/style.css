@@ -99,7 +99,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     #logo, #scrolltotop {position: absolute;}
     .large {font-size: 80px;} /*  0.10*1600  */
     .portfolio h1 {margin: 0;}
-    .post .fullscreen h1 {margin: 0; padding: 2em 0 2em!important;}
+    .post .fullscreen h1 {margin: 0; padding: 2.5em 0 2.5em!important;}
     #nextlink .mobile {display: inline;}
     #nextlink .desktop {display: none;}
 }
