@@ -61,8 +61,8 @@ h2 {padding-bottom: 0.6em; padding-top: 0.6em;}
 #menu li {list-style: none; display: inline;}
 #menu li a {display: inline-block; margin: 0 0 0 1.5vw;}
 #logo {left: 2vw; top: -0.1vw; line-height: 1;}
-#scrolltotop {top: auto; bottom: 1.7vw; right: 2vw; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; max-width: calc(50% - 30px);}
-#nextlink {top: auto; bottom: 1.7vw; left: 2vw; right: auto; position: absolute; max-width: calc(50% - 30px); text-transform: lowercase;}
+#scrolltotop {top: auto; bottom: 1.7vw; right: 2vw; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; max-width: calc(35% - 30px);}
+#nextlink {top: auto; bottom: 1.7vw; left: 2vw; right: auto; position: absolute; max-width: calc(65% - 30px); text-transform: lowercase;}
 .scrolled #scrolltotop {opacity: 1; pointer-events: all;}
 #content {width: 50vw; text-align: left; margin: 0 auto; padding: 12vw 2vw 17vw;}
 #content h1 {text-align: center;}
