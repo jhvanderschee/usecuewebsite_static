@@ -226,7 +226,7 @@ transform-origin: 50% 50%;
 /* Opera */
 -o-transform: rotate(45deg);
 }
-.lightbox, #lightbox * {
+#lightbox, #lightbox * {
     -webkit-user-select: none;  
     -moz-user-select: none;    
     -ms-user-select: none;      
