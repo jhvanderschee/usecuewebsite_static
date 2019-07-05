@@ -141,7 +141,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
 
 
 
-#lightbox {width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0,0,0,0.85); z-index: 9999999; line-height: 0; cursor: pointer; display: none;}
+#lightbox {width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0,0,0,1); z-index: 9999999; line-height: 0; cursor: pointer; display: none;}
 #lightbox .img {
     position: relative; 
     top: 50%;
