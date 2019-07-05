@@ -4,7 +4,7 @@
 <meta charset="utf-8" /> 
 <title> | Usecue web development</title>
 
-<meta name="description" content="@font-face {	font-family: ‘Conv_times’;	src: url(‘/fonts/times. eot’);	src: local(“Times New Roman”), url(‘/fonts/times. woff’) format(‘woff’), url(‘/fonts/t...">
+<meta name="description" content="{% include css/style. css %}{% include css/lightbox. css %}">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -18,14 +18,14 @@
 <meta property="og:url" content="https://www.usecue.com/css/style.css"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="@font-face {	font-family: ‘Conv_times’;	src: url(‘/fonts/times. eot’);	src: local(“Times New Roman”), url(‘/fonts/times. woff’) format(‘woff’), url(‘/fonts/t..."/>
+<meta property="og:description" content="{% include css/style. css %}{% include css/lightbox. css %}"/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
 <meta name="twitter:title" content="" />
 
 <meta name="twitter:url" content="https://www.usecue.com/css/style.css" />
-<meta name="twitter:description" content="@font-face {	font-family: ‘Conv_times’;	src: url(‘/fonts/times. eot’);	src: local(“Times New Roman”), url(‘/fonts/times. woff’) format(‘woff’), url(‘/fonts/t..." />
+<meta name="twitter:description" content="{% include css/style. css %}{% include css/lightbox. css %}" />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
@@ -192,7 +192,6 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     #nextlink .mobile {display: inline;}
     #nextlink .desktop {display: none;}
 }
-
 #lightbox {width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0,0,0,0.85); z-index: 9999999; line-height: 0; cursor: pointer; display: none;}
 #lightbox .img {
     position: relative; 
