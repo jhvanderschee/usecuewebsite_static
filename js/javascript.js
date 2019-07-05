@@ -135,6 +135,10 @@ document.addEventListener("DOMContentLoaded", documentReady);
         xmlhttp.send();
     }
     function setGallery(el) {
+        var elements = document.body.querySelectorAll(".gallery");
+        elements.forEach(element => {
+            element.classList.remove('gallery');
+        });
         var link_elements = el.parentNode.querySelectorAll("a[class*='lightbox-']");
         link_elements.forEach(link_element => {
             link_element.classList.remove('current');
