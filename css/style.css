@@ -60,7 +60,8 @@ h2 {padding-bottom: 0.6em; padding-top: 0.6em;}
 #menu {right: 2vw; position: absolute;}
 #menu li {list-style: none; display: inline;}
 #menu li a {display: inline-block; margin: 0 0 0 1.5vw;}
-#logo {left: 2vw; top: -0.1vw; line-height: 1;}
+#logo {left: 2vw; top: 1.5vw; line-height: 1;}
+#logo img {border: 1px solid rgba(255,255,255,0.4); width: 4vw; vertical-align: top; display: block;}
 #scrolltotop {top: auto; bottom: 1.7vw; right: 2vw; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; max-width: calc(35% - 30px);}
 #nextlink {top: auto; bottom: 1.7vw; left: 2vw; right: auto; position: absolute; max-width: calc(65% - 30px); text-transform: lowercase;}
 .scrolled #scrolltotop {opacity: 1; pointer-events: all;}
@@ -91,12 +92,13 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     body, .small {font-size: 30px;} /*  0.015*2000  */
     .post #content p:first-of-type, blockquote, .smallmedium {font-size: 42px;} /*  0.021*2000  */
     blockquote {padding-left: 42px;}
-    .medium, h1 {font-size: 110px;} /*  0.05*2000  */
+    .medium, h1 {font-size: 100px;} /*  0.05*2000  */
     .large {font-size: 200px;} /*  0.1*2000  */
     .portfolio #content .svg,
     #content {width: 1000px;} /*  0.5*2000  */
     .home #content {width: 1250px;} /*  0.6*2000  */
     #content ul {margin-left: 28px;}
+    #logo img {width: 80px;}
 }
 
 
@@ -113,6 +115,8 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     .portfolio h1, .post .fullscreen h1 {margin: 0 -11vw;}
 
     #menu {right: 30px; top: 25px;}
+    #logo {top: 25px;}
+    #logo img {width: 64px;}
     #logo, #nextlink {left: 30px;}
     #scrolltotop {right: 30px;}
     #content {padding: 192px 30px 272px;}
