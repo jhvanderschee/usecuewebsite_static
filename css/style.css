@@ -103,7 +103,6 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     #logo img {width: 67px;}
 }
 
-
 @media screen and (max-width: 1600px) {
     /* FONT SIZES */
     body, .small {font-size: 24px;} /*  0.015*1600  */
