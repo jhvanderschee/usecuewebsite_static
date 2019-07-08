@@ -73,7 +73,7 @@ body:not(.home) #content h1 {padding-bottom: .7em;}
 .home #content {width: 60vw; text-align: center; padding-bottom: 12vw;}
 #content p, #content ol, #content ul {padding-bottom: 1.25em;}
 blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35em; padding-left: 2.1vw;}
-#content img {width: 100%; max-width: 100%;}
+#content img {width: 100%; max-width: 100%; margin-bottom: 0.3em;}
 #content ul {margin-left: 1.4vw;}
 #content ol {margin-left: 2.4vw;}
 #content p:last-child {padding-bottom: 0;}
