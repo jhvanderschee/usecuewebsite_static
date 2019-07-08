@@ -63,7 +63,7 @@ h2 {padding-bottom: 0.6em; padding-top: 0.6em;}
 #logo {left: 2vw; top: 1.5vw; line-height: 1; display: block; border: 1px dotted rgb(255, 255, 255);}
 #logo img {width: 3.35vw; vertical-align: top; display: block;}
 .bgcolor #logo {background: url(/img/icon-196x196-transparent.png) center center / contain no-repeat;}
-.portfolio #logo img {opacity: 0;}
+.bgcolor #logo img {opacity: 0;}
 #scrolltotop {top: auto; bottom: 1.7vw; right: 2vw; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; max-width: calc(35% - 30px);}
 #nextlink {top: auto; bottom: 1.7vw; left: 2vw; right: auto; position: absolute; max-width: calc(65% - 30px); text-transform: lowercase;}
 .scrolled #scrolltotop {opacity: 1; pointer-events: all;}
