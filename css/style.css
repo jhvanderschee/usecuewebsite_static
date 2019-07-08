@@ -45,6 +45,16 @@ body.black a {color: black;}
     #splash > div {text-align: center;}
 }
 
+.line {position: fixed; top: 0; height: 100vh; width: 1px; background: rgba(255,255,255,0.13); z-index: 0;}
+.bgcolor .line {background: rgba(255,255,255,0.05);}
+.line1 {left: 2vw;}
+.line2 {left: 25%;}
+.line3 {left: 50%;}
+.line4 {right: 25%;}
+.line5 {right: 2vw;}
+.line6 {display: none;}
+.line7 {display: none;}
+
 /* FONT SIZES */
 body, .small {font-size: 1.5vw; line-height: 1.25;}
 .post #content p:first-of-type, blockquote, .smallmedium {font-size: 2.1vw;}
@@ -67,10 +77,10 @@ h2 {padding-bottom: 0.6em; padding-top: 0.6em;}
 #scrolltotop {top: auto; bottom: 1.7vw; right: 2vw; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; max-width: calc(35% - 30px);}
 #nextlink {top: auto; bottom: 1.7vw; left: 2vw; right: auto; position: absolute; max-width: calc(65% - 30px); text-transform: lowercase;}
 .scrolled #scrolltotop {opacity: 1; pointer-events: all;}
-#content {width: 50vw; text-align: left; margin: 0 auto; padding: 12vw 2vw 17vw;}
+#content {width: 50%; text-align: left; margin: 0 auto; padding: 12vw 2vw 17vw;}
 #content h1 {text-align: center;}
 body:not(.home) #content h1 {padding-bottom: .7em;}
-.home #content {width: 60vw; text-align: center; padding-bottom: 12vw;}
+.home #content {width: 60%; text-align: center; padding-bottom: 12vw;}
 #content p, #content ol, #content ul {padding-bottom: 1.25em;}
 blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35em; padding-left: 2.1vw;}
 #content img {width: 100%; max-width: 100%; margin-bottom: 0.2em;}
@@ -86,7 +96,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
 .portfolio #content {padding-top: 0;}
 .portfolio #content .svg {width: 50vw;}
 .portfolio #content .svg svg {width: 100%; height: 100%; position: relative; right: 2vw;}
-#scrolldown {position: absolute; transform: rotate(180deg) scaleX(1.75) scale(2); left: 50%; margin-top: -15vh;}
+#scrolldown {position: absolute; transform: rotate(180deg) scaleX(1.75) scale(2); left: 50%; margin-top: -15vh; margin-left: -0.2em;}
 #postdate {font-style: italic; padding-bottom: 1em;}
 
 @media screen and (min-width: 2000px) {
@@ -101,6 +111,13 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     .home #content {width: 1250px;} /*  0.6*2000  */
     #content ul {margin-left: 28px;}
     #logo img {width: 67px;}
+    .line1 {left: 2vw;}
+    .line2 {left: 18%;}
+    .line3 {left: 34%;}
+    .line4 {left: 50%;}
+    .line5 {right: 34%;}
+    .line6 {display: block; right: 18%;}
+    .line7 {display: block; right: 2vw;}
 }
 
 @media screen and (max-width: 1600px) {
@@ -123,6 +140,14 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     #content {padding: 192px 30px 272px;}
     #scrolltotop, #nextlink {bottom: 25px;}
     #content ul {margin-left: 22px;}
+
+    .line1 {left: 30px;}
+    .line2 {left: 25%;}
+    .line3 {left: 50%;}
+    .line4 {right: 25%;}
+    .line5 {right: 30px;}
+    .line6 {display: none;}
+    .line7 {display: none;}
 }
 
 .mobile {display: none;}
@@ -133,6 +158,13 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     .post .fullscreen h1 {margin: 0; padding: 2.5em 0 2.7em!important;}
     #nextlink .mobile {display: inline;}
     #nextlink .desktop {display: none;}
+    .line1 {left: 30px;}
+    .line2 {left: 50%;}
+    .line3 {right: 30px; left: auto;}
+    .line4 {display: none;}
+    .line5 {display: none;}
+    .line6 {display: none;}
+    .line7 {display: none;}
 }
 
 
