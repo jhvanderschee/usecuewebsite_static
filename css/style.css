@@ -61,7 +61,7 @@ h2 {padding-bottom: 0.6em; padding-top: 0.6em;}
 #menu li {list-style: none; display: inline;}
 #menu li a {display: inline-block; margin: 0 0 0 1.5vw;}
 #logo {left: 2vw; top: 1.5vw; line-height: 1; display: block; border: 1px dotted rgb(255, 255, 255);}
-#logo img {width: 4vw; vertical-align: top; display: block;}
+#logo img {width: 3.35vw; vertical-align: top; display: block;}
 .portfolio #logo {background: url(/img/icon-196x196-transparent.png) center center / contain no-repeat;}
 .portfolio #logo img {opacity: 0;}
 #scrolltotop {top: auto; bottom: 1.7vw; right: 2vw; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; max-width: calc(35% - 30px);}
@@ -100,7 +100,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     #content {width: 1000px;} /*  0.5*2000  */
     .home #content {width: 1250px;} /*  0.6*2000  */
     #content ul {margin-left: 28px;}
-    #logo img {width: 80px;}
+    #logo img {width: 67px;}
 }
 
 
@@ -118,7 +118,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
 
     #menu {right: 30px; top: 25px;}
     #logo {top: 25px;}
-    #logo img {width: 64px;}
+    #logo img {width: 54px;}
     #logo, #nextlink {left: 30px;}
     #scrolltotop {right: 30px;}
     #content {padding: 192px 30px 272px;}
