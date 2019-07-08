@@ -25,6 +25,7 @@ function external_new_window() {
             b.target = "_blank";
             b.rel = "noopener";
         }
+    }
 }
 //open PDF links in a new window
 function pdf_new_window ()
