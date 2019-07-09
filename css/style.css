@@ -48,9 +48,9 @@ body.black a {color: black;}
 .line {position: fixed; top: 0; height: 100vh; width: 1px; background: rgba(255,255,255,0.13); z-index: 0;}
 .bgcolor .line {background: rgba(255,255,255,0.05);}
 .line1 {left: 2vw;}
-.line2 {left: 25%;}
+.line2 {left: 26%;}
 .line3 {left: 50%;}
-.line4 {right: 25%;}
+.line4 {right: 26%;}
 .line5 {right: 2vw;}
 .line6 {display: none;}
 .line7 {display: none;}
@@ -77,7 +77,7 @@ h2 {padding-bottom: 0.6em; padding-top: 0.6em;}
 #scrolltotop {top: auto; bottom: 1.7vw; right: 2vw; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; max-width: calc(35% - 30px);}
 #nextlink {top: auto; bottom: 1.7vw; left: 2vw; right: auto; position: absolute; max-width: calc(65% - 30px); text-transform: lowercase;}
 .scrolled #scrolltotop {opacity: 1; pointer-events: all;}
-#content {width: 50%; text-align: left; margin: 0 auto; padding: 12vw 2vw 17vw;}
+#content {width: 48%; text-align: left; margin: 0 auto; padding: 12vw 2vw 17vw;}
 #content h1 {text-align: center;}
 body:not(.home) #content h1 {padding-bottom: .7em;}
 .home #content {width: 60%; text-align: center; padding-bottom: 12vw;}
