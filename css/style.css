@@ -70,7 +70,7 @@ h2 {padding-bottom: 0.6em; padding-top: 0.6em;}
 #menu {right: 2vw; position: absolute;}
 #menu li {list-style: none; display: inline;}
 #menu li a {display: inline-block; margin: 0 0 0 1.5vw;}
-#logo {left: 2vw; top: 1.5vw; line-height: 1; display: block; border: 1px solid rgba(255, 255, 255,0.4);}}
+#logo {left: 2vw; top: 1.5vw; line-height: 1; display: block; border: 1px solid rgba(255, 255, 255,0.4);}
 #logo img {width: 3.35vw; vertical-align: top; display: block;}
 .bgcolor #logo {background: url(/img/icon-196x196-transparent.png) center center / contain no-repeat;}
 .bgcolor #logo img {opacity: 0;}
