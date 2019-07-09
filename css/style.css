@@ -107,7 +107,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     .medium, h1 {font-size: 100px;} /*  0.05*2000  */
     .large {font-size: 200px;} /*  0.1*2000  */
     .portfolio #content .svg,
-    #content {width: 1000px;} /*  0.5*2000  */
+    #content {width: 960px;} /*  0.48*2000  */
     .home #content {width: 1250px;} /*  0.6*2000  */
     #content ul {margin-left: 28px;}
     #logo img {width: 67px;}
@@ -128,7 +128,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     .medium, h1 {font-size: 80px;} /*  0.05*1600  */
     .large {font-size: 10vw;} /*  0.1*1600  */
     .portfolio #content .svg {width: calc(100vw - 75px); max-width: 800px;}
-    #content {width: 800px;} /*  0.5*1600  */
+    #content {width: 768px;} /*  0.48*1600  */
     .home #content {width: 960px; padding-bottom: 192px;} /*  0.6*1600  */
     .portfolio h1, .post .fullscreen h1 {margin: 0 -11vw;}
 
