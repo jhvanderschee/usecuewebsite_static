@@ -111,6 +111,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     .home #content {width: 1250px;} /*  0.6*2000  */
     #content ul {margin-left: 28px;}
     #logo img {width: 67px;}
+    /*
     .line1 {left: 2vw;}
     .line2 {left: 18%;}
     .line3 {left: 34%;}
@@ -118,6 +119,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     .line5 {right: 34%;}
     .line6 {display: block; right: 18%;}
     .line7 {display: block; right: 2vw;}
+    */
 }
 
 @media screen and (max-width: 1600px) {
