@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Conv_times';
-	src: local(":-)"), 
+	src: local("Times"), 
 		url('/fonts/times.woff') format('woff'), 
 		url('/fonts/times.ttf') format('truetype'), 
 		url('/fonts/times.svg') format('svg');
