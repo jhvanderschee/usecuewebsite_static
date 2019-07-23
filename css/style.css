@@ -45,7 +45,7 @@ body.black a {color: black;}
     #splash > div {text-align: center;}
 }
 
-.line {position: fixed; top: 0; height: 100vh; width: 1px; background: rgba(255,255,255,0.13); z-index: 0;}
+.line {position: fixed; top: 0; height: 100vh; width: 1px; background: rgba(255,255,255,0.13); z-index: 0; padding: 0!important;}
 .bgcolor .line {background: rgba(255,255,255,0.05);}
 .line1 {left: 2vw;}
 .line2 {left: 26%;}
@@ -144,10 +144,10 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     #content ul {margin-left: 22px;}
 
     .line1 {left: 30px;}
-    .line2 {left: 26%;}
-    .line3 {left: 50%;}
-    .line4 {right: 26%;}
-    .line5 {right: 30px;}
+    .line2 {left: 50%;}
+    .line3 {right: 30px; left: auto;}
+    .line4 {display: none;}
+    .line5 {display: none;}
     .line6 {display: none;}
     .line7 {display: none;}
 }
@@ -160,13 +160,6 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     .post .fullscreen h1 {margin: 0; padding: 2.5em 0 2.7em!important;}
     #nextlink .mobile {display: inline;}
     #nextlink .desktop {display: none;}
-    .line1 {left: 30px;}
-    .line2 {left: 50%;}
-    .line3 {right: 30px; left: auto;}
-    .line4 {display: none;}
-    .line5 {display: none;}
-    .line6 {display: none;}
-    .line7 {display: none;}
 }
 
 
