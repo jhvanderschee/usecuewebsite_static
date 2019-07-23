@@ -29,7 +29,7 @@ body.black a {color: black;}
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
-#splash > div {padding: 0 30px 2em;
+#splash > div:not(.line) {padding: 0 30px 2em;
     animation-name: fadeout; 
     animation-delay: 1.7s; 
     animation-duration: 0.3s; 
