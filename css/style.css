@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'times_new_romanregular';
-    src: url('/fonts/times-webfont.woff2') format('woff2'),
-         url('/fonts/times-webfont.woff') format('woff');
+    src: url('/fonts/Times Roman.woff2') format('woff2'),
+         url('/fonts/Times Roman.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -13,7 +13,7 @@
 }
 
 * {margin: 0; padding: 0; font-weight: normal;}
-body {background: #0000ee; color: white; font-family: 'times_new_romanregular', serif;}
+body {background: #0000ee; color: white; font-family: 'times_new_romanregular', 'Times New Roman', 'Times', serif;}
 body, html {height: 100%;}
 img {max-width: 100%;}
 html {overflow-y: scroll;}
