@@ -42,3 +42,7 @@ Header unset X-Powered-By
 </IfModule>
 
 ErrorDocument 404 /404.html
+
+Redirect /portfolio/studioinhout/ /portfolio/studio-inhout/
+Redirect /tno/v1/ https://apps.usecue.com/tno/v1/
+Redirect /about-me/ /about/
