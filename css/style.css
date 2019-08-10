@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'times_new_romanregular';
-    src: local('Times'),
-         url('/fonts/Times Roman.woff2') format('woff2'),
+    src: url('/fonts/Times Roman.woff2') format('woff2'),
          url('/fonts/Times Roman.woff') format('woff');
     font-weight: normal;
     font-style: normal;
