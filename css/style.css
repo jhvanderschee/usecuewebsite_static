@@ -155,10 +155,10 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
 
 @media screen and (max-width: 500px) {
     body, .small {font-size: 18px;} /*  0.015*1600  */
-    .post #content p:first-of-type, blockquote, .smallmedium {font-size: 34px;} /*  0.021*1600  */
+    .post #content p:first-of-type, blockquote, .smallmedium {font-size: 24px;} /*  0.021*1600  */
     blockquote {padding-left: 24px;}
     .medium, h1 {font-size: 55px;} /*  0.05*1600  */
-    .large {font-size: 110px;} /*  0.1*1600  */
+    .large {font-size: 55px;} /*  0.1*1600  */
 }
 
 
