@@ -45,12 +45,6 @@ body.black a {color: black;}
     #splash > div {text-align: center;}
 }
 
-.line {position: fixed; top: 0; height: 100vh; width: 1px; background: rgba(255,255,255,0.13); z-index: 0; padding: 0!important;}
-.bgcolor .line {background: rgba(255,255,255,0.05);}
-.line1 {left: 2vw;}
-.line2 {left: 50%;}
-.line3 {right: 2vw; left: auto;}
-
 
 /* FONT SIZES */
 body, .small {font-size: 1.5vw; line-height: 1.25;}
@@ -135,9 +129,6 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     #scrolltotop, #nextlink {bottom: 25px;}
     #content ul {margin-left: 22px;}
 
-    .line1 {left: 30px;}
-    .line2 {left: 50%;}
-    .line3 {right: 30px; left: auto;}
 }
 
 .mobile {display: none;}
@@ -165,9 +156,6 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     #logo, #nextlink {left: 15px;}
     #scrolltotop {right: 15px;}
     #menu {right: 15px;}
-    .line1 {left: 15px;}
-    .line2 {left: 50%;}
-    .line3 {right: 15px; left: auto;}
 }
 
 
