@@ -21,6 +21,14 @@
   
   
       <url>
+        <loc>https://www.usecue.com/google-lighthouse-score/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+  
+  
+      <url>
         <loc>https://www.usecue.com/blog/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
