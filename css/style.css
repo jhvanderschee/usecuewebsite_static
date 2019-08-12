@@ -149,6 +149,9 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     #nextlink .mobile {display: inline;}
     #nextlink .desktop {display: none;}
 }
+@media screen and (max-width: 750px) {
+    .threecols > div .medium {font-size: 60px!important;}
+}
 
 @media screen and (max-width: 500px) {
     body, .small {font-size: 18px;} /*  0.015*1600  */
@@ -156,6 +159,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     blockquote {padding-left: 24px;}
     .medium, h1 {font-size: 55px;} /*  0.05*1600  */
     .large {font-size: 55px;} /*  0.1*1600  */
+    .threecols > div .medium {font-size: 40px!important;}
 
     #content {padding-left: 15px; padding-right: 15px;}
     #logo, #nextlink {left: 15px;}
