@@ -48,12 +48,9 @@ body.black a {color: black;}
 .line {position: fixed; top: 0; height: 100vh; width: 1px; background: rgba(255,255,255,0.13); z-index: 0; padding: 0!important;}
 .bgcolor .line {background: rgba(255,255,255,0.05);}
 .line1 {left: 2vw;}
-.line2 {left: 26%;}
-.line3 {left: 50%;}
-.line4 {right: 26%;}
-.line5 {right: 2vw;}
-.line6 {display: none;}
-.line7 {display: none;}
+.line2 {left: 50%;}
+.line3 {right: 2vw; left: auto;}
+
 
 /* FONT SIZES */
 body, .small {font-size: 1.5vw; line-height: 1.25;}
@@ -98,6 +95,10 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
 .portfolio #content .svg svg {width: 100%; height: 100%; position: relative; right: 2vw;}
 #scrolldown {position: absolute; transform: rotate(180deg) scaleX(1.75) scale(2); left: 50%; margin-top: -15vh; margin-left: -0.2em;}
 #postdate {font-style: italic; padding-bottom: 1em;}
+.btn {display: inline-block; padding: 0.35em 1em 0.45em; text-decoration: none; border: 1px solid rgba(255, 255, 255,0.4);}
+
+.threecols {display: flex;}
+.threecols > div {flex: 1 33.3%;}
 
 @media screen and (min-width: 2000px) {
     /* FONT SIZES */
@@ -137,10 +138,6 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     .line1 {left: 30px;}
     .line2 {left: 50%;}
     .line3 {right: 30px; left: auto;}
-    .line4 {display: none;}
-    .line5 {display: none;}
-    .line6 {display: none;}
-    .line7 {display: none;}
 }
 
 .mobile {display: none;}
@@ -159,6 +156,14 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     blockquote {padding-left: 24px;}
     .medium, h1 {font-size: 55px;} /*  0.05*1600  */
     .large {font-size: 55px;} /*  0.1*1600  */
+
+    #content {padding-left: 15px; padding-right: 15px;}
+    #logo, #nextlink {left: 15px;}
+    #scrolltotop {right: 15px;}
+    #menu {right: 15px;}
+    .line1 {left: 15px;}
+    .line2 {left: 50%;}
+    .line3 {right: 15px; left: auto;}
 }
 
 
