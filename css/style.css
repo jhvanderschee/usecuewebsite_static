@@ -23,7 +23,7 @@ body.black a {color: black;}
 #innerbody, #content .fullscreen, #splash {align-items: center; display: flex; justify-content: center; min-height: 100%;}
 #splash {background: #0000ee; position: fixed; top: 0; left: 0; z-index: 9; width: 100%; pointer-events: none;
     animation-name: fadeout; 
-    animation-delay: 3s; 
+    animation-delay: 4s; 
     animation-duration: 0.3s; 
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
@@ -31,7 +31,7 @@ body.black a {color: black;}
 }
 #splash > div:not(.line) {padding: 0 30px 2em;
     animation-name: fadeout; 
-    animation-delay: 2.7s; 
+    animation-delay: 3.7s; 
     animation-duration: 0.3s; 
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
@@ -51,7 +51,7 @@ body.black a {color: black;}
     height: 100vh;
     width: 100vw;
     animation-name: fadeout;
-    animation-delay: 1s; 
+    animation-delay: 2s; 
     animation-duration: 0.3s; 
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
