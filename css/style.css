@@ -51,7 +51,7 @@ body.black a {color: black;}
     height: 100vh;
     width: 100vw;
     animation-name: fadeout;
-    animation-delay: 2s; 
+    animation-delay: 1.5s; 
     animation-duration: 0.3s; 
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
