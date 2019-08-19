@@ -13,7 +13,7 @@
 }
 
 * {margin: 0; padding: 0; font-weight: normal;}
-body {background: #0000ee; color: white; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
+body {background: #0000ee url(/img/pattern1.png) center center; color: white; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
 body, html {height: 100%;}
 img {max-width: 100%;}
 html {overflow-y: scroll;}
@@ -21,7 +21,7 @@ a {color: white;}
 body.black a {color: black;}
 #innerbody {position: relative;}
 #innerbody, #content .fullscreen, #splash {align-items: center; display: flex; justify-content: center; min-height: 100%;}
-#splash {background: #0000ee; position: fixed; top: 0; left: 0; z-index: 9; width: 100%; pointer-events: none;
+#splash {background: #0000ee url(/img/pattern1.png) center center; position: fixed; top: 0; left: 0; z-index: 9; width: 100%; pointer-events: none;
     animation-name: fadeout; 
     animation-delay: 1.3s; 
     animation-duration: 0.3s; 
@@ -64,8 +64,9 @@ h2 {padding-bottom: 0.6em; padding-top: 0.6em;}
 #menu li a {display: inline-block; margin: 0 0 0 1.5vw;}
 #logo {left: 2vw; top: 1.5vw; line-height: 1; display: block; border: 1px solid rgba(255, 255, 255,0.5);}
 #logo img {width: 3.35vw; vertical-align: top; display: block;}
-.bgcolor #logo {background: url(/img/icon-196x196-transparent.png) center center / contain no-repeat; border: 1px solid rgba(255, 255, 255,0.4);}
+.bgcolor #logo {border: 1px solid rgba(255, 255, 255,0.4);}
 .bgcolor #logo img {opacity: 0;}
+.bgcolor #logo:before {content: ""; width: 100%; height: 100%; background: url(/img/icon-196x196-transparent.png) center center / contain no-repeat; position: absolute;}
 #scrolltotop {top: auto; bottom: 1.7vw; right: 2vw; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; max-width: calc(35% - 30px);}
 #nextlink {top: auto; bottom: 1.7vw; left: 2vw; right: auto; position: absolute; max-width: calc(65% - 30px); text-transform: lowercase;}
 .scrolled #scrolltotop {opacity: 1; pointer-events: all;}
