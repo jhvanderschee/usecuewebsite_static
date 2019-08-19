@@ -13,7 +13,7 @@
 }
 
 * {margin: 0; padding: 0; font-weight: normal;}
-body {background: #0000ee url(/img/pattern1.png) center center; color: white; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
+body {background: #0000ee url(/img/pattern1.png) left top; color: white; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
 body, html {height: 100%;}
 img {max-width: 100%;}
 html {overflow-y: scroll;}
@@ -21,7 +21,7 @@ a {color: white;}
 body.black a {color: black;}
 #innerbody {position: relative;}
 #innerbody, #content .fullscreen, #splash {align-items: center; display: flex; justify-content: center; min-height: 100%;}
-#splash {background: #0000ee url(/img/pattern1.png) center center; position: fixed; top: 0; left: 0; z-index: 9; width: 100%; pointer-events: none;
+#splash {background: #0000ee url(/img/pattern1.png) left top; position: fixed; top: 0; left: 0; z-index: 9; width: 100%; pointer-events: none;
     animation-name: fadeout; 
     animation-delay: 1.3s; 
     animation-duration: 0.3s; 
