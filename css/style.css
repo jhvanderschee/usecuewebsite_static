@@ -90,8 +90,8 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
 .portfolio #content .svg svg {width: 100%; height: 100%; position: relative; right: 2vw;}
 #scrolldown {position: absolute; left: 50%; margin-top: -15vh; margin-left: -0.2em;}
 #scrolldown:before, #scrolldown:after {content: ""; position: absolute; height: 1.6vw; width: 0.65vw; background: white;}
-#scrolldown:before {transform: skewX(50deg); transform-origin: 100% 100%;}
-#scrolldown:after {transform: skewX(-50deg); transform-origin: 0% 100%;}
+#scrolldown:before {transform: skewX(45deg); transform-origin: 100% 100%;}
+#scrolldown:after {transform: skewX(-45deg); transform-origin: 0% 100%;}
 #postdate {font-style: italic; padding-bottom: 1em;}
 .btn {display: inline-block; padding: 0.35em 1em 0.45em; text-decoration: none; border: 1px solid rgba(255, 255, 255,0.4);}
 
