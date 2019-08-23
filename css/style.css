@@ -19,7 +19,6 @@ body {background: #0000ee url(/img/pattern1.png) left top; background-attachment
 .home #pattern {clip-path: url(#clipping); opacity: 1;}
 .portfolio #pattern {clip-path: circle(22% at center); opacity: .75;}
 
-
 body, html {height: 100%;}
 img {max-width: 100%;}
 html {overflow-y: scroll;}
