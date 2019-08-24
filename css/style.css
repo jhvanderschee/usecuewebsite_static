@@ -13,13 +13,10 @@
 }
 
 * {margin: 0; padding: 0; font-weight: normal;}
-body {background: #0000ee url(/img/pattern1.png) left top; background-attachment: fixed; color: white; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
-#pattern {position: fixed; background: url(/img/pattern2.png) left top; height: 100vh; width: 100%; opacity: 0; transition: opacity .3s ease-in-out;}
-.scrolled #pattern {opacity: 0!important;}
-@media screen and (min-width: 1200px) {
-    .home #pattern {clip-path: url(#clipping); opacity: 1;}
-    .post #pattern,
-    .portfolio #pattern {clip-path: circle(22% at center); opacity: .75;}
+body {background: #0000ee url(/img/pattern2.png) left top; background-attachment: fixed; color: white; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
+#pattern {position: fixed; background: #0000ee url(/img/pattern1.png) left top; height: 100vh; width: 100vw;
+    mask-image: linear-gradient(to bottom right, rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, .25) 100%);
+    -webkit-mask-image: linear-gradient(to bottom right, rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, .25) 100%);
 }
 body, html {height: 100%;}
 img {max-width: 100%;}
