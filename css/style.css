@@ -69,7 +69,14 @@ h2 {padding-bottom: 0.6em; padding-top: 0.6em;}
 .bgcolor #logo:before {content: ""; width: 100%; height: 100%; background: url(/img/icon-196x196-transparent.png) center center / contain no-repeat; position: absolute;}
 #scrolltotop {top: auto; bottom: 1.7vw; right: 2vw; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; max-width: calc(35% - 30px);}
 #nextlink {top: auto; bottom: 1.7vw; left: 2vw; right: auto; position: absolute; max-width: calc(65% - 30px); text-transform: lowercase;}
+#nextlinktop, #prevlinktop {top:50vh; left: 2vw; position: fixed; transition: opacity 0.3s ease-in-out; opacity: 1; transform: rotate(-90deg) translateX(-50%); transform-origin: 0% 0%;}
+#nextlinktop {left: auto; right: 2vw; transform-origin: 100% 0%; transform: rotate(90deg) translateX(50%);}
+.scrolled #nextlinktop,
+.scrolled #prevlinktop {opacity: 0; pointer-events: none;}
 .scrolled #scrolltotop {opacity: 1; pointer-events: all;}
+@media screen and (max-width: 1100px) {
+    #nextlinktop, #prevlinktop {opacity: 0; pointer-events: none;}
+}
 #content {width: 48%; text-align: left; margin: 0 auto; padding: 12vw 2vw 17vw;}
 #content h1 {text-align: center;}
 body:not(.home) #content h1 {padding-bottom: .7em;}
@@ -144,8 +151,8 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     .large {font-size: 80px;} /*  0.10*1600  */
     .portfolio h1 {margin: 0;}
     .post .fullscreen h1 {margin: 0; padding: 2.5em 0 2.7em!important;}
-    #nextlink .mobile {display: inline;}
-    #nextlink .desktop {display: none;}
+    a .mobile {display: inline;}
+    a .desktop {display: none;}
     #scrolldown:before, #scrolldown:after {height: 18px; width: 7px;}
 }
 @media screen and (max-width: 750px) {
