@@ -17,7 +17,8 @@ body {background: #0000ee; background-attachment: fixed; color: white; font-fami
 body, html {height: 100%;}
 img {max-width: 100%;}
 html {overflow-y: scroll;}
-a {color: white;}
+a {color: white; text-decoration-style: solid; /*solid dotted, dashed, and wavy*/ text-decoration-color: rgba(255,255,255,0.5);}
+#splash a {text-decoration-color: rgba(255,255,255,1);}
 body.black a {color: black;}
 #innerbody {position: relative;}
 #innerbody, #content .fullscreen, #splash {align-items: center; display: flex; justify-content: center; min-height: 100%;}
