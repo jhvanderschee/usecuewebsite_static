@@ -37,13 +37,9 @@
 </head>
 
 <body id="top" class="post" style="">
-  <svg style="position: absolute; width: 100%; height: 100vh;">
-    <defs>
-      <clipPath id="clipping">
-        <text id="txt" x="50%" y="100%" font-family="Arial Black" font-size="800" text-anchor="middle">usecue web development</text>
-      </clipPath>
-    </defs>
-  </svg>
+  <script>
+    if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
+  </script>
 
   
     <a id="logo" href="/" style=""><img src="/img/icon-196x196.png" alt="Usecue logo" /></a>
@@ -150,6 +146,10 @@
             <a id="prevlinktop" href="/blog/the-viewport-meta-tag-on-desktop/">previous post</a>
         
         <a id="scrolltotop" href="#top">Scroll to top</a>
+        <a id="darkmode" href="#" onclick="toggleDarkmode()">mode</a>
+        <script>
+            if (localStorage.getItem('mode') == 'dark') document.getElementById('darkmode').classList.add('selected'); 
+        </script>
     </div>
 
     <div id="lightbox"></div>
