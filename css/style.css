@@ -288,8 +288,8 @@ transform-origin: 50% 50%;
 
 
 .bgcolor #darkmode {pointer-events: none; opacity: 0;}
-#darkmode.selected::before {content: "normal ";}
-#darkmode::before {content: "dark ";}
+#darkmode.selected::before {content: "feeling blue?";}
+#darkmode::before {content: "ouch my eyes!";}
 body.darkmode:not(.bgcolor) img {filter: grayscale(100%);}
 body.darkmode:not(.bgcolor) #logo img {filter: grayscale(100%);}
 body.darkmode:not(.bgcolor) {background: #101010;}
