@@ -22,6 +22,7 @@ a {color: white; text-decoration-style: solid; /*solid dotted, dashed, and wavy*
 body.black a {color: black;}
 #innerbody {position: relative;}
 #innerbody, #content .fullscreen, #splash {align-items: center; display: flex; justify-content: center; min-height: 100%;}
+#darkmodeoverlay {background: #fff2; position: fixed; top: 0; left: 0; z-index: 8; width: 100%; pointer-events: none; opacity: 0; height: 100vh;}
 #splash {background: #0000ee; position: fixed; top: 0; left: 0; z-index: 9; width: 100%; pointer-events: none;
     animation-name: fadeout; 
     animation-delay: 1.3s; 
@@ -292,9 +293,11 @@ transform-origin: 50% 50%;
 body.darkmode:not(.bgcolor) img {filter: grayscale(100%);}
 body.darkmode:not(.bgcolor) #logo img {filter: grayscale(100%);}
 body.darkmode:not(.bgcolor) {background: #101010;}
+body.darkmode:not(.bgcolor) #darkmodeoverlay {opacity: 1;}
 @media (prefers-color-scheme: dark) {
     #darkmode {pointer-events: none; opacity: 0;}
     body:not(.bgcolor) img {filter: grayscale(100%);}
     body:not(.bgcolor) #logo img {filter: grayscale(100%);}
     body:not(.bgcolor) {background: #101010;}
+    #darkmodeoverlay {opacity: 1;}
 }
