@@ -152,8 +152,9 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
 }
 
 .mobile {display: none;}
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
     #logo, #scrolltotop, #darkmode {position: absolute;}
+    .scrolled #darkmode {left: 30px; right: auto; opacity: 1; pointer-events: all;}
     .large {font-size: 80px;} /*  0.10*1600  */
     .portfolio h1 {margin: 0;}
     .post .fullscreen h1 {margin: 0; padding: 2.5em 0 2.7em!important;}
@@ -174,8 +175,8 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     .threecols > div .medium {font-size: 40px!important;}
 
     #content {padding-left: 15px; padding-right: 15px;}
-    #logo, #nextlink {left: 15px;}
-    #scrolltotop, #darkmode {right: 15px;}
+    #logo, #nextlink, .scrolled #darkmode {left: 15px;}
+    #scrolltotop {right: 15px;}
     #menu {right: 15px;}
 
     #scrolldown:before, #scrolldown:after {height: 12px; width: 5px;}
