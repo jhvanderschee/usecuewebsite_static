@@ -289,7 +289,7 @@ transform-origin: 50% 50%;
 
 
 
-.bgcolor #darkmode {pointer-events: none; opacity: 0;}
+.bgcolor #darkmode {pointer-events: none!important; opacity: 0!important;}
 #darkmode.selected::before {content: "feeling blue?";}
 #darkmode::before {content: "ouch, my eyes!";}
 body.darkmode:not(.bgcolor) img {filter: grayscale(100%);}
