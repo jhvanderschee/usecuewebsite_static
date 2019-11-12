@@ -47,6 +47,12 @@
   
   
       <url>
+        <loc>https://www.usecue.com/blog/google-will-shame-slow-sites/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
         <loc>https://www.usecue.com/blog/speaking-at-jekyllconf2019/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
