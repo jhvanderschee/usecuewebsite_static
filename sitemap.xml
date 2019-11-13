@@ -47,6 +47,12 @@
   
   
       <url>
+        <loc>https://www.usecue.com/blog/building-websites-in-rem/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
         <loc>https://www.usecue.com/blog/google-will-shame-slow-websites/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>

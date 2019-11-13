@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /> 
+<title>Building websites in 'rem' | Usecue web development</title>
+
+<meta name="description" content="Although I can almost build a website in my sleep (or in 20 minutes), I am not talking about ‘Rapid Eye Movement’, but about ‘Root Em’. You may still build y...">
+
+<link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
+<link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
+<link rel="apple-touch-icon" href="/img/icon-196x196.png" />
+
+<meta id="viewport" name="viewport" content="width=device-width">
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content="Building websites in 'rem'"/>
+
+<meta property="og:url" content="https://www.usecue.com/blog/building-websites-in-rem/"/>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Usecue web development"/>
+<meta property="og:description" content="Although I can almost build a website in my sleep (or in 20 minutes), I am not talking about ‘Rapid Eye Movement’, but about ‘Root Em’. You may still build y..."/>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@jhvanderschee">
+<meta name="twitter:title" content="Building websites in 'rem'" />
+
+<meta name="twitter:url" content="https://www.usecue.com/blog/building-websites-in-rem/" />
+<meta name="twitter:description" content="Although I can almost build a website in my sleep (or in 20 minutes), I am not talking about ‘Rapid Eye Movement’, but about ‘Root Em’. You may still build y..." />
+
+<link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
+
+<link rel="canonical" href="https://www.usecue.com/blog/building-websites-in-rem/">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
+
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+
+<body id="top" class="post" style="">
+  <script>
+    if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
+  </script>
+
+  
+
+  
+    <a id="logo" href="/" style=""><img src="/img/icon-196x196.png" alt="Usecue logo" /></a>
+
+    <ul id="menu">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/portfolio/de-babywegwijzer/">Portfolio</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
+    </ul>
+    <div id="innerbody">
+        <div id="content">
+
+
+<div class="fullscreen">
+    <h1 class="large"><div id="postdate" class="small">November 13, 2019</div>Building websites in 'rem'</h1>
+</div>
+<div id="scrolldown"></div>
+
+<p>Although I can almost build a website in my sleep (or in <a href="/blog/speaking-at-jekyllconf2019/">20 minutes</a>), I am not talking about ‘Rapid Eye Movement’, but about ‘Root Em’.</p>
+
+<p>You may still build your websites in pixels, but I have chosen to only use ‘ems’ from now on, and the be more specific ‘root ems’. The ‘em’ is a fascinating measurement. It originates from the height of the metal body of a letter in a letterpress and its name comes from its relation to the width of the captial letter ‘M’. In this digital era these relations have blurred. According to <a href="https://en.wikipedia.org/wiki/Em_(typography)">Wikipedia</a>, an average font might have a cap height of 70% of the em, and an x-height of 48% of the em.</p>
+
+<p>If the font, declared on the root of your HTML element, has a font-size of 20px, a pixel in your site is 0.05 by 0.05 root ems big. Knowing this, you can now build your website the way you used to be. Even media queries can be defined in root ems. A larger font could have a font-size of 2 root ems (40px) and your body text could be 0.8 root em (16px).</p>
+
+<p>So if root ems is nothing more than a multiplier, why should you use it? Well… only for one reason actually: If you want to simluate browser zoom. A common media query that takes advantage of this would be: if the screen is narrower than 600 pixels (30rem), bump the font-size of the HTML element up to 22 pixels. This media query will effectively show your complete website at a 110% scale, just like browser zoom would, with just a single line of CSS.</p>
+
+<p>Is this one usecase worth the extra effort? I think so. Situation in which I find this approach extremely helpful are: Google complaining about font-size, a designer complaining about the size on which I implemented his or her design and handling very large and very small screen sizes. Also, I got used to this new approach quite quickly, making it just as easy as using pixels.</p>
+
+
+
+
+
+
+
+
+        </div>
+        
+        
+        
+            
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+            <a id="nextlink" href="/blog/google-will-shame-slow-websites/">next<span class="desktop">: Google will shame slow websites</span><span class="mobile"> blog post</span></a>
+            <a id="nextlinktop" href="/blog/google-will-shame-slow-websites/">next post</a>
+            <a id="prevlinktop" href="/blog/usecues-also-known-as-affordances/">previous post</a>
+        
+        <a id="scrolltotop" href="#top">Scroll to top</a>
+        <a id="darkmode" href="#" onclick="toggleDarkmode()" title="toggle dark mode"></a>
+        <script>
+            if (localStorage.getItem('mode') == 'dark') document.getElementById('darkmode').classList.add('selected'); 
+        </script>
+    </div>
+    
+    <div id="darkmodeoverlay"></div>
+
+    <div id="lightbox"></div>
+    <script src="/js/javascript.js"></script>
+
+</body>
+
+</html>
