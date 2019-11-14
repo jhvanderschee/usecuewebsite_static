@@ -4,7 +4,7 @@
 <meta charset="utf-8" /> 
 <title>How to get a 100% Google Lighthouse score | Usecue web development</title>
 
-<meta name="description" content="You might have heard that soon Google will shame slow websites. A good reason to take a good look at your Google Lighthouse score. In this blogpost I will sh...">
+<meta name="description" content="You might have heard that soon Google will shame slow websites. A good reason to take a good look at your Google Lighthouse score. When you do, I bet you won...">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -18,14 +18,14 @@
 <meta property="og:url" content="https://www.usecue.com/blog/how-to-get-a100-google-lighthouse-score/"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="You might have heard that soon Google will shame slow websites. A good reason to take a good look at your Google Lighthouse score. In this blogpost I will sh..."/>
+<meta property="og:description" content="You might have heard that soon Google will shame slow websites. A good reason to take a good look at your Google Lighthouse score. When you do, I bet you won..."/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
 <meta name="twitter:title" content="How to get a 100% Google Lighthouse score" />
 
 <meta name="twitter:url" content="https://www.usecue.com/blog/how-to-get-a100-google-lighthouse-score/" />
-<meta name="twitter:description" content="You might have heard that soon Google will shame slow websites. A good reason to take a good look at your Google Lighthouse score. In this blogpost I will sh..." />
+<meta name="twitter:description" content="You might have heard that soon Google will shame slow websites. A good reason to take a good look at your Google Lighthouse score. When you do, I bet you won..." />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
@@ -63,19 +63,37 @@
 
 <p>You might have heard that soon <a href="/blog/google-will-shame-slow-websites">Google will shame slow websites</a>. A good reason to take a good look at your <a href="/blog/google-lighthouse-score">Google Lighthouse score</a>.</p>
 
-<p>In this blogpost I will share with you the secret on how to get a 100% Google Lighthouse score. To determine what the end-result should be, let’s look at some websites (I built) that score the so much desired 100% on all four categories:</p>
+<p>When you do, I bet you wonder how get to a perfect 100%. Well.. I have built many websites that score perfectly, or nearly perfect on these Googles charts. So, I obviously got the answer. And if I can built 100% scoring websites on a daily basis, you already guessed that it is a lot easier than you think.</p>
 
-<h2 id="de-baby-wegwijzer">De Baby Wegwijzer</h2>
+<h2 id="some-sample-websites">Some sample websites</h2>
+
+<p>Lets start by looking at some websites that score the so much desired 100% on all four categories, to determine what the end-results can look like.</p>
+
+<h3 id="de-baby-wegwijzer-by-usecue-bv">De Baby Wegwijzer (by Usecue BV)</h3>
 
 <ul>
+  <li><a href="https://jekyllcodex.org/">jekyllcodex.org</a></li>
+  <li>Total size: 130Kb</li>
+  <li>Number of requests: 15</li>
+  <li>TTFB: 172ms</li>
+  <li>DOMContentLoaded: 386ms</li>
+  <li>Loading time: 756ms</li>
+  <li>Hosted on: CloudFlare (CDN)</li>
+</ul>
+
+<h3 id="de-baby-wegwijzer-by-usecue-bv-1">De Baby Wegwijzer (by Usecue BV)</h3>
+
+<ul>
+  <li><a href="https://www.debabywegwijzer.nl/">www.debabywegwijzer.nl</a></li>
   <li>Total size: 120Kb</li>
   <li>Number of requests: 9</li>
   <li>TTFB: 22ms</li>
   <li>DOMContentLoaded: 274ms</li>
   <li>Loading time: 596ms</li>
+  <li>Hosted on: CloudFlare (CDN)</li>
 </ul>
 
-<h2 id="studio-inhout">Studio InHout</h2>
+<h3 id="studio-inhout-by-usecue-bv">Studio InHout (by Usecue BV)</h3>
 
 <ul>
   <li>Total size: 115Kb</li>
@@ -83,9 +101,10 @@
   <li>TTFB: 16ms</li>
   <li>DOMContentLoaded: 307ms</li>
   <li>Loading time: 564ms</li>
+  <li>Hosted at: CloudFlare (CDN)</li>
 </ul>
 
-<h2 id="usecue-bv">Usecue BV</h2>
+<h3 id="usecue-bv-by-usecue-bv">Usecue BV (by Usecue BV)</h3>
 
 <ul>
   <li>Total size: 44Kb</li>
@@ -93,9 +112,35 @@
   <li>TTFB: 15ms</li>
   <li>DOMContentLoaded: 231ms</li>
   <li>Loading time: 363ms</li>
+  <li>Hosted at: a Leaseweb VM in Amsterdam</li>
+</ul>
+
+<h3 id="delete-agency-by-delete-agency">Delete Agency (by Delete Agency)</h3>
+
+<ul>
+  <li>Total size: 561Kb</li>
+  <li>Number of requests: 30</li>
+  <li>TTFB: 52ms</li>
+  <li>DOMContentLoaded: 528ms</li>
+  <li>Loading time: 1.05s</li>
+  <li>Hosted at: unknown</li>
 </ul>
 
 <p>We need a very low page weight, a very low number of requests and a low TTFB.</p>
+
+<h2 id="the-essential-steps">The essential steps</h2>
+
+<p>There are basically two approaches possible.</p>
+
+<h2 id="approach-1-the-painfull-approach">Approach 1. The painfull approach</h2>
+
+<p>Delete Agency improved their website until it reached a 100% score. A great achievement, but also <a href="https://www.deleteagency.com/blog/how-to-get-a-100-percents-lighthouse-performance-score">an awful lot of work</a>.</p>
+
+<h2 id="approach-2-the-simple-approach">Approach 2. The simple approach</h2>
+
+<h3 id="the-right-stack">The right stack</h3>
+
+<p>Fortunately, there is a much simpler method. Just make your website 5 times smaller. How to do that?</p>
 
 
 
