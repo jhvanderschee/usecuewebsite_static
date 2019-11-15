@@ -111,7 +111,7 @@
   <li>Loading time: 363ms</li>
   <li>Hosted at: a Leaseweb VM in Amsterdam</li>
   <li>Built by: Usecue BV</li>
-  <li>Score: 97,100,100,100</li>
+  <li>Score: 100,100,100,100</li>
 </ul>
 
 <p><a href="https://jekyllcodex.org/">jekyllcodex.org</a></p>
@@ -126,7 +126,7 @@
   <li>Loading time: 756ms</li>
   <li>Hosted on: CloudFlare (CDN)</li>
   <li>Built by: Usecue BV</li>
-  <li>Score: 97,100,100,100</li>
+  <li>Score: 99,92,100,100</li>
 </ul>
 
 <p><a href="https://lamanzanilla.es/">lamanzanilla.es</a></p>
@@ -134,14 +134,14 @@
 <ul>
   <li>Javascript: 1kb</li>
   <li>CSS: 7kb</li>
-  <li>Total size: 1.08Mb</li>
+  <li>Total size: 974kb</li>
   <li>Number of requests: 17</li>
   <li>TTFB: 166ms</li>
   <li>DOMContentLoaded: 401ms</li>
   <li>Loading time: 777ms</li>
   <li>Hosted at: CloudFlare (CDN)</li>
   <li>Built by: Usecue BV</li>
-  <li>Score: 99,93,100,100</li>
+  <li>Score: 100,93,100,100</li>
 </ul>
 
 <p><a href="https://www.deleteagency.com/">deleteagency.com</a></p>
@@ -156,28 +156,28 @@
   <li>Loading time: 1.05s</li>
   <li>Hosted at: unknown</li>
   <li>Built by: Delete Agency</li>
-  <li>Score: 97,100,100,100</li>
+  <li>Score: 98,100,100,100</li>
 </ul>
 
-<h2 id="the-essential-steps">The essential steps</h2>
+<h2 id="the-easy-steps">The easy steps</h2>
 
-<p>First of all you need a low Time To First Byte. In other words: the server needs to respond fast. I use CloudFlare for most of my websites, but using a well configured VM works too (as you can see). I am not sure what hosting Delete Agency uses, but they got a nice low TTFB. You can test the TTFB with tools like Pingdom and GTMetrix.</p>
+<p>First of all you need a low Time To First Byte. All websites have a TTFB of less than 200ms. This means that the server needs to respond fast. I use CloudFlare for most of my websites, but using a well configured VM works too (as you can see). I am not sure what hosting Delete Agency uses, but they got a nice low TTFB. Getting a low TTFB is just a matter of chosing the right hosting. You can test this metric with a tool like Pingdom or GTMetrix.</p>
 
-<p>Secondly, you need to optimize your images. Note that using WebP is not required at all to get a good score. Using strong JPG compression is often more than enough.</p>
+<p>Secondly, you need to optimize your images. Use SVG where possible and heavily compressed JPG for the rest. If you have to use PNG, make sure you use TinyPNG to compress them. Use ‘loading=”lazy”’ where possible. Note that using WebP is not required at all to get a good score.</p>
 
-<p>Finally, you need to address all the small issues in Google Lighthouse.</p>
+<p>Finally, you need to address all the small issues Google Lighthouse throws at you. These could be accessibility things, but also SEO or performance issues. Note that you are not required to fix all Performance issues, as the score correlates to the speed at which the site loads, not to the checklist.</p>
 
 <h2 id="the-blocking-code-issue">The blocking code issue</h2>
 
-<p>When you have done all the above, you are left with the blocking code issue. Google suggests to move all CSS to the footer. Although this works, you get an ugly Flash Of Unstyled Text (FOUT). The website is also only usable after the CSS has loaded. To fix this blocking issue there are two options.</p>
+<p>When you have done all the above, you are probably left with some hard to solve ‘blocking code’ issues. Google will suggest to move the CSS to the footer, but that does not really solve it. You will get an ugly Flash Of Unstyled Text (FOUT) and your website will only be usable after the CSS has loaded. Here is where I got stuck in the beginning. Fortunately, there are two solutions to fix this blocking issue.</p>
 
-<p>The first approach is perfectly outlined by Delete Agency (the last website in the list). They use a lot of Javascript and CSS, which is typically blocking, so they split and/or inlined parts of this code. They <a href="https://www.deleteagency.com/blog/how-to-get-a-100-percents-lighthouse-performance-score">documented</a> this process in great detail. Although the end-result is impressive, it is also an awful lot of work.</p>
+<p>The first approach is perfectly outlined by Delete Agency (the last website in the list). They use a lot of Javascript and CSS, which is typically blocking, so they split and/or inlined parts of this code. They <a href="https://www.deleteagency.com/blog/how-to-get-a-100-percents-lighthouse-performance-score">documented</a> this process in great detail. The end-result is impressive, but it is also an awful lot of work.</p>
 
-<p>However, there is a much simpler and more logical approach. I found out that you can build perfectly functional website with A LOT less Javascript and CSS. And I just had to do ONE thing: stop using (Javascript and CSS) frameworks. That was all! This reduces the amount of Javascript and CSS dramatically. I do not think that I need to explain that there is no need for inlining or splitting when you reduce the amount of Javascript and CSS by a factor 6 to 10.</p>
+<p>Fortunately, there is a much simpler approach. As you can see in the statistics, you can build perfectly functional websites with A LOT less Javascript and CSS. I just had to do ONE thing to get to my perfect score: stop using (Javascript and CSS) frameworks. That was all! This reduces the amount of loaded Javascript and CSS dramatically. Obviously, there is no need for inlining or splitting when you reduce the amount of Javascript and CSS by a factor 10 or more.</p>
 
-<h3 id="the-right-stack">The right stack</h3>
+<p>Note that you can perfectly load a LOT of large images. A homepage twice as big as the one from Delete Agency can still get a nearly perfect score. The problem is the blocking CSS and Javascript. Nothing else.</p>
 
-<p>Fortunately, there is a much simpler method. Just make your website 5 times smaller. How to do that?</p>
+<h2 id="the-right-stack">The right stack</h2>
 
 
 
