@@ -57,6 +57,7 @@ blockquote {padding-left: 2.1vw;}
 .medium, h1 {font-size: 5vw; line-height: 1.05;}
 h1 {padding-bottom: 0.4em;}
 h2 {padding-bottom: 0.6em; padding-top: 0.6em;}
+h3 {padding-bottom: 0.6em; padding-top: 0.6em;}
 .large {font-size: 10vw;}
 
 
@@ -87,7 +88,7 @@ h2 {padding-bottom: 0.6em; padding-top: 0.6em;}
 #content h1 {text-align: center;}
 body:not(.home) #content h1 {padding-bottom: .7em;}
 .home #content {width: 60%; text-align: center; padding-bottom: 12vw;}
-#content p, #content ol, #content ul {padding-bottom: 1.25em;}
+#content p, #content ol, #content ul, #content table {padding-bottom: 1.25em;}
 blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35em; padding-left: 2.1vw;}
 #content img {width: 100%; max-width: 100%; margin-bottom: 0.2em;}
 #content ul {margin-left: 1.4vw;}

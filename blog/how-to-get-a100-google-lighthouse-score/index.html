@@ -67,97 +67,289 @@
 
 <h2 id="some-sample-websites">Some sample websites</h2>
 
-<p>Lets start by looking at some websites that score (nearly) 100% on all four categories, to determine what the end-result looks like. For each site I have listed the weights: the Javascript, CSS and the total page weight. You can also see the number of requests (although they do not matter much over HTTP/2), as well as the time it takes the server to respond (TTFB) and the site to load. Finally, I listed the host the company that built the website and the <a href="/blog/google-lighthouse-score">Google Lighthouse score</a>, where the first number is the performance.</p>
+<p>Lets start by looking at some websites that score (nearly) 100% on all four categories, to determine what the end-result looks like. For each site I have listed the weights: the Javascript, CSS and the total page weight. You can also see the number of requests (although they do not matter much over HTTP/2), as well as the time it takes the server to respond (TTFB) and the site to load. Finally, I listed the host, the company that built the website and the <a href="/blog/google-lighthouse-score">Google Lighthouse score</a>. Note that the comma seperated numbers stand for Performance, Accessibility, Best Practises and SEO.</p>
 
-<p><a href="https://www.debabywegwijzer.nl/">debabywegwijzer.nl</a></p>
+<h3 id="debabywegwijzernlhttpswwwdebabywegwijzernl"><a href="https://www.debabywegwijzer.nl/">debabywegwijzer.nl</a></h3>
 
-<ul>
-  <li>Javascript: 0kb</li>
-  <li>CSS: 9kb</li>
-  <li>Total size: 120kb</li>
-  <li>Number of requests: 9</li>
-  <li>TTFB: 22ms</li>
-  <li>DOMContentLoaded: 274ms</li>
-  <li>Loading time: 596ms</li>
-  <li>Hosted on: CloudFlare (CDN)</li>
-  <li>Built by: Usecue BV</li>
-  <li>Score: 99,100,100,100</li>
-</ul>
+<table>
+  <tbody>
+    <tr>
+      <td>Javascript:</td>
+      <td>0kb</td>
+    </tr>
+    <tr>
+      <td>CSS:</td>
+      <td>9kb</td>
+    </tr>
+    <tr>
+      <td>Total size:</td>
+      <td>120kb</td>
+    </tr>
+    <tr>
+      <td>Requests:</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>TTFB:</td>
+      <td>22ms</td>
+    </tr>
+    <tr>
+      <td>DOM loaded:    </td>
+      <td>274ms</td>
+    </tr>
+    <tr>
+      <td>Loading time:</td>
+      <td>596ms</td>
+    </tr>
+    <tr>
+      <td>Hosted on:</td>
+      <td>CloudFlare (CDN)</td>
+    </tr>
+    <tr>
+      <td>Built by:</td>
+      <td>Usecue BV</td>
+    </tr>
+    <tr>
+      <td>Score:</td>
+      <td>99,100,100,100</td>
+    </tr>
+  </tbody>
+</table>
 
-<p><a href="https://www.studioinhout.nl/">studioinhout.nl</a></p>
+<h3 id="studioinhoutnlhttpswwwstudioinhoutnl"><a href="https://www.studioinhout.nl/">studioinhout.nl</a></h3>
 
-<ul>
-  <li>Javascript: 1kb</li>
-  <li>CSS: 14kb</li>
-  <li>Total size: 115kb</li>
-  <li>Number of requests: 9</li>
-  <li>TTFB: 16ms</li>
-  <li>DOMContentLoaded: 307ms</li>
-  <li>Loading time: 564ms</li>
-  <li>Hosted at: CloudFlare (CDN)</li>
-  <li>Built by: Usecue BV</li>
-  <li>Score: 100,100,100,100</li>
-</ul>
+<table>
+  <tbody>
+    <tr>
+      <td>Javascript:</td>
+      <td>1kb</td>
+    </tr>
+    <tr>
+      <td>CSS:</td>
+      <td>14kb</td>
+    </tr>
+    <tr>
+      <td>Total size:</td>
+      <td>115kb</td>
+    </tr>
+    <tr>
+      <td>Requests:</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>TTFB:</td>
+      <td>16ms</td>
+    </tr>
+    <tr>
+      <td>DOM loaded:    </td>
+      <td>307ms</td>
+    </tr>
+    <tr>
+      <td>Loading time:</td>
+      <td>564ms</td>
+    </tr>
+    <tr>
+      <td>Hosted at:</td>
+      <td>CloudFlare (CDN)</td>
+    </tr>
+    <tr>
+      <td>Built by:</td>
+      <td>Usecue BV</td>
+    </tr>
+    <tr>
+      <td>Score:</td>
+      <td>100,100,100,100</td>
+    </tr>
+  </tbody>
+</table>
 
-<p><a href="https://www.usecue.com/">usecue.com</a></p>
+<h3 id="usecuecomhttpswwwusecuecom"><a href="https://www.usecue.com/">usecue.com</a></h3>
 
-<ul>
-  <li>Javascript: 10kb</li>
-  <li>CSS: 12kb</li>
-  <li>Total size: 44kb</li>
-  <li>Number of requests: 7</li>
-  <li>TTFB: 15ms</li>
-  <li>DOMContentLoaded: 231ms</li>
-  <li>Loading time: 363ms</li>
-  <li>Hosted at: a Leaseweb VM in Amsterdam</li>
-  <li>Built by: Usecue BV</li>
-  <li>Score: 100,100,100,100</li>
-</ul>
+<table>
+  <tbody>
+    <tr>
+      <td>Javascript:</td>
+      <td>10kb</td>
+    </tr>
+    <tr>
+      <td>CSS:</td>
+      <td>12kb</td>
+    </tr>
+    <tr>
+      <td>Total size:</td>
+      <td>44kb</td>
+    </tr>
+    <tr>
+      <td>Requests:</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>TTFB:</td>
+      <td>15ms</td>
+    </tr>
+    <tr>
+      <td>DOM loaded:    </td>
+      <td>231ms</td>
+    </tr>
+    <tr>
+      <td>Loading time:</td>
+      <td>363ms</td>
+    </tr>
+    <tr>
+      <td>Hosted at:</td>
+      <td>Leaseweb VM</td>
+    </tr>
+    <tr>
+      <td>Built by:</td>
+      <td>Usecue BV</td>
+    </tr>
+    <tr>
+      <td>Score:</td>
+      <td>100,100,100,100</td>
+    </tr>
+  </tbody>
+</table>
 
-<p><a href="https://jekyllcodex.org/">jekyllcodex.org</a></p>
+<h3 id="jekyllcodexorghttpsjekyllcodexorg"><a href="https://jekyllcodex.org/">jekyllcodex.org</a></h3>
 
-<ul>
-  <li>Javascript: 13kb</li>
-  <li>CSS: 13kb</li>
-  <li>Total size: 130kb</li>
-  <li>Number of requests: 15</li>
-  <li>TTFB: 172ms</li>
-  <li>DOMContentLoaded: 386ms</li>
-  <li>Loading time: 756ms</li>
-  <li>Hosted on: CloudFlare (CDN)</li>
-  <li>Built by: Usecue BV</li>
-  <li>Score: 99,92,100,100</li>
-</ul>
+<table>
+  <tbody>
+    <tr>
+      <td>Javascript:</td>
+      <td>13kb</td>
+    </tr>
+    <tr>
+      <td>CSS:</td>
+      <td>13kb</td>
+    </tr>
+    <tr>
+      <td>Total size:</td>
+      <td>130kb</td>
+    </tr>
+    <tr>
+      <td>Requests:</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>TTFB:</td>
+      <td>172ms</td>
+    </tr>
+    <tr>
+      <td>DOM loaded:    </td>
+      <td>386ms</td>
+    </tr>
+    <tr>
+      <td>Loading time:</td>
+      <td>756ms</td>
+    </tr>
+    <tr>
+      <td>Hosted on:</td>
+      <td>CloudFlare (CDN)</td>
+    </tr>
+    <tr>
+      <td>Built by:</td>
+      <td>Usecue BV</td>
+    </tr>
+    <tr>
+      <td>Score:</td>
+      <td>99,92,100,100</td>
+    </tr>
+  </tbody>
+</table>
 
-<p><a href="https://lamanzanilla.es/">lamanzanilla.es</a></p>
+<h3 id="lamanzanillaeshttpslamanzanillaes"><a href="https://lamanzanilla.es/">lamanzanilla.es</a></h3>
 
-<ul>
-  <li>Javascript: 1kb</li>
-  <li>CSS: 7kb</li>
-  <li>Total size: 974kb</li>
-  <li>Number of requests: 17</li>
-  <li>TTFB: 166ms</li>
-  <li>DOMContentLoaded: 601ms</li>
-  <li>Loading time: 1s</li>
-  <li>Hosted at: CloudFlare (CDN)</li>
-  <li>Built by: Usecue BV</li>
-  <li>Score: 100,93,100,100</li>
-</ul>
+<table>
+  <tbody>
+    <tr>
+      <td>Javascript:</td>
+      <td>1kb</td>
+    </tr>
+    <tr>
+      <td>CSS:</td>
+      <td>7kb</td>
+    </tr>
+    <tr>
+      <td>Total size:</td>
+      <td>974kb</td>
+    </tr>
+    <tr>
+      <td>Requests:</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>TTFB:</td>
+      <td>166ms</td>
+    </tr>
+    <tr>
+      <td>DOM loaded:    </td>
+      <td>601ms</td>
+    </tr>
+    <tr>
+      <td>Loading time:</td>
+      <td>1s</td>
+    </tr>
+    <tr>
+      <td>Hosted at:</td>
+      <td>CloudFlare (CDN)</td>
+    </tr>
+    <tr>
+      <td>Built by:</td>
+      <td>Usecue BV</td>
+    </tr>
+    <tr>
+      <td>Score:</td>
+      <td>100,93,100,100</td>
+    </tr>
+  </tbody>
+</table>
 
-<p><a href="https://www.deleteagency.com/">deleteagency.com</a></p>
+<h3 id="deleteagencycomhttpswwwdeleteagencycom"><a href="https://www.deleteagency.com/">deleteagency.com</a></h3>
 
-<ul>
-  <li>Javascript: 140kb</li>
-  <li>CSS: 80kb</li>
-  <li>Total size: 561kb</li>
-  <li>Number of requests: 30</li>
-  <li>TTFB: 52ms</li>
-  <li>DOMContentLoaded: 528ms</li>
-  <li>Loading time: 1.05s</li>
-  <li>Hosted at: unknown</li>
-  <li>Built by: Delete Agency</li>
-  <li>Score: 98,100,100,100</li>
-</ul>
+<table>
+  <tbody>
+    <tr>
+      <td>Javascript:</td>
+      <td>140kb</td>
+    </tr>
+    <tr>
+      <td>CSS:</td>
+      <td>80kb</td>
+    </tr>
+    <tr>
+      <td>Total size:</td>
+      <td>561kb</td>
+    </tr>
+    <tr>
+      <td>Requests:</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>TTFB:</td>
+      <td>52ms</td>
+    </tr>
+    <tr>
+      <td>DOM loaded:    </td>
+      <td>528ms</td>
+    </tr>
+    <tr>
+      <td>Loading time:</td>
+      <td>1.05s</td>
+    </tr>
+    <tr>
+      <td>Hosted at:</td>
+      <td>unknown</td>
+    </tr>
+    <tr>
+      <td>Built by:</td>
+      <td>Delete Agency</td>
+    </tr>
+    <tr>
+      <td>Score:</td>
+      <td>98,100,100,100</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="the-easy-steps">The easy steps</h2>
 
