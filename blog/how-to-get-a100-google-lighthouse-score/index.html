@@ -61,13 +61,13 @@
 </div>
 <div id="scrolldown"></div>
 
-<p>You might have heard that soon <a href="/blog/google-will-shame-slow-websites">Google will shame slow websites</a>. A good reason to take a good look at your <a href="/blog/google-lighthouse-score">Google Lighthouse score</a>.</p>
+<p>You might have heard that soon <a href="/blog/google-will-shame-slow-websites">Google will shame slow websites</a>. A good reason to take a good look at your Google Lighthouse score.</p>
 
 <p>When you do, I bet you wonder how get to a perfect 100%. Well.. I have built many websites that score perfectly, or nearly perfect on these Googles charts. So, I obviously got the answer. And if I can built 100% scoring websites on a daily basis, you already guessed that it is a lot easier than you think.</p>
 
 <h2 id="some-sample-websites">Some sample websites</h2>
 
-<p>Lets start by looking at some websites that score (nearly) 100% on all four categories, to determine what the end-result looks like.</p>
+<p>Lets start by looking at some websites that score (nearly) 100% on all four categories, to determine what the end-result looks like. For each site I have listed the weights: the Javascript, CSS and the total page weight. You can also see the number of requests (although they do not matter much over HTTP/2), as well as the time it takes the server to respond (TTFB) and the site to load. Finally, I listed the host the company that built the website and the <a href="/blog/google-lighthouse-score">Google Lighthouse score</a>, where the first number is the performance.</p>
 
 <p><a href="https://www.debabywegwijzer.nl/">debabywegwijzer.nl</a></p>
 
@@ -137,8 +137,8 @@
   <li>Total size: 974kb</li>
   <li>Number of requests: 17</li>
   <li>TTFB: 166ms</li>
-  <li>DOMContentLoaded: 401ms</li>
-  <li>Loading time: 777ms</li>
+  <li>DOMContentLoaded: 601ms</li>
+  <li>Loading time: 1s</li>
   <li>Hosted at: CloudFlare (CDN)</li>
   <li>Built by: Usecue BV</li>
   <li>Score: 100,93,100,100</li>
@@ -163,7 +163,7 @@
 
 <p>First of all you need a low Time To First Byte. All websites have a TTFB of less than 200ms. This means that the server needs to respond fast. I use CloudFlare for most of my websites, but using a well configured VM works too (as you can see). I am not sure what hosting Delete Agency uses, but they got a nice low TTFB. Getting a low TTFB is just a matter of chosing the right hosting. You can test this metric with a tool like Pingdom or GTMetrix.</p>
 
-<p>Secondly, you need to optimize your images. Use SVG where possible and heavily compressed JPG for the rest. If you have to use PNG, make sure you use TinyPNG to compress them. Use ‘loading=”lazy”’ where possible. Note that using WebP is not required at all to get a good score.</p>
+<p>Secondly, you need to optimize your images. Use SVG where possible and heavily compressed JPG for the rest. If you have to use PNG, make sure you use TinyPNG to compress them. Use loading=”lazy” where possible. Note that using WebP is not required at all to get a good score.</p>
 
 <p>Finally, you need to address all the small issues Google Lighthouse throws at you. These could be accessibility things, but also SEO or performance issues. Note that you are not required to fix all Performance issues, as the score correlates to the speed at which the site loads, not to the checklist.</p>
 
@@ -173,12 +173,13 @@
 
 <p>The first approach is perfectly outlined by Delete Agency (the last website in the list). They use a lot of Javascript and CSS, which is typically blocking, so they split and/or inlined parts of this code. They <a href="https://www.deleteagency.com/blog/how-to-get-a-100-percents-lighthouse-performance-score">documented</a> this process in great detail. The end-result is impressive, but it is also an awful lot of work.</p>
 
-<p>Fortunately, there is a much simpler approach. As you can see in the statistics, you can build perfectly functional websites with A LOT less Javascript and CSS. I just had to do ONE thing to get to my perfect score: stop using (Javascript and CSS) frameworks. That was all! This reduces the amount of loaded Javascript and CSS dramatically. Obviously, there is no need for inlining or splitting when you reduce the amount of Javascript and CSS by a factor 10 or more.</p>
+<p>Fortunately, there is a much simpler approach. As you can see in the examples above, you can build perfectly functional websites with A LOT less Javascript and CSS. I just had to do ONE thing to get to my perfect score: stop using (Javascript and CSS) frameworks. That was all! This reduces the amount of loaded Javascript and CSS dramatically. Obviously, there is no need for inlining or splitting when you reduce the amount of Javascript and CSS by a factor 10 or more.</p>
 
-<p>Note that you can perfectly load a LOT of large images. A homepage twice as big as the one from Delete Agency can still get a nearly perfect score. The problem is the blocking CSS and Javascript. Nothing else.</p>
+<p>Note that you can perfectly load a LOT of large images. A homepage twice as big as the one from Delete Agency can still get a perfect score. The problem is the blocking CSS and Javascript.</p>
 
-<h2 id="the-right-stack">The right stack</h2>
+<h2 id="some-closing-words">Some closing words…</h2>
 
+<p>Not using Javascript and CSS frameworks might seem scary… but trust me: it is not. Javascript and CSS have come a long way. Things like Flexbox, CSS columns and CSS grid handle most of your more complex CSS problems with ease. And if you feel insecure about programming non-jQuery stuff, please let <a href="https://gomakethings.com/">Chris Ferdinandy</a> help you. He is an advocate for a simpler world wide web and loves to teach you <a href="https://gomakethings.com/">Vanilla Javascript</a>. It is worth the investment.</p>
 
 
 
