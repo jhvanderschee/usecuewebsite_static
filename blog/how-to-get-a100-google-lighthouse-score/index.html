@@ -67,76 +67,113 @@
 
 <h2 id="some-sample-websites">Some sample websites</h2>
 
-<p>Lets start by looking at some websites that score the so much desired 100% on all four categories, to determine what the end-results can look like.</p>
+<p>Lets start by looking at some websites that score (nearly) 100% on all four categories, to determine what the end-result looks like.</p>
 
-<h3 id="de-baby-wegwijzer-by-usecue-bv">De Baby Wegwijzer (by Usecue BV)</h3>
-
-<ul>
-  <li><a href="https://jekyllcodex.org/">jekyllcodex.org</a></li>
-  <li>Total size: 130Kb</li>
-  <li>Number of requests: 15</li>
-  <li>TTFB: 172ms</li>
-  <li>DOMContentLoaded: 386ms</li>
-  <li>Loading time: 756ms</li>
-  <li>Hosted on: CloudFlare (CDN)</li>
-</ul>
-
-<h3 id="de-baby-wegwijzer-by-usecue-bv-1">De Baby Wegwijzer (by Usecue BV)</h3>
+<p><a href="https://www.debabywegwijzer.nl/">debabywegwijzer.nl</a></p>
 
 <ul>
-  <li><a href="https://www.debabywegwijzer.nl/">www.debabywegwijzer.nl</a></li>
-  <li>Total size: 120Kb</li>
+  <li>Javascript: 0kb</li>
+  <li>CSS: 9kb</li>
+  <li>Total size: 120kb</li>
   <li>Number of requests: 9</li>
   <li>TTFB: 22ms</li>
   <li>DOMContentLoaded: 274ms</li>
   <li>Loading time: 596ms</li>
   <li>Hosted on: CloudFlare (CDN)</li>
+  <li>Built by: Usecue BV</li>
+  <li>Score: 99,100,100,100</li>
 </ul>
 
-<h3 id="studio-inhout-by-usecue-bv">Studio InHout (by Usecue BV)</h3>
+<p><a href="https://www.studioinhout.nl/">studioinhout.nl</a></p>
 
 <ul>
-  <li>Total size: 115Kb</li>
+  <li>Javascript: 1kb</li>
+  <li>CSS: 14kb</li>
+  <li>Total size: 115kb</li>
   <li>Number of requests: 9</li>
   <li>TTFB: 16ms</li>
   <li>DOMContentLoaded: 307ms</li>
   <li>Loading time: 564ms</li>
   <li>Hosted at: CloudFlare (CDN)</li>
+  <li>Built by: Usecue BV</li>
+  <li>Score: 100,100,100,100</li>
 </ul>
 
-<h3 id="usecue-bv-by-usecue-bv">Usecue BV (by Usecue BV)</h3>
+<p><a href="https://www.usecue.com/">usecue.com</a></p>
 
 <ul>
-  <li>Total size: 44Kb</li>
+  <li>Javascript: 10kb</li>
+  <li>CSS: 12kb</li>
+  <li>Total size: 44kb</li>
   <li>Number of requests: 7</li>
   <li>TTFB: 15ms</li>
   <li>DOMContentLoaded: 231ms</li>
   <li>Loading time: 363ms</li>
   <li>Hosted at: a Leaseweb VM in Amsterdam</li>
+  <li>Built by: Usecue BV</li>
+  <li>Score: 97,100,100,100</li>
 </ul>
 
-<h3 id="delete-agency-by-delete-agency">Delete Agency (by Delete Agency)</h3>
+<p><a href="https://jekyllcodex.org/">jekyllcodex.org</a></p>
 
 <ul>
-  <li>Total size: 561Kb</li>
+  <li>Javascript: 13kb</li>
+  <li>CSS: 13kb</li>
+  <li>Total size: 130kb</li>
+  <li>Number of requests: 15</li>
+  <li>TTFB: 172ms</li>
+  <li>DOMContentLoaded: 386ms</li>
+  <li>Loading time: 756ms</li>
+  <li>Hosted on: CloudFlare (CDN)</li>
+  <li>Built by: Usecue BV</li>
+  <li>Score: 97,100,100,100</li>
+</ul>
+
+<p><a href="https://lamanzanilla.es/">lamanzanilla.es</a></p>
+
+<ul>
+  <li>Javascript: 1kb</li>
+  <li>CSS: 7kb</li>
+  <li>Total size: 1.08Mb</li>
+  <li>Number of requests: 17</li>
+  <li>TTFB: 166ms</li>
+  <li>DOMContentLoaded: 401ms</li>
+  <li>Loading time: 777ms</li>
+  <li>Hosted at: CloudFlare (CDN)</li>
+  <li>Built by: Usecue BV</li>
+  <li>Score: 99,93,100,100</li>
+</ul>
+
+<p><a href="https://www.deleteagency.com/">deleteagency.com</a></p>
+
+<ul>
+  <li>Javascript: 140kb</li>
+  <li>CSS: 80kb</li>
+  <li>Total size: 561kb</li>
   <li>Number of requests: 30</li>
   <li>TTFB: 52ms</li>
   <li>DOMContentLoaded: 528ms</li>
   <li>Loading time: 1.05s</li>
   <li>Hosted at: unknown</li>
+  <li>Built by: Delete Agency</li>
+  <li>Score: 97,100,100,100</li>
 </ul>
-
-<p>We need a very low page weight, a very low number of requests and a low TTFB.</p>
 
 <h2 id="the-essential-steps">The essential steps</h2>
 
-<p>There are basically two approaches possible.</p>
+<p>First of all you need a low Time To First Byte. In other words: the server needs to respond fast. I use CloudFlare for most of my websites, but using a well configured VM works too (as you can see). I am not sure what hosting Delete Agency uses, but they got a nice low TTFB. You can test the TTFB with tools like Pingdom and GTMetrix.</p>
 
-<h2 id="approach-1-the-painfull-approach">Approach 1. The painfull approach</h2>
+<p>Secondly, you need to optimize your images. Note that using WebP is not required at all to get a good score. Using strong JPG compression is often more than enough.</p>
 
-<p>Delete Agency improved their website until it reached a 100% score. A great achievement, but also <a href="https://www.deleteagency.com/blog/how-to-get-a-100-percents-lighthouse-performance-score">an awful lot of work</a>.</p>
+<p>Finally, you need to address all the small issues in Google Lighthouse.</p>
 
-<h2 id="approach-2-the-simple-approach">Approach 2. The simple approach</h2>
+<h2 id="the-blocking-code-issue">The blocking code issue</h2>
+
+<p>When you have done all the above, you are left with the blocking code issue. Google suggests to move all CSS to the footer. Although this works, you get an ugly Flash Of Unstyled Text (FOUT). The website is also only usable after the CSS has loaded. To fix this blocking issue there are two options.</p>
+
+<p>The first approach is perfectly outlined by Delete Agency (the last website in the list). They use a lot of Javascript and CSS, which is typically blocking, so they split and/or inlined parts of this code. They <a href="https://www.deleteagency.com/blog/how-to-get-a-100-percents-lighthouse-performance-score">documented</a> this process in great detail. Although the end-result is impressive, it is also an awful lot of work.</p>
+
+<p>However, there is a much simpler and more logical approach. I found out that you can build perfectly functional website with A LOT less Javascript and CSS. And I just had to do ONE thing: stop using (Javascript and CSS) frameworks. That was all! This reduces the amount of Javascript and CSS dramatically. I do not think that I need to explain that there is no need for inlining or splitting when you reduce the amount of Javascript and CSS by a factor 6 to 10.</p>
 
 <h3 id="the-right-stack">The right stack</h3>
 
