@@ -69,7 +69,7 @@
 
 <p>Here is how it works: If you set your font-size to 20px on the HTML element, 1 <em>root em</em> will equal 20 pixels. So, <em>root em</em> equals the root font-size. A pixel becomes 1/20th by 1/20th <em>root em</em> big. A larger font could have a font-size of 2 <em>root em</em> (40px) and your body text could be 0.8 <em>root em</em> (16px). And a nice extra: even media queries can be defined in <em>root em</em>.</p>
 
-<p>So if <em>root em</em> is nothing more than a multiplier, why should you use it? Well… only for one reason actually: If you want to simluate browser zoom. A common media query that takes advantage of this would be: if the screen is narrower than 600 pixels (30rem), bump the font-size of the HTML element up to 22 pixels. This media query will effectively show your complete website at a 110% scale, just like browser zoom would, with just a single line of CSS.</p>
+<p>So if <em>root em</em> is nothing more than a multiplier, why should you use it? Well… only for one reason actually: it helps you to simluate browser zoom. A common media query that takes advantage of this would be: if the screen is narrower than 600 pixels (30rem), bump the font-size of the HTML element up to 22 pixels. This media query will effectively show your complete website at a 110% scale, just like browser zoom would, with just a single line of CSS.</p>
 
 <p>Sounds great, but is it worth the extra effort? I think it is. I got used to this new approach quickly and it soon felt as easy as using pixels. Situation in which I find this approach extremely helpful are: handling very large and very small screen sizes and Google or some designer complaining about the chosen website width or font-size.</p>
 
