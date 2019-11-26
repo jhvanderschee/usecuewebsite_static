@@ -16,7 +16,7 @@
 body {background: #0000ee; color: white; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
 body, html {height: 100%;}
 img {max-width: 100%;}
-html {overflow-y: scroll;}
+html {overflow-y: scroll; scroll-behavior: smooth;}
 a {color: white; text-decoration-style: solid; /*solid dotted, dashed, and wavy*/ text-decoration-color: rgba(255,255,255,0.5);}
 #splash a {text-decoration-color: rgba(255,255,255,1);}
 body.black a {color: black;}
