@@ -47,6 +47,12 @@
   
   
       <url>
+        <loc>https://www.usecue.com/blog/no-code-platforms/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
         <loc>https://www.usecue.com/blog/how-to-get-a-100-google-lighthouse-score/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
