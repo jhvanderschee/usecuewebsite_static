@@ -13,7 +13,7 @@
 }
 
 * {margin: 0; padding: 0; font-weight: normal;}
-body {background: #0000ee; color: white; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
+body {background: #0000ee; background-attachment: fixed; color: white; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
 body, html {height: 100%;}
 img {max-width: 100%;}
 html {overflow-y: scroll; scroll-behavior: smooth;}
@@ -295,12 +295,12 @@ transform-origin: 50% 50%;
 #darkmode::before {content: "ouch, my eyes!";}
 body.darkmode:not(.bgcolor) img {filter: grayscale(100%);}
 body.darkmode:not(.bgcolor) #logo img {filter: grayscale(100%);}
-body.darkmode:not(.bgcolor) {background: #101010;}
+body.darkmode:not(.bgcolor) {background-color: #101010;}
 body.darkmode:not(.bgcolor) #darkmodeoverlay {opacity: 1;}
 @media (prefers-color-scheme: dark) {
     #darkmode {pointer-events: none; opacity: 0;}
     body:not(.bgcolor) img {filter: grayscale(100%);}
     body:not(.bgcolor) #logo img {filter: grayscale(100%);}
-    body:not(.bgcolor) {background: #101010;}
+    body:not(.bgcolor) {background-color: #101010;}
     #darkmodeoverlay {opacity: 1;}
 }
