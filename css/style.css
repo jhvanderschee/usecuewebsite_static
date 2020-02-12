@@ -304,3 +304,33 @@ body.darkmode:not(.bgcolor) #darkmodeoverlay {opacity: 1;}
     body:not(.bgcolor) {background-color: #101010;}
     #darkmodeoverlay {opacity: 1;}
 }
+
+#blob {
+    border-radius: 64% 36% 31% 69% / 43% 30% 70% 57%  ; 
+    background: rgba(255, 255, 255,0.10);
+    animation: morph 20s ease-in-out infinite alternate;
+    will-change: border-radius;
+    width: 100%;
+    height: 100%;
+  }
+  #blobbox {
+    width: 50vh;
+    position: absolute;
+    top: calc(55vh - 25vh); 
+    left: calc(55vw - 25vh);
+    height: 50vh;    
+    animation: spin 60s linear infinite;
+    transform-origin: center center;
+    will-change: transform;
+  }
+  
+@keyframes morph {
+0% {border-radius: 64% 36% 31% 69% / 46% 54% 46% 54%;}
+20% {border-radius: 47% 53% 40% 60% / 46% 54% 46% 54%;} 
+40% {border-radius: 37% 63% 40% 60% / 66% 74% 26% 34%;} 
+60% {border-radius: 67% 33% 74% 26% / 65% 63% 37% 35%;} 
+70% {border-radius: 64% 36% 74% 26% / 55% 75% 25% 45%;} 
+90% {border-radius: 64% 36% 31% 69% / 43% 60% 40% 57%;}
+100% {border-radius: 67% 33% 40% 60% / 33% 63% 37% 67%;}  
+}
+@keyframes spin {to {transform: rotate(1turn);}}
