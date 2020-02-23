@@ -184,10 +184,17 @@ external_new_window();
 
     });
 
-function toggleDarkmode() {
-    document.getElementById('top').classList.toggle('darkmode'); 
-    document.getElementById('darkmode').classList.toggle('selected'); 
-    if (localStorage.getItem('mode') != 'dark') localStorage.setItem('mode', 'dark'); 
-    else localStorage.setItem('mode', 'normal');
-    document.getElementById('darkmode').blur();
+function toggleLightmode() {
+    if(document.getElementById('top').classList.contains('lightmode')){
+        document.getElementById('top').classList.remove('lightmode');
+        document.getElementById('top').classList.add('darkmode');
+        localStorage.setItem('mode', 'light'); 
+    } else if (document.getElementById('top').classList.contains('darkmode')) {
+        document.getElementById('top').classList.remove('darkmode');
+        localStorage.setItem('mode', 'blue'); 
+    } else {
+        document.getElementById('top').classList.add('lightmode');
+        localStorage.setItem('mode', 'light'); 
+    }
+    document.getElementById('lightmode').blur();
 }

@@ -13,17 +13,21 @@
 }
 
 * {margin: 0; padding: 0; font-weight: normal;}
-body {background: #0000ee; background-attachment: fixed; color: white; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
+body {background: #0000ee; background-attachment: fixed; color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
+body.lightmode:not(.bgcolor) {color: #0000ee; background-color: #dde;}
+body.bgcolor {color: #fffd;}
 body, html {height: 100%;}
 img {max-width: 100%;}
 html {overflow-y: scroll; scroll-behavior: smooth;}
-a {color: white; text-decoration-style: solid; /*solid dotted, dashed, and wavy*/ text-decoration-color: rgba(255,255,255,0.5);}
-#splash a {text-decoration-color: rgba(255,255,255,1);}
+a {color: #dde; text-decoration-style: solid; /*solid dotted, dashed, and wavy*/ text-decoration-color: rgba(221,221,221,0.5);}
+.lightmode:not(.bgcolor) a {color: #0000ee; text-decoration-color: rgba(0,0,238,0.5);}
+.bgcolor a {color: #fffd;}
+#splash a {text-decoration-color: #dde; color: #dde;}
 body.black a {color: black;}
 #innerbody {position: relative;}
 #innerbody, #content .fullscreen, #splash {align-items: center; display: flex; justify-content: center; min-height: 100%;}
 #darkmodeoverlay {background: #fff2; position: fixed; top: 0; left: 0; z-index: 8; width: 100%; pointer-events: none; opacity: 0; height: 100vh;}
-#splash {background: #0000ee; position: fixed; top: 0; left: 0; z-index: 9; width: 100%; pointer-events: none;
+#splash {background: #0000ee; position: fixed; top: 0; left: 0; z-index: 9; width: 100%; pointer-events: none; color: #dde;
     animation-name: fadeout; 
     animation-delay: 1.3s; 
     animation-duration: 0.3s; 
@@ -61,22 +65,24 @@ h3 {padding-bottom: 0.6em; padding-top: 0.6em;}
 .large {font-size: 10vw;}
 
 
-#scrolltotop, #logo, #menu, #nextlink, #darkmode {position: fixed; top: 1.5vw; z-index: 2;}
-#scrolltotop, #logo, #menu, #darkmode {text-transform: lowercase;}
+#scrolltotop, #logo, #menu, #nextlink, #lightmode {position: fixed; top: 1.5vw; z-index: 2;}
+#scrolltotop, #logo, #menu, #lightmode {text-transform: lowercase;}
 #menu {right: 2vw; position: absolute;}
 #menu li {list-style: none; display: inline;}
 #menu li a {display: inline-block; margin: 0 0 0 1.5vw;}
-#logo {left: 2vw; top: 1.5vw; line-height: 1; display: block; border: 1px solid rgba(255, 255, 255,0.5);}
+#logo {left: 2vw; top: 1.5vw; line-height: 1; display: block; border: 1px solid rgba(255, 255, 255,0.5); opacity: 0.85;}
+.lightmode #logo {opacity: 1; border: 1px solid rgba(0, 0, 238,0.5);}
 #logo img {width: 3.35vw; vertical-align: top; display: block;}
 .bgcolor #logo {border: 1px solid rgba(255, 255, 255,0.4);}
-.bgcolor #logo img {opacity: 0;}
-.bgcolor #logo:before {content: ""; width: 100%; height: 100%; background: url(/img/icon-196x196-transparent.png) center center / contain no-repeat; position: absolute;}
+.bgcolor #logo img, .lightmode #logo img {opacity: 0;}
+.bgcolor #logo:before, .lightmode #logo:before {content: ""; width: 100%; height: 100%; background: url(/img/icon-196x196-transparent.png) center center / contain no-repeat; position: absolute;}
+.lightmode:not(.bgcolor) #logo:before {background: url(/img/icon-196x196-transparent-blue.png) center center / contain no-repeat;}
 #scrolltotop {top: auto; bottom: 1.7vw; right: 2vw; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; max-width: calc(35% - 30px);}
-#darkmode {top: auto; bottom: 1.7vw; right: 2vw; position: fixed; transition: opacity 0.3s ease-in-out;}
+#lightmode {top: auto; bottom: 1.7vw; right: 2vw; position: fixed; transition: opacity 0.3s ease-in-out;}
 #nextlink {top: auto; bottom: 1.7vw; left: 2vw; right: auto; position: absolute; max-width: calc(65% - 30px); text-transform: lowercase;}
 #nextlinktop, #prevlinktop {top:50vh; left: 2vw; position: fixed; transition: opacity 0.3s ease-in-out; opacity: 1; transform: rotate(-90deg) translateX(-50%); transform-origin: 0% 0%;}
 #nextlinktop {left: auto; right: 2vw; transform-origin: 100% 0%; transform: rotate(90deg) translateX(50%);}
-.scrolled #darkmode,
+.scrolled #lightmode,
 .scrolled #nextlinktop,
 .scrolled #prevlinktop {opacity: 0; pointer-events: none;}
 .scrolled #scrolltotop {opacity: 1; pointer-events: all;}
@@ -89,7 +95,8 @@ h3 {padding-bottom: 0.6em; padding-top: 0.6em;}
 body:not(.home) #content h1 {padding-bottom: .7em;}
 .home #content {width: 60%; text-align: center; padding-bottom: 12vw;}
 #content p, #content ol, #content ul, #content table {padding-bottom: 1.25em;}
-blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35em; padding-left: 2.1vw;}
+blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35em; padding-left: 2.1vw;}
+.lightmode:not(.bgcolor) {border-left: 2px solid #00e;}
 #content img {width: 100%; max-width: 100%; margin-bottom: 0.2em;}
 #content ul {margin-left: 1.4vw;}
 #content ol {margin-left: 2.4vw;}
@@ -104,7 +111,8 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
 .portfolio #content .svg {width: 50vw;}
 .portfolio #content .svg svg {width: 100%; height: 100%; position: relative; right: 2vw;}
 #scrolldown {position: absolute; left: 50%; margin-top: -15vh; margin-left: -0.2em;}
-#scrolldown:before, #scrolldown:after {content: ""; position: absolute; height: 1.6vw; width: 0.65vw; background: white;}
+#scrolldown:before, #scrolldown:after {content: ""; position: absolute; height: 1.6vw; width: 0.65vw; background: #fffd;}
+.lightmode:not(.bgcolor) #scrolldown:before, .lightmode:not(.bgcolor) #scrolldown:after {background: #0000ee;}
 #scrolldown:before {transform: skewX(45deg); transform-origin: 100% 100%;}
 #scrolldown:after {transform: skewX(-45deg); transform-origin: 0% 100%;}
 #postdate {font-style: italic; padding-bottom: 1em;}
@@ -145,17 +153,17 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
     #logo {top: 25px;}
     #logo img {width: 54px;}
     #logo, #nextlink {left: 30px;}
-    #scrolltotop, #darkmode {right: 30px;}
+    #scrolltotop, #lightmode {right: 30px;}
     #content {padding: 192px 30px 272px;}
-    #scrolltotop, #nextlink, #darkmode {bottom: 25px;}
+    #scrolltotop, #nextlink, #lightmode {bottom: 25px;}
     #content ul {margin-left: 22px;}
     #scrolldown:before, #scrolldown:after {height: 24px; width: 10px;}
 }
 
 .mobile {display: none;}
 @media screen and (max-width: 1150px) {
-    #logo, #scrolltotop, #darkmode {position: absolute;}
-    .scrolled:not(.post) #darkmode {left: 30px; right: auto; opacity: 1; pointer-events: all;}
+    #logo, #scrolltotop, #lightmode {position: absolute;}
+    .scrolled:not(.post) #lightmode {left: 30px; right: auto; opacity: 1; pointer-events: all;}
     .large {font-size: 80px;} /*  0.10*1600  */
     .portfolio h1 {margin: 0;}
     .post .fullscreen h1 {margin: 0; padding: 2.5em 0 2.7em!important;}
@@ -177,8 +185,8 @@ blockquote {margin-top: 0.5em; border-left: 2px solid white; margin-bottom: 1.35
 
     #content {padding-left: 15px; padding-right: 15px;}
     #logo, #nextlink {left: 15px;}
-    #scrolltotop, #darkmode {right: 15px;}
-    .scrolled:not(.post) #darkmode {left: 15px; right: auto;}
+    #scrolltotop, #lightmode {right: 15px;}
+    .scrolled:not(.post) #lightmode {left: 15px; right: auto;}
     #menu {right: 15px;}
 
     #scrolldown:before, #scrolldown:after {height: 12px; width: 5px;}
@@ -290,15 +298,18 @@ transform-origin: 50% 50%;
 
 
 
-.bgcolor #darkmode {pointer-events: none!important; opacity: 0!important;}
-#darkmode.selected::before {content: "feeling blue?";}
-#darkmode::before {content: "ouch, my eyes!";}
+.bgcolor #lightmode {pointer-events: none!important; opacity: 0!important;}
+.lightmode #lightmode {color: #0000ee;}
+#lightmode::before {content: "ouch, my eyes!";}
+.lightmode #lightmode::before {content: "want it darker?";}
+.darkmode #lightmode::before {content: "feeling blue?";}
+
 body.darkmode:not(.bgcolor) img {filter: grayscale(100%);}
 body.darkmode:not(.bgcolor) #logo img {filter: grayscale(100%);}
 body.darkmode:not(.bgcolor) {background-color: #101010;}
 body.darkmode:not(.bgcolor) #darkmodeoverlay {opacity: 1;}
 @media (prefers-color-scheme: dark) {
-    #darkmode {pointer-events: none; opacity: 0;}
+    #lightmode {pointer-events: none; opacity: 0;}
     body:not(.bgcolor) img {filter: grayscale(100%);}
     body:not(.bgcolor) #logo img {filter: grayscale(100%);}
     body:not(.bgcolor) {background-color: #101010;}

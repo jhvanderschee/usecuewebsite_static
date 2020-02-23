@@ -40,6 +40,7 @@
 
   <script>
     if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
+    if (localStorage.getItem('mode') == 'light') document.getElementById('top').classList.add('lightmode'); 
   </script>
 
   
@@ -165,9 +166,9 @@
             <a id="prevlinktop" href="/blog/jekyll-against-the-rest-of-the-world/">previous post</a>
         
         <a id="scrolltotop" href="#top">Scroll to top</a>
-        <a id="darkmode" href="#" onclick="toggleDarkmode()" title="toggle dark mode"></a>
+        <a id="lightmode" href="#" onclick="toggleLightmode()" title="toggle light mode"></a>
         <script>
-            if (localStorage.getItem('mode') == 'dark') document.getElementById('darkmode').classList.add('selected'); 
+            if (localStorage.getItem('mode') == 'light') document.getElementById('lightmode').classList.add('selected'); 
         </script>
     </div>
     
