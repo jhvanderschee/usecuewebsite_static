@@ -110,11 +110,9 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
 .portfolio #content {padding-top: 0;}
 .portfolio #content .svg {width: 50vw;}
 .portfolio #content .svg svg {width: 100%; height: 100%; position: relative; right: 2vw;}
-#scrolldown {position: absolute; left: 50%; margin-top: -15vh; margin-left: -0.2em;}
-#scrolldown:before, #scrolldown:after {content: ""; position: absolute; height: 1.6vw; width: 0.65vw; background: #fffd;}
-.lightmode:not(.bgcolor) #scrolldown:before, .lightmode:not(.bgcolor) #scrolldown:after {background: #0000ee;}
-#scrolldown:before {transform: skewX(45deg); transform-origin: 100% 100%;}
-#scrolldown:after {transform: skewX(-45deg); transform-origin: 0% 100%;}
+#scrolldown {position: absolute; left: 50%; margin-top: -15vh;}
+#scrolldown:before {content: "»"; transform: rotate(90deg); position: absolute; color: #fffd; font-size: 10rem; margin-left: -1.25rem; margin-top: -5rem;}
+.lightmode:not(.bgcolor) #scrolldown:before {color: #0000ee;}
 #postdate {font-style: italic; padding-bottom: 1em;}
 .btn {display: inline-block; padding: 0.35em 1em 0.45em; text-decoration: none; border: 1px solid rgba(255, 255, 255,0.4);}
 
