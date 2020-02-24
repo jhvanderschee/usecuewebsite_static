@@ -96,7 +96,7 @@ body:not(.home) #content h1 {padding-bottom: .7em;}
 .home #content {width: 60%; text-align: center; padding-bottom: 12vw;}
 #content p, #content ol, #content ul, #content table {padding-bottom: 1.25em;}
 blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35em; padding-left: 2.1vw;}
-.lightmode:not(.bgcolor) {border-left: 2px solid #00e;}
+.lightmode:not(.bgcolor) blockquote {border-left: 2px solid #00e;}
 #content img {width: 100%; max-width: 100%; margin-bottom: 0.2em;}
 #content ul {margin-left: 1.4vw;}
 #content ol {margin-left: 2.4vw;}
