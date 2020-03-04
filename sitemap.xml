@@ -47,6 +47,12 @@
   
   
       <url>
+        <loc>https://www.usecue.com/blog/help-my-server-is-down/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
         <loc>https://www.usecue.com/blog/no-code-platforms/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
