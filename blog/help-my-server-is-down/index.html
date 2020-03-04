@@ -73,7 +73,7 @@
 
 <h2 id="minimizing-down-time">Minimizing down-time</h2>
 
-<p>Having a solid backup strategy is not enough. I also want to prevent as much down-time as possible. Our premium hosting clients have DNS fail-over, which means they use two machines which are exact duplicates. One in an Amsterdam datacenter and one in a Frankfurt datacenter. If one server is unavailable the DNS automatically switches to the other server. Most of our regular clients, however, get served through a CDN (Cloudflare). If a server in this CDN goes down, the others take over. Even some (short) down-time of the origin server can be hidden or mitigated by a CDN. Our regular clients have not experienced any significant down-time in the last four years. I know, because I have monitoring on all servers, which buys me a little extra time to find a solution when things go south.</p>
+<p>Having a solid backup strategy is not enough. I also want to prevent as much down-time as possible. My premium hosting clients have DNS fail-over, which means they use two machines which are exact duplicates. One in an Amsterdam datacenter and one in a Frankfurt datacenter. If one server is unavailable the DNS automatically switches to the other server. Most of my regular clients, however, get served through a CDN (Cloudflare). If a server in this CDN goes down, the others take over. Even some (short) down-time of the origin server can be hidden or mitigated by a CDN. My clients have not experienced any significant down-time in the last four years. I know, because I have monitoring on all servers, which buys me a little extra time to find a solution when things go south.</p>
 
 <h2 id="when-it-hits-the-fan">When it hits the fan</h2>
 
