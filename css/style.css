@@ -315,7 +315,7 @@ body.darkmode:not(.bgcolor) #darkmodeoverlay {opacity: 1;}
 #blob {
     border-radius: 64% 36% 31% 69% / 43% 30% 70% 57%  ; 
     background: rgba(255, 255, 255,0.10);
-    animation: morph 20s ease-in-out infinite alternate;
+    animation: morgph 20s ease-in-out infinite alternate;
     will-change: border-radius;
     width: 100%;
     height: 100%;
@@ -326,7 +326,7 @@ body.darkmode:not(.bgcolor) #darkmodeoverlay {opacity: 1;}
     top: calc(55vh - 25vh); 
     left: calc(55vw - 25vh);
     height: 50vh;    
-    animation: spin 60s linear infinite;
+    animation: spgn 60s linear infinite;
     transform-origin: center center;
     will-change: transform;
   }
