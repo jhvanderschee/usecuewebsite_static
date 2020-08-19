@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /> 
+
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--    ... ...   ....    ....    ....  ... ...    ....                                       -->
+<!--     ||  ||  ||. '  .|...|| .|   ''  ||  ||  .|...||                                      -->
+<!--     ||  ||  . '|.. ||      ||       ||  ||  ||                                           -->
+<!--     '|..'|. |'..|'  '|...'  '|...'  '|..'|.  '|...'    w e b    d e v e l o p m e n t    -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--    .-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    |                  - = Google Lighthouse Score = -                      |             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    !         Performance:    100            Best Practices:  100           !             -->
+<!--    :         Accessibility:  100            SEO:             100           :             -->
+<!--    :                                                                       :             -->
+<!--    .                                                                       .             -->
+<!--    .                  First Contentful Paint:   1.0 s                      .             -->
+<!--    :                  First Meaningful Paint:   1.0 s                      :             -->
+<!--    :                  Speed Index:              1.8 s                      :             -->
+<!--    !                  First CPU Idle:           1.0 s                      !             -->
+<!--    |                  Time to Interactive:      1.0 s                      |             -->
+<!--    |                  Estimated Input Latency:  10 ms                      |             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    `-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'             -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                       Last audit: Apr 2, 2020 7:42 PM                                    -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+
+<title>Google will shame slow websites | Usecue web development</title>
+
+<meta name="description" content="At Chrome Dev Summit Google announced that it “is looking at ways to reward developers for going the extra mile when it comes to website performance”. They s...">
+
+<link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
+<link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
+<link rel="apple-touch-icon" href="/img/icon-196x196.png" />
+
+<meta id="viewport" name="viewport" content="width=device-width">
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content="Google will shame slow websites"/>
+
+<meta property="og:url" content="https://www.usecue.com/2019/11/12/google-will-shame-slow-websites.html"/>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Usecue web development"/>
+<meta property="og:description" content="At Chrome Dev Summit Google announced that it “is looking at ways to reward developers for going the extra mile when it comes to website performance”. They s..."/>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@jhvanderschee">
+<meta name="twitter:title" content="Google will shame slow websites" />
+
+<meta name="twitter:url" content="https://www.usecue.com/2019/11/12/google-will-shame-slow-websites.html" />
+<meta name="twitter:description" content="At Chrome Dev Summit Google announced that it “is looking at ways to reward developers for going the extra mile when it comes to website performance”. They s..." />
+
+<link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
+
+<link rel="canonical" href="https://www.usecue.com/2019/11/12/google-will-shame-slow-websites.html">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
+
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+
+<body id="top" class="post en" style="">
+
+  <script>
+    if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
+    if (localStorage.getItem('mode') == 'light') document.getElementById('top').classList.add('lightmode'); 
+  </script>
+
+  
+  
+    <a id="logo" href="/" style=""><img src="/img/icon-196x196.png" alt="Usecue logo" /></a>
+
+    <ul id="menu">
+        
+          <li><a href="/about/">About</a></li>
+          <li><a href="/portfolio/en/de-babywegwijzer.html">Portfolio</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        
+    </ul>
+    <div id="innerbody">
+        <div id="content">
+
+
+<h1>Google will shame slow websites</h1>
+
+<p>At Chrome Dev Summit Google <a href="https://blog.chromium.org/2019/11/chrome-dev-summit-2019-elevating-web.html">announced</a> that it “is looking at ways to reward developers for going the extra mile when it comes to website performance”.</p>
+
+<p>They shared some early explorations which surface speed signals in the Chrome’s UI, like a <a href="/uploads/googleslowloading.png">preloading screen</a> warning you for the slow experience or a colored loading bar. Google will identify sites that typically load fast or slow for users with clear badging, according to <a href="https://blog.chromium.org/2019/11/moving-towards-faster-web.html">the official Chrome blog</a>.</p>
+
+<h2 id="the-ssl-approach">The SSL approach</h2>
+
+<p>It sounds nice, but do not be fooled by the words ‘reward’ and ‘badging’. When I heard this I immediately recalled the way Google approached SSL. First they awarded all secure websites with a green badge. Later they made the green badge gray and actively shamed non-SSL websites by displaying ‘Not secure’ in front of their URL. Additionally, they promoted SSL websites in their search results and demoted non-SSL websites. I expect them to go for an identical approach here as their SSL approach was highly effective. Note that Google has already been using page speed as a ranking factor <a href="https://webmasters.googleblog.com/2010/04/using-site-speed-in-web-search-ranking.html">since 2010</a>.</p>
+
+<h2 id="speed-is-very-important">Speed is very important</h2>
+
+<p>In a blogpost the Chromium team says that “speed has been one of Chrome’s core principles since the beginning”, and that they “are constantly working to give users <a href="/blog/websites-that-load-instantly/">an experience that is instant</a> as they browse the web”. Google was very succesful when it introduced its new faster browser in 2008. It changed the whole browser market by focussing on just ‘speed’. Everybody wanted a faster internet and switched to Chrome without any hesitation. The people at Google seem to remember that very well. They recently added a non-standard performance solution to Chrome (<a href="https://web.dev/native-lazy-loading/">lazy loading</a>). I can only see that as a trick to keep their speed advantage over other browsers. Nevertheless, it is also a confirmation that speed is truly very important to Google.</p>
+
+<h2 id="is-google-fixing-the-internet">Is Google fixing the internet?</h2>
+
+<p>I would say that Google is (at least partly) responsible for the decay in website speed, as Google has made advertisement networks and third-party requests the norm. They created services like Google Fonts, Google Analytics, Google Tag Manager and Google Ads, which all require third-party requests. Those third-party requests are not only the most important reason the internet is so terribly slow, but also the reason why your privacy is so severely violated. Let us face the truth: Not Ralph, but Google broke the internet.</p>
+
+<p>However, by promoting SSL and with their focus on website performance, Google seems to be on the right track. A safer and faster internet is a good thing. In a faster internet there is no room for slow, privacy-invading, third-party scripts. A faster internet is <a href="https://www.usecue.com/blog/a-green-websiite/">greener</a>, cheaper and more accessible. The big question remains: What is their motive? Is Google really trying to fix the internet and make this world a better place? Or is this a way of promoting their super fast, alternative internet, called Accelerated Mobile Pages (AMP)? I truly hope the latter is not true and I am just being cynical.</p>
+
+<h2 id="invest-in-speed">Invest in speed</h2>
+
+<p>Either way, we have no choice but to invest in speed. Google owns most searches and therefore makes the rules. If we want our websites to be found, we will have to invest in website performance and build faster websites. Fortunately, I know <a href="/blog/how-to-get-a-100-google-lighthouse-score/">how to get a 100% Google Lighthouse score</a>, and I would love to help you!</p>
+
+
+
+
+
+
+
+
+        </div>
+        
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+            <a id="nextlink" href="/2019/10/24/hosting-is-overal-hetzelfde.html">next<span class="desktop">: Hosting is overal hetzelfde</span><span class="mobile"> blog post</span></a>
+            <a id="nextlinktop" href="/2019/10/24/hosting-is-overal-hetzelfde.html">next post</a>
+            <a id="prevlinktop" href="/2019/11/13/building-websites-in-rem.html">previous post</a>
+        
+        <a id="scrolltotop" href="#top">Scroll to top</a>
+        <a id="lightmode" href="#" onclick="toggleLightmode()" title="change color"></a>
+    </div>
+    
+    <div id="darkmodeoverlay"></div>
+
+    <div id="lightbox"></div>
+    <script src="/js/javascript.js"></script>
+
+</body>
+
+</html>

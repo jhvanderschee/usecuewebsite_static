@@ -192,12 +192,6 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
 
 
 
-
-
-
-
-
-
 #lightbox {width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0,0,0,1); z-index: 9999999; line-height: 0; cursor: pointer; display: none;}
 #lightbox .img {
     position: relative; 
@@ -267,23 +261,15 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
 -moz-transform-origin: 50% 50%;
 -o-transform-origin: 50% 50%;
 transform-origin: 50% 50%;
-/* Safari */
 -webkit-transform: rotate(-45deg);
-/* Firefox */
 -moz-transform: rotate(-45deg);
-/* IE */
 -ms-transform: rotate(-45deg);
-/* Opera */
 -o-transform: rotate(-45deg);
 }
 #lightbox #close:after {
-/* Safari */
 -webkit-transform: rotate(45deg);
-/* Firefox */
 -moz-transform: rotate(45deg);
-/* IE */
 -ms-transform: rotate(45deg);
-/* Opera */
 -o-transform: rotate(45deg);
 }
 #lightbox, #lightbox * {
@@ -293,13 +279,17 @@ transform-origin: 50% 50%;
     user-select: none;
 }
 
-
-
 .bgcolor #lightmode {pointer-events: none!important; opacity: 0!important;}
 .lightmode #lightmode {color: #0000ee;}
+
 #lightmode::before {content: "ouch, my eyes!";}
 .lightmode #lightmode::before {content: "want it darker?";}
 .darkmode #lightmode::before {content: "feeling blue?";}
+
+body.nl #lightmode::before {content: "auw, mijn ogen!";}
+body.nl.lightmode #lightmode::before {content: "donker graag!";}
+body.nl.darkmode #lightmode::before {content: "helemaal blauw?";}
+
 
 body.darkmode:not(.bgcolor) img {filter: grayscale(100%);}
 body.darkmode:not(.bgcolor) #logo img {filter: grayscale(100%);}
@@ -312,33 +302,3 @@ body.darkmode:not(.bgcolor) #darkmodeoverlay {opacity: 1;}
     body:not(.bgcolor) {background-color: #101010;}
     #darkmodeoverlay {opacity: 1;}
 }
-
-#blob {
-    border-radius: 64% 36% 31% 69% / 43% 30% 70% 57%  ; 
-    background: rgba(255, 255, 255,0.10);
-    animation: morgph 20s ease-in-out infinite alternate;
-    will-change: border-radius;
-    width: 100%;
-    height: 100%;
-  }
-  #blobbox {
-    width: 50vh;
-    position: absolute;
-    top: calc(55vh - 25vh); 
-    left: calc(55vw - 25vh);
-    height: 50vh;    
-    animation: spgn 60s linear infinite;
-    transform-origin: center center;
-    will-change: transform;
-  }
-  
-@keyframes morph {
-0% {border-radius: 64% 36% 31% 69% / 46% 54% 46% 54%;}
-20% {border-radius: 47% 53% 40% 60% / 46% 54% 46% 54%;} 
-40% {border-radius: 37% 63% 40% 60% / 66% 74% 26% 34%;} 
-60% {border-radius: 67% 33% 74% 26% / 65% 63% 37% 35%;} 
-70% {border-radius: 64% 36% 74% 26% / 55% 75% 25% 45%;} 
-90% {border-radius: 64% 36% 31% 69% / 43% 60% 40% 57%;}
-100% {border-radius: 67% 33% 40% 60% / 33% 63% 37% 67%;}  
-}
-@keyframes spin {to {transform: rotate(1turn);}}

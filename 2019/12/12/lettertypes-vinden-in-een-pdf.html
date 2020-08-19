@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" /> 
+
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--    ... ...   ....    ....    ....  ... ...    ....                                       -->
+<!--     ||  ||  ||. '  .|...|| .|   ''  ||  ||  .|...||                                      -->
+<!--     ||  ||  . '|.. ||      ||       ||  ||  ||                                           -->
+<!--     '|..'|. |'..|'  '|...'  '|...'  '|..'|.  '|...'    w e b    d e v e l o p m e n t    -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--    .-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    |                  - = Google Lighthouse Score = -                      |             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    !         Performance:    100            Best Practices:  100           !             -->
+<!--    :         Accessibility:  100            SEO:             100           :             -->
+<!--    :                                                                       :             -->
+<!--    .                                                                       .             -->
+<!--    .                  First Contentful Paint:   1.0 s                      .             -->
+<!--    :                  First Meaningful Paint:   1.0 s                      :             -->
+<!--    :                  Speed Index:              1.8 s                      :             -->
+<!--    !                  First CPU Idle:           1.0 s                      !             -->
+<!--    |                  Time to Interactive:      1.0 s                      |             -->
+<!--    |                  Estimated Input Latency:  10 ms                      |             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    `-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'             -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                       Last audit: Apr 2, 2020 7:42 PM                                    -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+
+<title>Lettertypes vinden in een PDF | Usecue web development</title>
+
+<meta name="description" content="Wanneer een ontwerper artwork moet aanleveren, zeg ik altijd: ‘Doe maar een high resolution PDF, dus alsof je voor print aanlevert, maar dan in safe RGB (sRG...">
+
+<link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
+<link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
+<link rel="apple-touch-icon" href="/img/icon-196x196.png" />
+
+<meta id="viewport" name="viewport" content="width=device-width">
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content="Lettertypes vinden in een PDF"/>
+
+<meta property="og:url" content="https://www.usecue.com/2019/12/12/lettertypes-vinden-in-een-pdf.html"/>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Usecue web development"/>
+<meta property="og:description" content="Wanneer een ontwerper artwork moet aanleveren, zeg ik altijd: ‘Doe maar een high resolution PDF, dus alsof je voor print aanlevert, maar dan in safe RGB (sRG..."/>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@jhvanderschee">
+<meta name="twitter:title" content="Lettertypes vinden in een PDF" />
+
+<meta name="twitter:url" content="https://www.usecue.com/2019/12/12/lettertypes-vinden-in-een-pdf.html" />
+<meta name="twitter:description" content="Wanneer een ontwerper artwork moet aanleveren, zeg ik altijd: ‘Doe maar een high resolution PDF, dus alsof je voor print aanlevert, maar dan in safe RGB (sRG..." />
+
+<link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
+
+<link rel="canonical" href="https://www.usecue.com/2019/12/12/lettertypes-vinden-in-een-pdf.html">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
+
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+
+<body id="top" class="post nl" style="">
+
+  <script>
+    if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
+    if (localStorage.getItem('mode') == 'light') document.getElementById('top').classList.add('lightmode'); 
+  </script>
+
+  
+  
+    <a id="logo" href="/nl/" style=""><img src="/img/icon-196x196.png" alt="Usecue logo" /></a>
+
+    <ul id="menu">
+        
+          <li><a href="/nl/over/">Over</a></li>
+          <li><a href="/portfolio/en/de-babywegwijzer.html">Portfolio</a></li>
+          <li><a href="/nl/blog/">Blog</a></li>
+          <li><a href="/nl/contact/">Contact</a></li>
+        
+    </ul>
+    <div id="innerbody">
+        <div id="content">
+
+
+<h1>Lettertypes vinden in een PDF</h1>
+
+<p>Wanneer een ontwerper artwork moet aanleveren, zeg ik altijd: ‘Doe maar een high resolution PDF, dus alsof je voor print aanlevert, maar dan in safe RGB (sRGB).’</p>
+
+<p>Ik zal uitleggen waarom ik dat vraag en wat mijn bijbehorende work-flow is. Bij safe RGB is de kleurconversie van CMYK naar RGB al gedaan en kunnen er ook geen kleurprofielen meer actief zijn. Dit maakt dat de kleur uit de PDF exact dezelfde is als de hexwaarde voor het web en daar dus geen discussie meer over kan ontstaan. Daarnaast vraag ik om hoge resolutie, zodat ik hoge resolutie foto’s uit de pdf kan halen (rechtsklikken en opslaan). Het nadeel van deze hoge resolutie PDF is dat deze wat traag openen op mijn Linux machine, daarom maak ik er via GIMP (of screenshot) ook nog een afbeelding van. Tenslotte open ik de PDF in een vectorprogramma om erachter te komen welke lettertypes gebruikt worden (en om eventuele vectorafbeeldingen op te slaan).</p>
+
+<p>Bij een recent project werkte dat laatste echter niet. Adobe Illustrator vond dat de file corrupt was en Inkscape wilde hem ook niet goed openen, dus wist ik niet wat het gebruikte lettertype was. Vreemd genoeg opende de file prima in een PDF reader en in GIMP, dus waar het probleem precies zat was niet duidelijk. Gelukkig vond ik <a href="http://www.documentsnap.com/find-fonts-pdf/">online</a> een goede tip. Type in de terminal:</p>
+
+<blockquote>
+  <p>strings /path/to/your/filename.pdf | grep FontName</p>
+</blockquote>
+
+<p>Dat gaf me precies de informatie over de lettertypes die ik zocht. Een superfijne oplossing, waardoor ik voor de analyse van de lettertypes niet meer afhankelijk ben van de ondoorgrondbare grillen van eerdergenoemde vectorprogramma’s.</p>
+
+
+
+
+
+
+
+
+        </div>
+        
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+            <a id="nextlink" href="/2019/11/14/how-to-get-a-100-google-lighthouse-score.html">volgende<span class="desktop">: How to get a 100% Google Lighthouse score</span><span class="mobile"> blog post</span></a>
+            <a id="nextlinktop" href="/2019/11/14/how-to-get-a-100-google-lighthouse-score.html">volgende post</a>
+            <a id="prevlinktop" href="/2019/12/19/no-code-platforms.html">vorige post</a>
+        
+        <a id="scrolltotop" href="#top">Scroll naar boven</a>
+        <a id="lightmode" href="#" onclick="toggleLightmode()" title="verander kleur"></a>
+    </div>
+    
+    <div id="darkmodeoverlay"></div>
+
+    <div id="lightbox"></div>
+    <script src="/js/javascript.js"></script>
+
+</body>
+
+</html>

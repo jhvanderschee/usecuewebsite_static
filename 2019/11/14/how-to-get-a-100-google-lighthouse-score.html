@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /> 
+
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--    ... ...   ....    ....    ....  ... ...    ....                                       -->
+<!--     ||  ||  ||. '  .|...|| .|   ''  ||  ||  .|...||                                      -->
+<!--     ||  ||  . '|.. ||      ||       ||  ||  ||                                           -->
+<!--     '|..'|. |'..|'  '|...'  '|...'  '|..'|.  '|...'    w e b    d e v e l o p m e n t    -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--    .-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    |                  - = Google Lighthouse Score = -                      |             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    !         Performance:    100            Best Practices:  100           !             -->
+<!--    :         Accessibility:  100            SEO:             100           :             -->
+<!--    :                                                                       :             -->
+<!--    .                                                                       .             -->
+<!--    .                  First Contentful Paint:   1.0 s                      .             -->
+<!--    :                  First Meaningful Paint:   1.0 s                      :             -->
+<!--    :                  Speed Index:              1.8 s                      :             -->
+<!--    !                  First CPU Idle:           1.0 s                      !             -->
+<!--    |                  Time to Interactive:      1.0 s                      |             -->
+<!--    |                  Estimated Input Latency:  10 ms                      |             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    `-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'             -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                       Last audit: Apr 2, 2020 7:42 PM                                    -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+
+<title>How to get a 100% Google Lighthouse score | Usecue web development</title>
+
+<meta name="description" content="Google will soon shame slow websites. A good reason to take a good look at your Google Lighthouse score right now. You might feel that it is nearly impossibl...">
+
+<link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
+<link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
+<link rel="apple-touch-icon" href="/img/icon-196x196.png" />
+
+<meta id="viewport" name="viewport" content="width=device-width">
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content="How to get a 100% Google Lighthouse score"/>
+
+<meta property="og:url" content="https://www.usecue.com/2019/11/14/how-to-get-a-100-google-lighthouse-score.html"/>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Usecue web development"/>
+<meta property="og:description" content="Google will soon shame slow websites. A good reason to take a good look at your Google Lighthouse score right now. You might feel that it is nearly impossibl..."/>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@jhvanderschee">
+<meta name="twitter:title" content="How to get a 100% Google Lighthouse score" />
+
+<meta name="twitter:url" content="https://www.usecue.com/2019/11/14/how-to-get-a-100-google-lighthouse-score.html" />
+<meta name="twitter:description" content="Google will soon shame slow websites. A good reason to take a good look at your Google Lighthouse score right now. You might feel that it is nearly impossibl..." />
+
+<link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
+
+<link rel="canonical" href="https://www.usecue.com/2019/11/14/how-to-get-a-100-google-lighthouse-score.html">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
+
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+
+<body id="top" class="post en" style="">
+
+  <script>
+    if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
+    if (localStorage.getItem('mode') == 'light') document.getElementById('top').classList.add('lightmode'); 
+  </script>
+
+  
+  
+    <a id="logo" href="/" style=""><img src="/img/icon-196x196.png" alt="Usecue logo" /></a>
+
+    <ul id="menu">
+        
+          <li><a href="/about/">About</a></li>
+          <li><a href="/portfolio/en/de-babywegwijzer.html">Portfolio</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        
+    </ul>
+    <div id="innerbody">
+        <div id="content">
+
+
+<h1>How to get a 100% Google Lighthouse score</h1>
+
+<p>Google will soon <a href="/blog/google-will-shame-slow-websites">shame slow websites</a>. A good reason to take a good look at your Google Lighthouse score <a href="https://web.dev/">right now</a>.</p>
+
+<p>You might feel that it is nearly impossible to get to a perfect 100% score. You minified your Javascript, properly scaled your images and even combined some requests, but that did not help nearly enough. The problem is: you might be looking at it from the wrong angle.</p>
+
+<p>I build <a href="/uploads/100procentscore.jpg">100% scoring websites</a> on a daily basis, so obviously it is very well possible to get a perfect score on all your websites with little effort. I will try to explain what we want to achieve and how we can achieve that.</p>
+
+<p>There are some basic facts that a lot of people get wrong when it comes to speed and performance. Minifying <a href="https://css-tricks.com/the-difference-between-minification-and-gzipping/">does not beat</a> gzipping, image scaling <a href="http://users.wfu.edu/matthews/misc/graphics/ResVsComp/JpgResVsComp.html">does not beat</a> JPG compression and combining requests is actually <a href="https://designsystem.digital.gov/performance/http2/">counter-effective</a> over HTTP/2. These are probably the reasons why your earlier efforts had so little effect. Another important thing to know is that Google Lighthouse simulates a slow connection. This emphasizes the importance of a low ‘page weight’ or ‘total size’ over fast infrastructure, as a small page is delivered significantly faster over such a narrow connection than a large page.</p>
+
+<p>Before we look at the actual steps we need to take, let us look at some websites that score (nearly) 100 points on all four categories. It will give you an idea of what the end-result could or should look like. For each site I have listed the weights: the Javascript, CSS and the total page weight. You can also see the number of requests, as well as the time it takes the server to respond (TTFB) and the site to load. Note that these results are results from my computer. Finally, I listed the host, the company that built the website and the <a href="/blog/google-lighthouse-score">Google Lighthouse score</a>. Note that the comma separated numbers stand for Performance, Accessibility, Best Practises and SEO.</p>
+
+<h3 id="debabywegwijzernlhttpswwwdebabywegwijzernl"><a href="https://www.debabywegwijzer.nl/">debabywegwijzer.nl</a></h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Javascript:</td>
+      <td>0kb</td>
+    </tr>
+    <tr>
+      <td>CSS:</td>
+      <td>9kb</td>
+    </tr>
+    <tr>
+      <td>Total size:</td>
+      <td>120kb</td>
+    </tr>
+    <tr>
+      <td>Requests:</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>TTFB:</td>
+      <td>22ms</td>
+    </tr>
+    <tr>
+      <td>DOM loaded:    </td>
+      <td>274ms</td>
+    </tr>
+    <tr>
+      <td>Loading time:</td>
+      <td>596ms</td>
+    </tr>
+    <tr>
+      <td>Hosted on:</td>
+      <td>CloudFlare (CDN)</td>
+    </tr>
+    <tr>
+      <td>Built by:</td>
+      <td>Usecue BV</td>
+    </tr>
+    <tr>
+      <td>Score:</td>
+      <td>99,100,100,100</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="studioinhoutnlhttpswwwstudioinhoutnl"><a href="https://www.studioinhout.nl/">studioinhout.nl</a></h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Javascript:</td>
+      <td>1kb</td>
+    </tr>
+    <tr>
+      <td>CSS:</td>
+      <td>14kb</td>
+    </tr>
+    <tr>
+      <td>Total size:</td>
+      <td>115kb</td>
+    </tr>
+    <tr>
+      <td>Requests:</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>TTFB:</td>
+      <td>16ms</td>
+    </tr>
+    <tr>
+      <td>DOM loaded:    </td>
+      <td>307ms</td>
+    </tr>
+    <tr>
+      <td>Loading time:</td>
+      <td>564ms</td>
+    </tr>
+    <tr>
+      <td>Hosted at:</td>
+      <td>CloudFlare (CDN)</td>
+    </tr>
+    <tr>
+      <td>Built by:</td>
+      <td>Usecue BV</td>
+    </tr>
+    <tr>
+      <td>Score:</td>
+      <td>100,100,100,100</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="usecuecomhttpswwwusecuecom"><a href="https://www.usecue.com/">usecue.com</a></h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Javascript:</td>
+      <td>10kb</td>
+    </tr>
+    <tr>
+      <td>CSS:</td>
+      <td>12kb</td>
+    </tr>
+    <tr>
+      <td>Total size:</td>
+      <td>44kb</td>
+    </tr>
+    <tr>
+      <td>Requests:</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>TTFB:</td>
+      <td>15ms</td>
+    </tr>
+    <tr>
+      <td>DOM loaded:    </td>
+      <td>231ms</td>
+    </tr>
+    <tr>
+      <td>Loading time:</td>
+      <td>363ms</td>
+    </tr>
+    <tr>
+      <td>Hosted at:</td>
+      <td>Leaseweb (VM)</td>
+    </tr>
+    <tr>
+      <td>Built by:</td>
+      <td>Usecue BV</td>
+    </tr>
+    <tr>
+      <td>Score:</td>
+      <td>100,100,100,100</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="jekyllcodexorghttpsjekyllcodexorg"><a href="https://jekyllcodex.org/">jekyllcodex.org</a></h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Javascript:</td>
+      <td>13kb</td>
+    </tr>
+    <tr>
+      <td>CSS:</td>
+      <td>13kb</td>
+    </tr>
+    <tr>
+      <td>Total size:</td>
+      <td>130kb</td>
+    </tr>
+    <tr>
+      <td>Requests:</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>TTFB:</td>
+      <td>172ms</td>
+    </tr>
+    <tr>
+      <td>DOM loaded:    </td>
+      <td>386ms</td>
+    </tr>
+    <tr>
+      <td>Loading time:</td>
+      <td>756ms</td>
+    </tr>
+    <tr>
+      <td>Hosted on:</td>
+      <td>CloudFlare (CDN)</td>
+    </tr>
+    <tr>
+      <td>Built by:</td>
+      <td>Usecue BV</td>
+    </tr>
+    <tr>
+      <td>Score:</td>
+      <td>99,92,100,100</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="lamanzanillaeshttpslamanzanillaes"><a href="https://lamanzanilla.es/">lamanzanilla.es</a></h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Javascript:</td>
+      <td>1kb</td>
+    </tr>
+    <tr>
+      <td>CSS:</td>
+      <td>7kb</td>
+    </tr>
+    <tr>
+      <td>Total size:</td>
+      <td>974kb</td>
+    </tr>
+    <tr>
+      <td>Requests:</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>TTFB:</td>
+      <td>166ms</td>
+    </tr>
+    <tr>
+      <td>DOM loaded:    </td>
+      <td>601ms</td>
+    </tr>
+    <tr>
+      <td>Loading time:</td>
+      <td>1s</td>
+    </tr>
+    <tr>
+      <td>Hosted at:</td>
+      <td>CloudFlare (CDN)</td>
+    </tr>
+    <tr>
+      <td>Built by:</td>
+      <td>Usecue BV</td>
+    </tr>
+    <tr>
+      <td>Score:</td>
+      <td>100,93,100,100</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="deleteagencycomhttpswwwdeleteagencycom"><a href="https://www.deleteagency.com/">deleteagency.com</a></h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Javascript:</td>
+      <td>140kb</td>
+    </tr>
+    <tr>
+      <td>CSS:</td>
+      <td>80kb</td>
+    </tr>
+    <tr>
+      <td>Total size:</td>
+      <td>561kb</td>
+    </tr>
+    <tr>
+      <td>Requests:</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>TTFB:</td>
+      <td>52ms</td>
+    </tr>
+    <tr>
+      <td>DOM loaded:    </td>
+      <td>528ms</td>
+    </tr>
+    <tr>
+      <td>Loading time:</td>
+      <td>1.05s</td>
+    </tr>
+    <tr>
+      <td>Hosted at:</td>
+      <td>unknown</td>
+    </tr>
+    <tr>
+      <td>Built by:</td>
+      <td>Delete Agency</td>
+    </tr>
+    <tr>
+      <td>Score:</td>
+      <td>98,100,100,100</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="the-easy-steps">The easy steps</h2>
+
+<p>First of all you need a low Time To First Byte. All websites in the list above have a TTFB of less than 200ms. This means that the server needs to respond fast. I use CloudFlare for most of my websites, but using a well configured VM works too (as you can see). I am not sure what hosting Delete Agency uses, but they got a nice low TTFB. Getting a low TTFB is mainly a matter of choosing the right hosting. You can test this metric with a tool like Pingdom or GTMetrix. Note that proper (server-side) caching helps a lot too. I use a Static Site Generator to generate my pages, which is essentially the same as using full server-side caching.</p>
+
+<p>Secondly, you need to optimize your images. Use SVG whenever possible and heavily compressed JPG for the rest. If you have to use PNG, make sure you use TinyPNG to compress them and use loading=”lazy” on all image tags. Note that using WebP is not required at all to get a good score. The total page size to aim for is under a 1000kb.</p>
+
+<p>Finally, you need to address all the small issues Google Lighthouse throws at you. These could be accessibility things, but also SEO or performance issues. Note that Performance issues correlate to the speed at which the site loads, not to the checklist, so fixing these issues is optional. A Performance score of 100 represents the 98th percentile.</p>
+
+<h2 id="the-blocking-code-issue">The blocking code issue</h2>
+
+<p>When you have done all the above, you are probably left with some hard to solve ‘blocking code’ issues. Google will suggest to move the Javascript and CSS to the footer, but that does not really solve it. You will get an ugly Flash Of Unstyled Text (FOUT) and your website will only be usable after your code has fully loaded. Here is where I initially got stuck. I found two solutions to fix this blocking issue.</p>
+
+<p>The first approach is perfectly outlined by Delete Agency (the last website in the list). They use a lot of Javascript and CSS, which is typically blocking. Therefore, they had to split and/or inline parts of this code. They <a href="https://www.deleteagency.com/blog/how-to-get-a-100-percents-lighthouse-performance-score">documented</a> this process in great detail. The end-result (and the process) is impressive, but it is also an awful lot of work.</p>
+
+<p>Fortunately, there is a much simpler approach. You should simply use less Javascript and CSS and when I say less… I mean <em>significantly</em> less. If you compare the websites built by Usecue BV (that is me) to the website built by Delete Agency you see that I used 10 times less Javascript and CSS. This obviously completely removes the need for inlining and splitting code. When you look at all websites worldwide, the difference between my perfectly scoring websites and the <a href="https://www.igvita.com/2016/01/12/the-average-page-is-a-myth/">average website</a> is actually more like 20 times less, as the average website contains <a href="https://httparchive.org/reports/state-of-javascript#bytesJs">400kb Javascript</a> and <a href="https://httparchive.org/reports/page-weight#bytesCss">60kb CSS</a>. To get these numbers down so drastically I only had to do one thing: stop using (Javascript and CSS) frameworks. Of course this required a learning curve, but I got the hang of it really quickly.</p>
+
+<p>It is a misconception that your total page size should be very very small. You can perfectly load a LOT of large images (as long as you stay under a 1000kb). A homepage twice as big as the one from Delete Agency can still get a perfect score. The problem lies mainly in the blocking Javascript and CSS.</p>
+
+<h2 id="some-closing-words">Some closing words</h2>
+
+<p>So… an effective strategy for getting a perfect Google Lighthouse score is to stop using Javascript and CSS frameworks. That might seem scary at first, but Javascript and CSS have come a long way. Things like Flexbox, CSS columns and CSS grid handle most of your more complex CSS problems with ease. Cross-browser issues are close to non-existent in the <a href="https://www.netmarketshare.com/browser-market-share.aspx">current browser landscape</a>. Stick to writing lean CSS and lean Javascript. It might feel like you are going back to the nineties or the zero’s, but that is okay. Listen to Michael Jackson and sing along. A world <a href="/blog/code-warriors/">without dependencies</a> is a happy place. Heal the world!</p>
+
+<p>A final piece of advice: if you feel insecure about programming <a href="https://gomakethings.com/">Vanilla Javascript</a>, please let <a href="https://gomakethings.com/">Chris Ferdinandy</a> help you. He is an advocate for a simpler World Wide Web and loves to teach. Go make simpler things!</p>
+
+
+
+
+
+
+
+
+        </div>
+        
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+            <a id="nextlink" href="/2019/11/13/building-websites-in-rem.html">next<span class="desktop">: Building websites in rem</span><span class="mobile"> blog post</span></a>
+            <a id="nextlinktop" href="/2019/11/13/building-websites-in-rem.html">next post</a>
+            <a id="prevlinktop" href="/2019/12/12/lettertypes-vinden-in-een-pdf.html">previous post</a>
+        
+        <a id="scrolltotop" href="#top">Scroll to top</a>
+        <a id="lightmode" href="#" onclick="toggleLightmode()" title="change color"></a>
+    </div>
+    
+    <div id="darkmodeoverlay"></div>
+
+    <div id="lightbox"></div>
+    <script src="/js/javascript.js"></script>
+
+</body>
+
+</html>
