@@ -44,7 +44,7 @@ Header unset X-Powered-By
 ErrorDocument 404 /404.html
 
 Redirect /portfolio/studioinhout/ /portfolio/studio-inhout/
-Redirect /tno/v1/ https://apps.usecue.com/tno/v1/
+Redirect /tno/v1/ http://apps.usecue.com/tno/v1/
 Redirect /about-me/ /about/
 Redirect /2016/01/04/no-javascript-please.html /blog/no-javascript-please/
 Redirect /2015/05/30/the-viewport-meta-tag-on-desktop.html /blog/the-viewport-meta-tag-on-desktop/

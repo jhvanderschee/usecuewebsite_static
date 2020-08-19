@@ -1,5 +1,5 @@
 /portfolio/studioinhout/ /portfolio/studio-inhout/
-/tno/v1/ https://apps.usecue.com/tno/v1/
+/tno/v1/ http://apps.usecue.com/tno/v1/
 /about-me/ /about/
 /2016/01/04/no-javascript-please.html /blog/no-javascript-please/
 /2015/05/30/the-viewport-meta-tag-on-desktop.html /blog/the-viewport-meta-tag-on-desktop/
