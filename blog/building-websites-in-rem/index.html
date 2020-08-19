@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /> 
+
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--    ... ...   ....    ....    ....  ... ...    ....                                       -->
+<!--     ||  ||  ||. '  .|...|| .|   ''  ||  ||  .|...||                                      -->
+<!--     ||  ||  . '|.. ||      ||       ||  ||  ||                                           -->
+<!--     '|..'|. |'..|'  '|...'  '|...'  '|..'|.  '|...'    w e b    d e v e l o p m e n t    -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--    .-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    |                  - = Google Lighthouse Score = -                      |             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    !         Performance:    100            Best Practices:  100           !             -->
+<!--    :         Accessibility:  100            SEO:             100           :             -->
+<!--    :                                                                       :             -->
+<!--    .                                                                       .             -->
+<!--    .                  First Contentful Paint:   1.0 s                      .             -->
+<!--    :                  First Meaningful Paint:   1.0 s                      :             -->
+<!--    :                  Speed Index:              1.8 s                      :             -->
+<!--    !                  First CPU Idle:           1.0 s                      !             -->
+<!--    |                  Time to Interactive:      1.0 s                      |             -->
+<!--    |                  Estimated Input Latency:  10 ms                      |             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    `-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'             -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                       Last audit: Apr 2, 2020 7:42 PM                                    -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+
+<title>Building websites in rem | Usecue web development</title>
+
+<meta name="description" content="Although I can almost build a website in my sleep (or in 20 minutes), I am not talking about REM sleep or Rapid Eye Movement, but about ‘root em’. I used to ...">
+
+<link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
+<link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
+<link rel="apple-touch-icon" href="/img/icon-196x196.png" />
+
+<meta id="viewport" name="viewport" content="width=device-width">
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content="Building websites in rem"/>
+
+<meta property="og:url" content="https://www.usecue.com/blog/building-websites-in-rem/"/>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Usecue web development"/>
+<meta property="og:description" content="Although I can almost build a website in my sleep (or in 20 minutes), I am not talking about REM sleep or Rapid Eye Movement, but about ‘root em’. I used to ..."/>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@jhvanderschee">
+<meta name="twitter:title" content="Building websites in rem" />
+
+<meta name="twitter:url" content="https://www.usecue.com/blog/building-websites-in-rem/" />
+<meta name="twitter:description" content="Although I can almost build a website in my sleep (or in 20 minutes), I am not talking about REM sleep or Rapid Eye Movement, but about ‘root em’. I used to ..." />
+
+<link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
+
+<link rel="canonical" href="https://www.usecue.com/blog/building-websites-in-rem/">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
+
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+
+<body id="top" class="post en" style="">
+
+  <script>
+    if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
+    if (localStorage.getItem('mode') == 'light') document.getElementById('top').classList.add('lightmode'); 
+  </script>
+
+  
+  
+    <a id="logo" href="/" style=""><img src="/img/icon-196x196.png" alt="Usecue logo" /></a>
+
+    <ul id="menu">
+        
+          <li><a href="/about/">About</a></li>
+          <li><a href="/portfolio/de-babywegwijzer">Portfolio</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        
+    </ul>
+    <div id="innerbody">
+        <div id="content">
+
+
+<div class="fullscreen">
+    <h1 class="large"><div id="postdate" class="small">November 13, 2019</div>Building websites in rem</h1>
+</div>
+<div id="scrolldown"></div>
+
+<p>Although I can almost build a website in my sleep (or in <a href="/blog/speaking-at-jekyllconf2019/">20 minutes</a>), I am not talking about REM sleep or Rapid Eye Movement, but about ‘root em’.</p>
+
+<p>I used to build websites in pixels, but I have chosen to abandon pixels and to completely swap to <em>em</em>, and the be more specific <em>root em</em>. Forty percent of all pages use <em>root em</em> in some way, according to the <a href="https://almanac.httparchive.org/en/2019/css#units">HTTP Archive Almanac</a>, so you are probably familiar with the abbreviation ‘rem’.</p>
+
+<p>The ‘em’ is a fascinating unit/measurement. It originates from the height of the metal body of a letter in a letterpress and its name comes from its relation to the width of the captial letter ‘M’. In this digital era this relation has blurred. According to <a href="https://en.wikipedia.org/wiki/Em_(typography)">Wikipedia</a>, an average font might have a cap height of 70% of the <em>em</em>, and an x-height of 48% of the <em>em</em>. ‘Root’ means that the size of the <em>em</em> is related to the font-size of the root element, which it the HTML element of your web page.</p>
+
+<p>Here is how it works: If you set your font-size to 20px on the HTML element, 1 <em>root em</em> will equal 20 pixels. So, <em>root em</em> equals the root font-size. A pixel becomes 1/20th by 1/20th <em>root em</em> big. A larger font could have a font-size of 2 <em>root em</em> (40px) and your body text could be 0.8 <em>root em</em> (16px). And a nice extra: even media queries can be defined in <em>root em</em>.</p>
+
+<p>So if <em>root em</em> is nothing more than a multiplier, why should you use it? Well… only for one reason actually: it makes simulating browser zoom much easier. A common media query that takes advantage of this would be: if the screen is narrower than 600 pixels (30rem), bump the font-size of the HTML element up to 22 pixels. This media query will show your website at 110% scale, with just a single line of CSS.</p>
+
+<p>Sounds great, but is it worth the extra effort? I think it is. I got used to this new approach quickly and it soon felt as easy as using pixels. Situation in which I find this approach extremely helpful are: handling very large and very small screen sizes and Google or some designer complaining about the chosen website width or font-size.</p>
+
+
+
+
+
+
+
+
+        </div>
+        
+        
+        
+            
+            <a id="nextlink" href="/blog/google-will-shame-slow-websites/">next<span class="desktop">: Google will shame slow websites</span><span class="mobile"> blog post</span></a>
+            <a id="nextlinktop" href="/blog/google-will-shame-slow-websites/">next post</a>
+            <a id="prevlinktop" href="/blog/how-to-get-a-100-google-lighthouse-score/">previous post</a>
+        
+        <a id="scrolltotop" href="#top">Scroll to top</a>
+        <a id="lightmode" href="#" onclick="toggleLightmode()" title="change color"></a>
+    </div>
+    
+    <div id="darkmodeoverlay"></div>
+
+    <div id="lightbox"></div>
+    <script src="/js/javascript.js"></script>
+
+</body>
+
+</html>
