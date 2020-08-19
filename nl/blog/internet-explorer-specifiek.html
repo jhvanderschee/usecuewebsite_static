@@ -47,9 +47,9 @@
 <!--                                                                                          -->
 <!--                                                                                          -->
 
-<title>Ik ben een web developer uit Amsterdam. | Usecue web development</title>
+<title>Internet Explorer specifiek | Usecue web development</title>
 
-<meta name="description" content="Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. Meer weten?">
+<meta name="description" content="Al jaren schrijf ik cross-browser code: code die hetzelfde werkt in alle (gangbare) browsers. Mijn taktiek is om alleen code te gebruiken waarvan ik zeker we...">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -58,40 +58,36 @@
 <meta id="viewport" name="viewport" content="width=device-width">
 
 <!-- Facebook and Twitter integration -->
-<meta property="og:title" content="Ik ben een web developer uit Amsterdam."/>
+<meta property="og:title" content="Internet Explorer specifiek"/>
 
-<meta property="og:url" content="https://www.usecue.com/nl/"/>
+<meta property="og:url" content="https://www.usecue.com/nl/blog/internet-explorer-specifiek"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. Meer weten?"/>
+<meta property="og:description" content="Al jaren schrijf ik cross-browser code: code die hetzelfde werkt in alle (gangbare) browsers. Mijn taktiek is om alleen code te gebruiken waarvan ik zeker we..."/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
-<meta name="twitter:title" content="Ik ben een web developer uit Amsterdam." />
+<meta name="twitter:title" content="Internet Explorer specifiek" />
 
-<meta name="twitter:url" content="https://www.usecue.com/nl/" />
-<meta name="twitter:description" content="Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. Meer weten?" />
+<meta name="twitter:url" content="https://www.usecue.com/nl/blog/internet-explorer-specifiek" />
+<meta name="twitter:description" content="Al jaren schrijf ik cross-browser code: code die hetzelfde werkt in alle (gangbare) browsers. Mijn taktiek is om alleen code te gebruiken waarvan ik zeker we..." />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
-<link rel="canonical" href="https://www.usecue.com/nl/">
+<link rel="canonical" href="https://www.usecue.com/nl/blog/internet-explorer-specifiek">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
 
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 </head>
 
-<body id="top" class="home nl" style="">
+<body id="top" class="post nl" style="">
 
   <script>
     if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
     if (localStorage.getItem('mode') == 'light') document.getElementById('top').classList.add('lightmode'); 
   </script>
 
-  
-    <div id="splash">
-      <div><span class="medium"><span><a href="/about/">u</a></span><span>s</span><span>e</span><span>c</span><span>u</span><span>e</span></span><span class="small">web development</span></div>
-    </div>
   
   
     <a id="logo" href="/nl/" style=""><img src="/img/icon-196x196.png" alt="Usecue logo" /></a>
@@ -108,9 +104,35 @@
         <div id="content">
 
 
-<h1>Ik ben een web developer uit Amsterdam.</h1>
+<div class="fullscreen">
+    <h1 class="large"><div id="postdate" class="small">February 25, 2020</div>Internet Explorer specifiek</h1>
+</div>
+<div id="scrolldown"></div>
 
-<p>Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. <a href="/nl/over/">Meer weten?</a></p>
+<p>Al jaren schrijf ik cross-browser code: code die hetzelfde werkt in alle (gangbare) browsers. Mijn taktiek is om alleen code te gebruiken waarvan ik zeker weet dat deze ondersteund wordt door alle browsers.</p>
+
+<p>Iedereen gebruikte allang ‘flexbox’, terwijl ik nog steeds ‘float’ gebruikte. Dat scheelde me enorm veel cross-browser testing en browser-specifieke oplossingen. Recent heb ik float eindelijk ingeruild voor flexbox, omdat ik de browser support voldoende vond. Zo gaat dat met meer dingen, waaronder ook ‘jQuery’. Toen jQuery uitkwam werkte float nog niet consistent, werden CSS standaarden met voeten werden getreden en zat iedere website vol met Internet Explorer specifieke code. jQuery was toen een uitkomst. Nu is het overbodige ballast geworden.</p>
+
+<h2 id="ie-conditional-is-niet-meer">IE conditional is niet meer</h2>
+
+<p>Toch loop je nog wel eens een heel enkele keer aan tegen de noodzaak om Internet Explorer specifieke code te schrijven. Daarvoor gebruikte ik altijd ‘IE conditional comments’. Je kon er precies mee aangeven op welke versie je code van toepassing was. Deze comments (die alleen door Internet Explorer werden gelezen) worden echter niet meer ondersteund.</p>
+
+<h2 id="user-agent-als-oplossing">User Agent als oplossing?</h2>
+
+<p>Online vond ik echter een trucje om toch IE specifieke code (CSS) te schrijven. De code die ik vond voegt de ‘user agent’ toe aan de body in een data attribuut. Dat ziet er zo uit:</p>
+
+<p>var doc = document.documentElement;<br />
+doc.setAttribute(‘data-useragent’, navigator.userAgent);</p>
+
+<p>Vervolgens kun je zoiets zeggens als: als de user agent het woord ‘Windows’ bevat, voer deze code uit. Windows is echter niet het goede woord, omdat meerdere browsers op Windows (kunnen) draaien. Ik kwam erachter dat deze CSS regel vrij goed onderscheid kan maken tussen de browsers Internet Explorer, Edge, Chrome en Firefox:</p>
+
+<p>html[data-useragent*=’Trident’]</p>
+
+<p>Trident is de ‘layout engine’ van Internet Explorer en wordt in alle IE user agents genoemd. Trident is eigendom van Microsoft, net als Internet Explorer en Edge. Edge gebruikte vroeger echter ‘EdgeHTML’ en tegenwoordig ‘Blink’ als layout engine. Hierdoor pik je met deze Microsoft georiënteerde zoekterm dus precies de Internet Explorer browsers er tussenuit, zonder dat je gebruik hoeft te maken van IE conditional comments.</p>
+
+<h2 id="overwegingen">Overwegingen</h2>
+
+<p>Een grote kritiek op ‘user agent sniffing’ zoals deze techniek heet, is dat de techniek inaccurate resultaten geeft. Daar kan ik weinig anders tegenin brengen dan <a href="https://en.wikipedia.org/wiki/Trident_(software)">de lijst van Trident browsers</a> tonen en beweren dat de schade wel mee zal vallen. Daarnaast is het onwaarschijnlijk dat er een nieuwe browser uitkomt met de Trident layout engine (waarop de code mogelijk een averechts effect zou kunnen hebben), aangezien Internet Explorer niet meer verder wordt onwikkeld en Microsoft zijn kaarten op het op Chromium gebaseerde Edge heeft gezet (dat dus tegenwoordig Blink gebruikt).</p>
 
 
 
@@ -122,6 +144,11 @@
         </div>
         
         
+        
+            
+            <a id="nextlink" href="/nl/blog/lettertypes-vinden-in-een-pdf">volgende<span class="desktop">: Lettertypes vinden in een PDF</span><span class="mobile"> blog post</span></a>
+            <a id="nextlinktop" href="/nl/blog/lettertypes-vinden-in-een-pdf">volgende post</a>
+            <a id="prevlinktop" href="/nl/blog/icon-font-of-svg">vorige post</a>
         
         <a id="scrolltotop" href="#top">Scroll naar boven</a>
         <a id="lightmode" href="#" onclick="toggleLightmode()" title="verander kleur"></a>

@@ -7,14 +7,6 @@
   
   
       <url>
-        <loc>https://www.usecue.com/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-  
-  
-      <url>
         <loc>https://www.usecue.com/contact/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -24,14 +16,6 @@
   
       <url>
         <loc>https://www.usecue.com/blog/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-  
-  
-      <url>
-        <loc>https://www.usecue.com/nl/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
@@ -63,7 +47,23 @@
   
   
       <url>
+        <loc>https://www.usecue.com/nl/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+  
+  
+      <url>
         <loc>https://www.usecue.com/about/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+  
+  
+      <url>
+        <loc>https://www.usecue.com/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
@@ -81,434 +81,434 @@
   
   
       <url>
-        <loc>https://www.usecue.com/2020/08/07/the-problem-with-multi-purpose-themes.html</loc>
+        <loc>https://www.usecue.com/blog/the-problem-with-multi-purpose-themes</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2020/07/16/icon-font-of-svg.html</loc>
+        <loc>https://www.usecue.com/nl/blog/icon-font-of-svg</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2020/03/04/help-my-server-is-down.html</loc>
+        <loc>https://www.usecue.com/blog/help-my-server-is-down</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2020/02/25/internet-explorer-specifiek.html</loc>
+        <loc>https://www.usecue.com/nl/blog/internet-explorer-specifiek</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/12/19/no-code-platforms.html</loc>
+        <loc>https://www.usecue.com/blog/no-code-platforms</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/12/12/lettertypes-vinden-in-een-pdf.html</loc>
+        <loc>https://www.usecue.com/nl/blog/lettertypes-vinden-in-een-pdf</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/11/14/how-to-get-a-100-google-lighthouse-score.html</loc>
+        <loc>https://www.usecue.com/blog/how-to-get-a-100-google-lighthouse-score</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/11/13/building-websites-in-rem.html</loc>
+        <loc>https://www.usecue.com/blog/building-websites-in-rem</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/11/12/google-will-shame-slow-websites.html</loc>
+        <loc>https://www.usecue.com/blog/google-will-shame-slow-websites</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/10/24/hosting-is-overal-hetzelfde.html</loc>
+        <loc>https://www.usecue.com/nl/blog/hosting-is-overal-hetzelfde</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/10/19/speaking-at-jekyllconf2019.html</loc>
+        <loc>https://www.usecue.com/blog/speaking-at-jekyllconf2019</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/09/25/internet-en-de-boekdrukkunst.html</loc>
+        <loc>https://www.usecue.com/nl/blog/internet-en-de-boekdrukkunst</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/08/21/een-groene-website.html</loc>
+        <loc>https://www.usecue.com/nl/blog/een-groene-website</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/08/21/a-green-websiite.html</loc>
+        <loc>https://www.usecue.com/blog/a-green-websiite</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/08/12/speed-index-explained.html</loc>
+        <loc>https://www.usecue.com/blog/speed-index-explained</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/08/12/google-lighthouse-score.html</loc>
+        <loc>https://www.usecue.com/blog/google-lighthouse-score</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/08/01/websites-that-load-instantly.html</loc>
+        <loc>https://www.usecue.com/blog/websites-that-load-instantly</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/07/10/how-netlify-became-irrelevant.html</loc>
+        <loc>https://www.usecue.com/blog/how-netlify-became-irrelevant</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/07/04/a-long-overdue-redesign.html</loc>
+        <loc>https://www.usecue.com/blog/a-long-overdue-redesign</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/07/01/a-tribute-to-the-web.html</loc>
+        <loc>https://www.usecue.com/blog/a-tribute-to-the-web</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2019/05/23/revolutie-in-smartphone-land.html</loc>
+        <loc>https://www.usecue.com/nl/blog/revolutie-in-smartphone-land</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2018/12/28/case-migratie-van-wordpress-naar-jekyll.html</loc>
+        <loc>https://www.usecue.com/nl/blog/case-migratie-van-wordpress-naar-jekyll</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2018/12/02/code-warriors.html</loc>
+        <loc>https://www.usecue.com/blog/code-warriors</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2018/11/23/arguments-for-the-jamstack.html</loc>
+        <loc>https://www.usecue.com/blog/arguments-for-the-jamstack</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2018/11/22/argumenten-voor-de-jamstack.html</loc>
+        <loc>https://www.usecue.com/nl/blog/argumenten-voor-de-jamstack</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2018/11/11/vaarwel-google.html</loc>
+        <loc>https://www.usecue.com/nl/blog/vaarwel-google</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2018/11/11/goodbye-google.html</loc>
+        <loc>https://www.usecue.com/blog/goodbye-google</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2018/04/19/het-internet-is-niet-meer-gratis.html</loc>
+        <loc>https://www.usecue.com/nl/blog/het-internet-is-niet-meer-gratis</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2018/04/13/bye-bye-facebook.html</loc>
+        <loc>https://www.usecue.com/nl/blog/bye-bye-facebook</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2018/02/27/de-need-for-speed-op-het-web.html</loc>
+        <loc>https://www.usecue.com/nl/blog/de-need-for-speed-op-het-web</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2018/02/25/the-need-for-speed-on-the-web.html</loc>
+        <loc>https://www.usecue.com/blog/the-need-for-speed-on-the-web</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2017/11/06/the-new-nokia-3310-could-give-you-your-life-back.html</loc>
+        <loc>https://www.usecue.com/blog/the-new-nokia-3310-could-give-you-your-life-back</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2017/08/22/running-jekyll-on-cloud9.html</loc>
+        <loc>https://www.usecue.com/blog/running-jekyll-on-cloud9</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2017/07/19/why-you-should-upgrade-your-website-to-ssl.html</loc>
+        <loc>https://www.usecue.com/blog/why-you-should-upgrade-your-website-to-ssl</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2017/03/23/smashing-new-technology.html</loc>
+        <loc>https://www.usecue.com/blog/smashing-new-technology</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2017/02/16/security--awareness-2017.html</loc>
+        <loc>https://www.usecue.com/nl/blog/security-awareness-2017</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2016/12/11/turbolinks5-is-awesome.html</loc>
+        <loc>https://www.usecue.com/blog/turbolinks5-is-awesome</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2016/09/21/getting-started-with-jekyll.html</loc>
+        <loc>https://www.usecue.com/blog/getting-started-with-jekyll</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2016/08/17/jekyll-tegen-de-rest-van-de-wereld.html</loc>
+        <loc>https://www.usecue.com/nl/blog/jekyll-tegen-de-rest-van-de-wereld</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2016/08/17/jekyll-against-the-rest-of-the-world.html</loc>
+        <loc>https://www.usecue.com/blog/jekyll-against-the-rest-of-the-world</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2016/08/07/hover-is-dead.html</loc>
+        <loc>https://www.usecue.com/blog/hover-is-dead</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2016/07/23/de-uitdagingen-in-interface-design.html</loc>
+        <loc>https://www.usecue.com/nl/blog/de-uitdagingen-in-interface-design</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2016/07/03/from-wordpress-to-cloudcannon.html</loc>
+        <loc>https://www.usecue.com/blog/from-wordpress-to-cloudcannon</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2016/04/21/two-viewports-to-rule-them-all.html</loc>
+        <loc>https://www.usecue.com/blog/two-viewports-to-rule-them-all</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2016/04/18/may-1st-reboot.html</loc>
+        <loc>https://www.usecue.com/nl/blog/may-1st-reboot</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2016/01/04/no-javascript-please.html</loc>
+        <loc>https://www.usecue.com/blog/no-javascript-please</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2015/11/04/why-static-website-generators-are-the-next-big-thing.html</loc>
+        <loc>https://www.usecue.com/blog/why-static-website-generators-are-the-next-big-thing</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2015/08/14/the-race-to-zero-in-webhosting.html</loc>
+        <loc>https://www.usecue.com/blog/the-race-to-zero-in-webhosting</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2015/05/30/the-viewport-meta-tag-on-desktop.html</loc>
+        <loc>https://www.usecue.com/blog/the-viewport-meta-tag-on-desktop</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2015/05/30/flash-scaling-in-html.html</loc>
+        <loc>https://www.usecue.com/blog/flash-scaling-in-html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2015/05/05/the-web-notifications-api.html</loc>
+        <loc>https://www.usecue.com/blog/the-web-notifications-api</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2015/05/03/developing-web-applications-on-a-chromebook.html</loc>
+        <loc>https://www.usecue.com/blog/developing-web-applications-on-a-chromebook</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/2015/04/09/usecues-also-known-as-affordances.html</loc>
+        <loc>https://www.usecue.com/blog/usecues-also-known-as-affordances</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
   
       <url>
-        <loc>https://www.usecue.com/portfolio/en/de-babywegwijzer.html</loc>
+        <loc>https://www.usecue.com/portfolio/de-babywegwijzer</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/en/de-reclamefabriek.html</loc>
+        <loc>https://www.usecue.com/portfolio/de-reclamefabriek</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/en/de-vos-en-partners.html</loc>
+        <loc>https://www.usecue.com/portfolio/de-vos-en-partners</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/en/felgen-wie-neu.html</loc>
+        <loc>https://www.usecue.com/portfolio/felgen-wie-neu</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/en/la-manzanilla.html</loc>
+        <loc>https://www.usecue.com/portfolio/la-manzanilla</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/en/lucass-amsterdam.html</loc>
+        <loc>https://www.usecue.com/portfolio/lucass-amsterdam</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/en/studio-inhout.html</loc>
+        <loc>https://www.usecue.com/portfolio/studio-inhout</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/en/transactility.html</loc>
+        <loc>https://www.usecue.com/portfolio/transactility</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/en/usecue.html</loc>
+        <loc>https://www.usecue.com/portfolio/usecue</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/en/zonmw.html</loc>
+        <loc>https://www.usecue.com/portfolio/zonmw</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/nl/de-babywegwijzer.html</loc>
+        <loc>https://www.usecue.com/nl/portfolio/de-babywegwijzer</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/nl/de-reclamefabriek.html</loc>
+        <loc>https://www.usecue.com/nl/portfolio/de-reclamefabriek</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/nl/de-vos-en-partners.html</loc>
+        <loc>https://www.usecue.com/nl/portfolio/de-vos-en-partners</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/nl/felgen-wie-neu.html</loc>
+        <loc>https://www.usecue.com/nl/portfolio/felgen-wie-neu</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/nl/la-manzanilla.html</loc>
+        <loc>https://www.usecue.com/nl/portfolio/la-manzanilla</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/nl/lucass-amsterdam.html</loc>
+        <loc>https://www.usecue.com/nl/portfolio/lucass-amsterdam</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/nl/studio-inhout.html</loc>
+        <loc>https://www.usecue.com/nl/portfolio/studio-inhout</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/nl/usecue.html</loc>
+        <loc>https://www.usecue.com/nl/portfolio/usecue</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/nl/zonmw.html</loc>
+        <loc>https://www.usecue.com/nl/portfolio/zonmw</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>

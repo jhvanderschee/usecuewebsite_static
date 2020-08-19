@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
 <meta charset="utf-8" /> 
 
@@ -47,9 +47,9 @@
 <!--                                                                                          -->
 <!--                                                                                          -->
 
-<title>Ik ben een web developer uit Amsterdam. | Usecue web development</title>
+<title>No Java&shy;script Please! | Usecue web development</title>
 
-<meta name="description" content="Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. Meer weten?">
+<meta name="description" content="You probably load 100k jQuery in your page, because it makes programming soooo easy. But what if you want your page to be as small as 100k? Or usable by peop...">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -58,30 +58,30 @@
 <meta id="viewport" name="viewport" content="width=device-width">
 
 <!-- Facebook and Twitter integration -->
-<meta property="og:title" content="Ik ben een web developer uit Amsterdam."/>
+<meta property="og:title" content="No Java&shy;script Please!"/>
 
-<meta property="og:url" content="https://www.usecue.com/nl/"/>
+<meta property="og:url" content="https://www.usecue.com/blog/no-javascript-please"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. Meer weten?"/>
+<meta property="og:description" content="You probably load 100k jQuery in your page, because it makes programming soooo easy. But what if you want your page to be as small as 100k? Or usable by peop..."/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
-<meta name="twitter:title" content="Ik ben een web developer uit Amsterdam." />
+<meta name="twitter:title" content="No Java&shy;script Please!" />
 
-<meta name="twitter:url" content="https://www.usecue.com/nl/" />
-<meta name="twitter:description" content="Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. Meer weten?" />
+<meta name="twitter:url" content="https://www.usecue.com/blog/no-javascript-please" />
+<meta name="twitter:description" content="You probably load 100k jQuery in your page, because it makes programming soooo easy. But what if you want your page to be as small as 100k? Or usable by peop..." />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
-<link rel="canonical" href="https://www.usecue.com/nl/">
+<link rel="canonical" href="https://www.usecue.com/blog/no-javascript-please">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
 
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 </head>
 
-<body id="top" class="home nl" style="">
+<body id="top" class="post en" style="">
 
   <script>
     if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
@@ -89,28 +89,37 @@
   </script>
 
   
-    <div id="splash">
-      <div><span class="medium"><span><a href="/about/">u</a></span><span>s</span><span>e</span><span>c</span><span>u</span><span>e</span></span><span class="small">web development</span></div>
-    </div>
   
-  
-    <a id="logo" href="/nl/" style=""><img src="/img/icon-196x196.png" alt="Usecue logo" /></a>
+    <a id="logo" href="/" style=""><img src="/img/icon-196x196.png" alt="Usecue logo" /></a>
 
     <ul id="menu">
         
-          <li><a href="/nl/over/">Over</a></li>
-          <li><a href="/nl/portfolio/de-babywegwijzer">Portfolio</a></li>
-          <li><a href="/nl/blog/">Blog</a></li>
-          <li><a href="/nl/contact/">Contact</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/portfolio/de-babywegwijzer">Portfolio</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact/">Contact</a></li>
         
     </ul>
     <div id="innerbody">
         <div id="content">
 
 
-<h1>Ik ben een web developer uit Amsterdam.</h1>
+<div class="fullscreen">
+    <h1 class="large"><div id="postdate" class="small">January  4, 2016</div>No Java&shy;script Please!</h1>
+</div>
+<div id="scrolldown"></div>
 
-<p>Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. <a href="/nl/over/">Meer weten?</a></p>
+<p>You probably load 100k jQuery in your page, because it makes programming soooo easy. But what if you want your page to be as small as 100k? Or usable by people who disable Javascript for security reasons?</p>
+
+<p>Let us look at what the 100k jQuery in your website actually does. I bet it toggles your hamburger menu, it might toggle some tabs… and, of course, it powers that enormous homepage slider. So… without further ado, let me present you the replacements:</p>
+
+<ol>
+  <li>Off-screen navigation - Hiding and showing stuff is no problem with CSS. Alle you need is the <a href="http://www.sitepoint.com/pure-css-off-screen-navigation-menu/">radio button hack</a>, et voila… there you go.</li>
+  <li>Tabs - They are useful for hiding and showing content. You can use the <a href="http://stanhub.com/create-responsive-tabs-using-css-only-no-jquery/">same recipe</a> for them. </li>
+  <li>Sliders - A little more complicated but also possible… Even with autoplay! Here are <a href="http://codepen.io/hw/pen/biEBz">some</a> <a href="http://xdesigns.net/2013/08/css-slider/">examples</a>.</li>
+</ol>
+
+<p>If you really MUST support IE8 or you want a more polished experience, you can use some conditional (vanilla) Javascript. In general, you should prefer to use Javascript only when necessary and only to enhance the experience. You do not want your site to be broken without.</p>
 
 
 
@@ -123,8 +132,13 @@
         
         
         
-        <a id="scrolltotop" href="#top">Scroll naar boven</a>
-        <a id="lightmode" href="#" onclick="toggleLightmode()" title="verander kleur"></a>
+            
+            <a id="nextlink" href="/blog/why-static-website-generators-are-the-next-big-thing">next<span class="desktop">: Why Static Website Generators Are The Next Big Thing</span><span class="mobile"> blog post</span></a>
+            <a id="nextlinktop" href="/blog/why-static-website-generators-are-the-next-big-thing">next post</a>
+            <a id="prevlinktop" href="/blog/two-viewports-to-rule-them-all">previous post</a>
+        
+        <a id="scrolltotop" href="#top">Scroll to top</a>
+        <a id="lightmode" href="#" onclick="toggleLightmode()" title="change color"></a>
     </div>
     
     <div id="darkmodeoverlay"></div>

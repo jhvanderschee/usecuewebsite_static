@@ -47,9 +47,9 @@
 <!--                                                                                          -->
 <!--                                                                                          -->
 
-<title>Ik ben een web developer uit Amsterdam. | Usecue web development</title>
+<title>Lettertypes vinden in een PDF | Usecue web development</title>
 
-<meta name="description" content="Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. Meer weten?">
+<meta name="description" content="Wanneer een ontwerper artwork moet aanleveren, zeg ik altijd: ‘Doe maar een high resolution PDF, dus alsof je voor print aanlevert, maar dan in safe RGB (sRG...">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -58,40 +58,36 @@
 <meta id="viewport" name="viewport" content="width=device-width">
 
 <!-- Facebook and Twitter integration -->
-<meta property="og:title" content="Ik ben een web developer uit Amsterdam."/>
+<meta property="og:title" content="Lettertypes vinden in een PDF"/>
 
-<meta property="og:url" content="https://www.usecue.com/nl/"/>
+<meta property="og:url" content="https://www.usecue.com/nl/blog/lettertypes-vinden-in-een-pdf"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. Meer weten?"/>
+<meta property="og:description" content="Wanneer een ontwerper artwork moet aanleveren, zeg ik altijd: ‘Doe maar een high resolution PDF, dus alsof je voor print aanlevert, maar dan in safe RGB (sRG..."/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
-<meta name="twitter:title" content="Ik ben een web developer uit Amsterdam." />
+<meta name="twitter:title" content="Lettertypes vinden in een PDF" />
 
-<meta name="twitter:url" content="https://www.usecue.com/nl/" />
-<meta name="twitter:description" content="Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. Meer weten?" />
+<meta name="twitter:url" content="https://www.usecue.com/nl/blog/lettertypes-vinden-in-een-pdf" />
+<meta name="twitter:description" content="Wanneer een ontwerper artwork moet aanleveren, zeg ik altijd: ‘Doe maar een high resolution PDF, dus alsof je voor print aanlevert, maar dan in safe RGB (sRG..." />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
-<link rel="canonical" href="https://www.usecue.com/nl/">
+<link rel="canonical" href="https://www.usecue.com/nl/blog/lettertypes-vinden-in-een-pdf">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
 
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 </head>
 
-<body id="top" class="home nl" style="">
+<body id="top" class="post nl" style="">
 
   <script>
     if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
     if (localStorage.getItem('mode') == 'light') document.getElementById('top').classList.add('lightmode'); 
   </script>
 
-  
-    <div id="splash">
-      <div><span class="medium"><span><a href="/about/">u</a></span><span>s</span><span>e</span><span>c</span><span>u</span><span>e</span></span><span class="small">web development</span></div>
-    </div>
   
   
     <a id="logo" href="/nl/" style=""><img src="/img/icon-196x196.png" alt="Usecue logo" /></a>
@@ -108,9 +104,22 @@
         <div id="content">
 
 
-<h1>Ik ben een web developer uit Amsterdam.</h1>
+<div class="fullscreen">
+    <h1 class="large"><div id="postdate" class="small">December 12, 2019</div>Lettertypes vinden in een PDF</h1>
+</div>
+<div id="scrolldown"></div>
 
-<p>Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. <a href="/nl/over/">Meer weten?</a></p>
+<p>Wanneer een ontwerper artwork moet aanleveren, zeg ik altijd: ‘Doe maar een high resolution PDF, dus alsof je voor print aanlevert, maar dan in safe RGB (sRGB).’</p>
+
+<p>Ik zal uitleggen waarom ik dat vraag en wat mijn bijbehorende work-flow is. Bij safe RGB is de kleurconversie van CMYK naar RGB al gedaan en kunnen er ook geen kleurprofielen meer actief zijn. Dit maakt dat de kleur uit de PDF exact dezelfde is als de hexwaarde voor het web en daar dus geen discussie meer over kan ontstaan. Daarnaast vraag ik om hoge resolutie, zodat ik hoge resolutie foto’s uit de pdf kan halen (rechtsklikken en opslaan). Het nadeel van deze hoge resolutie PDF is dat deze wat traag openen op mijn Linux machine, daarom maak ik er via GIMP (of screenshot) ook nog een afbeelding van. Tenslotte open ik de PDF in een vectorprogramma om erachter te komen welke lettertypes gebruikt worden (en om eventuele vectorafbeeldingen op te slaan).</p>
+
+<p>Bij een recent project werkte dat laatste echter niet. Adobe Illustrator vond dat de file corrupt was en Inkscape wilde hem ook niet goed openen, dus wist ik niet wat het gebruikte lettertype was. Vreemd genoeg opende de file prima in een PDF reader en in GIMP, dus waar het probleem precies zat was niet duidelijk. Gelukkig vond ik <a href="http://www.documentsnap.com/find-fonts-pdf/">online</a> een goede tip. Type in de terminal:</p>
+
+<blockquote>
+  <p>strings /path/to/your/filename.pdf | grep FontName</p>
+</blockquote>
+
+<p>Dat gaf me precies de informatie over de lettertypes die ik zocht. Een superfijne oplossing, waardoor ik voor de analyse van de lettertypes niet meer afhankelijk ben van de ondoorgrondbare grillen van eerdergenoemde vectorprogramma’s.</p>
 
 
 
@@ -122,6 +131,11 @@
         </div>
         
         
+        
+            
+            <a id="nextlink" href="/nl/blog/hosting-is-overal-hetzelfde">volgende<span class="desktop">: Hosting is overal hetzelfde</span><span class="mobile"> blog post</span></a>
+            <a id="nextlinktop" href="/nl/blog/hosting-is-overal-hetzelfde">volgende post</a>
+            <a id="prevlinktop" href="/nl/blog/internet-explorer-specifiek">vorige post</a>
         
         <a id="scrolltotop" href="#top">Scroll naar boven</a>
         <a id="lightmode" href="#" onclick="toggleLightmode()" title="verander kleur"></a>

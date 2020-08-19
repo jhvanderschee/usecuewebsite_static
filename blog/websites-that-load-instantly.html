@@ -47,9 +47,9 @@
 <!--                                                                                          -->
 <!--                                                                                          -->
 
-<title>About me | Usecue web development</title>
+<title>Websites that load instantly | Usecue web development</title>
 
-<meta name="description" content="My name is Joost van der Schee and I am a web developer based in Amsterdam. This harsh looking website is actually a tribute to the web. I have studied Indus...">
+<meta name="description" content="In 2008 Google promised us websites that would load as quick as shooting a potato through a slicer with explosives. In other words, in one or two tenths of a...">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -58,30 +58,30 @@
 <meta id="viewport" name="viewport" content="width=device-width">
 
 <!-- Facebook and Twitter integration -->
-<meta property="og:title" content="About me"/>
+<meta property="og:title" content="Websites that load instantly"/>
 
-<meta property="og:url" content="https://www.usecue.com/about/"/>
+<meta property="og:url" content="https://www.usecue.com/blog/websites-that-load-instantly"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="My name is Joost van der Schee and I am a web developer based in Amsterdam. This harsh looking website is actually a tribute to the web. I have studied Indus..."/>
+<meta property="og:description" content="In 2008 Google promised us websites that would load as quick as shooting a potato through a slicer with explosives. In other words, in one or two tenths of a..."/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
-<meta name="twitter:title" content="About me" />
+<meta name="twitter:title" content="Websites that load instantly" />
 
-<meta name="twitter:url" content="https://www.usecue.com/about/" />
-<meta name="twitter:description" content="My name is Joost van der Schee and I am a web developer based in Amsterdam. This harsh looking website is actually a tribute to the web. I have studied Indus..." />
+<meta name="twitter:url" content="https://www.usecue.com/blog/websites-that-load-instantly" />
+<meta name="twitter:description" content="In 2008 Google promised us websites that would load as quick as shooting a potato through a slicer with explosives. In other words, in one or two tenths of a..." />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
-<link rel="canonical" href="https://www.usecue.com/about/">
+<link rel="canonical" href="https://www.usecue.com/blog/websites-that-load-instantly">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
 
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 </head>
 
-<body id="top" class="page en" style="">
+<body id="top" class="post en" style="">
 
   <script>
     if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
@@ -104,21 +104,30 @@
         <div id="content">
 
 
-<h1>About me</h1>
+<div class="fullscreen">
+    <h1 class="large"><div id="postdate" class="small">August  1, 2019</div>Websites that load instantly</h1>
+</div>
+<div id="scrolldown"></div>
 
-<p>My name is Joost van der Schee and I am a web developer based in Amsterdam. This harsh looking website is actually <a href="/blog/a-tribute-to-the-web">a tribute to the web</a>.</p>
+<p>In 2008 Google promised us websites that would load as quick as shooting a potato through a slicer with explosives. In other words, in one or two tenths of a second, or as I like to call it: ‘instantly’.</p>
 
-<p>I have studied Industrial Design Engineering at the <a href="/uploads/tudelft.jpg">Technical University in Delft</a> and founded ‘Usecue’ in 2007. My first priority is my family, but my work is absolutely number two. I love what I do, which is building beautiful websites and web applications.</p>
+<p><a href="https://youtu.be/nCgQDjiotG0"><img src="/uploads/instantly.gif" alt="Video of Chrome loading instantly and beating the potato gun." /></a><em>Video of Chrome loading instantly and beating the potato gun.</em></p>
 
-<p>All websites I build are well-coded and have good SEO. This is reflected by their excellent <a href="/blog/google-lighthouse-score/">Google score</a>, an objective quality measurement of a website. Quality is very important to me. I strongly believe that each job worth doing is worth doing well. Therefore I do not just build these websites, but host them as well. This supply chain integration is the reason I can deliver such high quality.</p>
+<p>Their campaign revolved around the introduction of v8, a new Javascript engine. This turned out to be a game changer and made Chrome significantly faster than any other browser at the time. The campaign was a big hit and Chrome (eventually) became the most used browser world wide, mostly due to this competitive advantage.</p>
 
-<p>I am a big fan of Jekyll (a website generator). To help fellow Jekyll-enthusiasts, I have launched <a href="http://jekyllcodex.org">jekyllcodex.org</a> and I answer Jekyll-related questions on <a href="http://stackoverflow.com/users/2397550/joosts">Stack Overflow</a>. <a href="https://cloudcannon.com/">CloudCannon</a> (an online CMS for Jekyll) mentioned me as a Jekyll expert on their ‘<a href="https://cloudcannon.com/experts/">experts page</a>’. I was also one of the speakers on <a href="https://jekyllconf.com/">JekyllConf 2019</a>.</p>
+<p>In their campaign video they used the website <a href="https://www.allrecipes.com">allrecipes.com</a>. I was curious to see how fast it loads today. We could ask <a href="https://web.dev">Lighthouse</a>, but Lighthouse simulates a slow 3G connection, so I asked <a href="https://www.pingdom.com">Pingdom</a>. Pingdom reported that the current website of allrecipes.com loads in <a href="/uploads/allrecipespingdom.png">4.8 seconds</a>. That is far from instantly. Their website has either become much slower during the past 11 years or we were looking at a preloaded website or both.</p>
 
-<p>Apart from Jekyll/CloudCannon websites I also develop WordPress, Issuu, MailChimp, Shopify and custom web solutions. My latest projects include <a href="https://www.invoicelion.org/">open source invoicing software</a>, called ‘Invoice Lion’, a progressive web app (PWA) for my company and a <a href="https://withoutcoding.com">platform for producing online magazines</a>, called ‘Without Coding’.</p>
+<p>From the video description we can read the website was preloaded (they used a local version). However, with Googles current focus on speed, I was wondering: can a website load in under 0.2 seconds over the internet? In other words: could a website load instantly and beat the potato gun? The answer is YES. According to Pingdom, this website loads in <a href="/uploads/usecuepingdom.png">0.1 seconds</a>!</p>
 
-<p> </p>
+<blockquote>
+  <p>This website loads in 0.1 seconds!</p>
+</blockquote>
 
-<p style="text-align: center;"><img src="/img/joostvanderschee.png" style="max-width: 100%; width: 400px;" alt="Joost van der Schee" /><br /><em>Me with my two fantastic kids</em></p>
+<p>What it requires? First of all you need a really low TTFB (time to first byte). This can be achieved by serving static code (using a site generator or cache plugin) in combination with a server that is geographically close to you. Ofcourse you also need a small page (with heavily compressed images and no jQuery). Finally, to get the best performance, you should use very little to no Javascript. This will give your site a low TTI (time to interactive) and <a href="https://developers.google.com/speed/docs/insights/v5/about?hl=nl-NL&amp;utm_source=PSI&amp;utm_medium=incoming-link&amp;utm_campaign=PSI">FID</a> (first input delay).</p>
+
+<p>But why would you want all this? What is the use of beating the potato gun? I am writing this post on a mobile phone with a spotty internet connection. A fast website loads here in a few seconds, a slow website takes forever or does not load at all. Fast websites are more accesible. Google acknowledges this too and <a href="https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html?m=1">prefers</a> to show fast loading websites in its search result. Fast websites rank higher. It <a href="https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/">has been proven</a> that fast websites have a higher conversion rate as well. Fast websites are simply more effective.</p>
+
+<p>Do you want your website to be more effective? Make it load instantly. Don’t know how? No problem. I know <a href="/blog/how-to-get-a-100-google-lighthouse-score/">how to get a 100% Google Lighthouse score</a> and I love to help. Just give me a call.</p>
 
 
 
@@ -130,6 +139,11 @@
         </div>
         
         
+        
+            
+            <a id="nextlink" href="/blog/how-netlify-became-irrelevant">next<span class="desktop">: How Netlify became irrelevant</span><span class="mobile"> blog post</span></a>
+            <a id="nextlinktop" href="/blog/how-netlify-became-irrelevant">next post</a>
+            <a id="prevlinktop" href="/blog/google-lighthouse-score">previous post</a>
         
         <a id="scrolltotop" href="#top">Scroll to top</a>
         <a id="lightmode" href="#" onclick="toggleLightmode()" title="change color"></a>

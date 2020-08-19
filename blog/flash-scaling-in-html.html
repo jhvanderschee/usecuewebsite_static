@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
 <meta charset="utf-8" /> 
 
@@ -47,9 +47,9 @@
 <!--                                                                                          -->
 <!--                                                                                          -->
 
-<title>Ik ben een web developer uit Amsterdam. | Usecue web development</title>
+<title>Flash scaling in HTML | Usecue web development</title>
 
-<meta name="description" content="Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. Meer weten?">
+<meta name="description" content="Back in the days, your website would be a rectangle, filled with one big interactive Flash canvas. The nice thing about it was that it would always fit your ...">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -58,30 +58,30 @@
 <meta id="viewport" name="viewport" content="width=device-width">
 
 <!-- Facebook and Twitter integration -->
-<meta property="og:title" content="Ik ben een web developer uit Amsterdam."/>
+<meta property="og:title" content="Flash scaling in HTML"/>
 
-<meta property="og:url" content="https://www.usecue.com/nl/"/>
+<meta property="og:url" content="https://www.usecue.com/blog/flash-scaling-in-html"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. Meer weten?"/>
+<meta property="og:description" content="Back in the days, your website would be a rectangle, filled with one big interactive Flash canvas. The nice thing about it was that it would always fit your ..."/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
-<meta name="twitter:title" content="Ik ben een web developer uit Amsterdam." />
+<meta name="twitter:title" content="Flash scaling in HTML" />
 
-<meta name="twitter:url" content="https://www.usecue.com/nl/" />
-<meta name="twitter:description" content="Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. Meer weten?" />
+<meta name="twitter:url" content="https://www.usecue.com/blog/flash-scaling-in-html" />
+<meta name="twitter:description" content="Back in the days, your website would be a rectangle, filled with one big interactive Flash canvas. The nice thing about it was that it would always fit your ..." />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
-<link rel="canonical" href="https://www.usecue.com/nl/">
+<link rel="canonical" href="https://www.usecue.com/blog/flash-scaling-in-html">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
 
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 </head>
 
-<body id="top" class="home nl" style="">
+<body id="top" class="post en" style="">
 
   <script>
     if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
@@ -89,28 +89,31 @@
   </script>
 
   
-    <div id="splash">
-      <div><span class="medium"><span><a href="/about/">u</a></span><span>s</span><span>e</span><span>c</span><span>u</span><span>e</span></span><span class="small">web development</span></div>
-    </div>
   
-  
-    <a id="logo" href="/nl/" style=""><img src="/img/icon-196x196.png" alt="Usecue logo" /></a>
+    <a id="logo" href="/" style=""><img src="/img/icon-196x196.png" alt="Usecue logo" /></a>
 
     <ul id="menu">
         
-          <li><a href="/nl/over/">Over</a></li>
-          <li><a href="/nl/portfolio/de-babywegwijzer">Portfolio</a></li>
-          <li><a href="/nl/blog/">Blog</a></li>
-          <li><a href="/nl/contact/">Contact</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/portfolio/de-babywegwijzer">Portfolio</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact/">Contact</a></li>
         
     </ul>
     <div id="innerbody">
         <div id="content">
 
 
-<h1>Ik ben een web developer uit Amsterdam.</h1>
+<div class="fullscreen">
+    <h1 class="large"><div id="postdate" class="small">May 30, 2015</div>Flash scaling in HTML</h1>
+</div>
+<div id="scrolldown"></div>
 
-<p>Ik maak en host elegante, zelfgeprogrammeerde websites en webapplicaties voor mijn klanten. <a href="/nl/over/">Meer weten?</a></p>
+<p>Back in the days, your website would be a rectangle, filled with one big interactive Flash canvas. The nice thing about it was that it would always fit your screen. Nowadays I sometimes get the request to build something like that again.</p>
+
+<p>Flash, obviously, is a no-go, so I built a demo to show how to do that in HTML and CSS. I have NOT used ‘rems’, ‘percentages’, or ‘viewport-width’ in the CSS. Everything is defined in pixels and then ‘transform(scale)’ is applied to the HTML. Check it out!</p>
+
+<p><a href="http://apps.usecue.com/viewport/flashscaling.html">http://apps.usecue.com/viewport/flashscaling.html</a></p>
 
 
 
@@ -123,8 +126,13 @@
         
         
         
-        <a id="scrolltotop" href="#top">Scroll naar boven</a>
-        <a id="lightmode" href="#" onclick="toggleLightmode()" title="verander kleur"></a>
+            
+            <a id="nextlink" href="/blog/the-web-notifications-api">next<span class="desktop">: The Web Notifications API</span><span class="mobile"> blog post</span></a>
+            <a id="nextlinktop" href="/blog/the-web-notifications-api">next post</a>
+            <a id="prevlinktop" href="/blog/the-viewport-meta-tag-on-desktop">previous post</a>
+        
+        <a id="scrolltotop" href="#top">Scroll to top</a>
+        <a id="lightmode" href="#" onclick="toggleLightmode()" title="change color"></a>
     </div>
     
     <div id="darkmodeoverlay"></div>
