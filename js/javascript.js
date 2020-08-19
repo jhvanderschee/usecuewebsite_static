@@ -198,3 +198,23 @@ function toggleLightmode() {
     }
     document.getElementById('lightmode').blur();
 }
+
+if(document.body.classList.contains('error') && window.location.href.indexOf("/nl/") != -1) {
+    var elements = document.querySelectorAll('.english');
+    for (var i=0; i < elements.length; i ++) {
+        elements[i].style.display = 'none';
+    }
+    var elements = document.querySelectorAll('.nederlands');
+    for (var i=0; i < elements.length; i ++) {
+        elements[i].style.display = 'block';
+    }
+} else {
+    var elements = document.querySelectorAll('.english');
+    for (var i=0; i < elements.length; i ++) {
+        elements[i].style.display = 'block';
+    }
+    var elements = document.querySelectorAll('.nederlands');
+    for (var i=0; i < elements.length; i ++) {
+        elements[i].style.display = 'none';
+    }
+}
