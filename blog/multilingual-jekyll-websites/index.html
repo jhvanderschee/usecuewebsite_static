@@ -47,9 +47,9 @@
 <!--                                                                                          -->
 <!--                                                                                          -->
 
-<title>The problem with multi-purpose themes | Usecue web development</title>
+<title>Multilingual Jekyll websites | Usecue web development</title>
 
-<meta name="description" content="Envato is filled with very popular multi-purpose themes. The popular ones are sold almost a million times. You can virtually build any site with these themes...">
+<meta name="description" content="There are many guides for making multilingual Jekyll websites. Most of them involve plugins, and I do not like plugins. After trying several approaches, I fo...">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -58,23 +58,23 @@
 <meta id="viewport" name="viewport" content="width=device-width">
 
 <!-- Facebook and Twitter integration -->
-<meta property="og:title" content="The problem with multi-purpose themes"/>
+<meta property="og:title" content="Multilingual Jekyll websites"/>
 
-<meta property="og:url" content="https://www.usecue.com/blog/the-problem-with-multi-purpose-themes/"/>
+<meta property="og:url" content="https://www.usecue.com/blog/multilingual-jekyll-websites/"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="Envato is filled with very popular multi-purpose themes. The popular ones are sold almost a million times. You can virtually build any site with these themes..."/>
+<meta property="og:description" content="There are many guides for making multilingual Jekyll websites. Most of them involve plugins, and I do not like plugins. After trying several approaches, I fo..."/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
-<meta name="twitter:title" content="The problem with multi-purpose themes" />
+<meta name="twitter:title" content="Multilingual Jekyll websites" />
 
-<meta name="twitter:url" content="https://www.usecue.com/blog/the-problem-with-multi-purpose-themes/" />
-<meta name="twitter:description" content="Envato is filled with very popular multi-purpose themes. The popular ones are sold almost a million times. You can virtually build any site with these themes..." />
+<meta name="twitter:url" content="https://www.usecue.com/blog/multilingual-jekyll-websites/" />
+<meta name="twitter:description" content="There are many guides for making multilingual Jekyll websites. Most of them involve plugins, and I do not like plugins. After trying several approaches, I fo..." />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
-<link rel="canonical" href="https://www.usecue.com/blog/the-problem-with-multi-purpose-themes/">
+<link rel="canonical" href="https://www.usecue.com/blog/multilingual-jekyll-websites/">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
 
 <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -105,37 +105,124 @@
 
 
 <div class="fullscreen">
-    <h1 class="large"><div id="postdate" class="small">August  7, 2020</div>The problem with multi-purpose themes</h1>
+    <h1 class="large"><div id="postdate" class="small">August 20, 2020</div>Multilingual Jekyll websites</h1>
 </div>
 <div id="scrolldown"></div>
 
-<p>Envato is filled with very popular multi-purpose themes. The popular ones are sold almost a million times. You can virtually build any site with these themes without writing a single line of code. They offer a variety of different pre-made layouts. They seem like value for money… but there is a catch.</p>
+<p>There are many guides for making multilingual Jekyll websites. Most of them involve plugins, and <a href="https://jekyllcodex.org/without-plugins">I do not like plugins</a>. After trying several approaches, I found a way that is as easy as it is elegant: the perfect solution.</p>
 
-<h2 id="high-maintenance-costs">High maintenance costs</h2>
+<p>Whenever I needed a multilingual Jekyll website in the past, I always copied my complete project and translated it. This is relatively easy, but it made maintenance and adjustments a tedious job. The logical alternative was to use themes. However, I find using themes a bit too complex. I like to keep things simple.</p>
 
-<p>Multi-purpose themes (often) have no strict separation between content and design, which means that your client can ruin your carefully created design. This leads to high maintenance costs, as you have to review and correct your clients design choices. Additionally, the systems powering these multi-purpose themes are hard to grasp for your client. There are simply too many options/buttons, which leads to a lot of (undesired) support calls.</p>
+<p>Fortunately, I got inspired by <a href="https://www.kooslooijesteijn.net/blog/multilingual-website-with-jekyll-collections">a post from Koos Looijesteijn</a>. He used a smart way of using collections and Jekyll defaults. I have slightly adjusted his solution, so it respects all types of collections and sets the language parameter based on a folder WITHIN each collection. To make it as elegant as possible I use the <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO language code</a> for the folder names. Note that the solution works not only for posts, but for all custom collections.</p>
 
-<h2 id="design-suffers">Design suffers</h2>
+<p>file structure:</p>
 
-<p>Because of the aforementioned lack of separation between design and content, the design of your website is at best ‘as intended’. Not very original, but on par with current design trends. At worst, however, it becomes a showcase of (your clients) bad design decisions, unique in its awfulness. Most of the time it is somewhere in between.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>_posts
+  en
+    2020-01-01-test-post.md
+    2020-01-02-second-post.md
+  nl
+    2020-01-01-testbericht.md
+    2020-01-02-tweede-bericht.md
+</code></pre></div></div>
 
-<h2 id="seo-suffers">SEO suffers</h2>
+<p>_config:</p>
 
-<p>You will notice that all multi-purpose themes have static demo pages and/or aggressive caching. There is a good reason for that. These themes require a huge amount of database queries per page load, which make them awfully slow. Making the pages static or adding an aggressive cache layer hides this defect to the unknowing buyer.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults:
+- scope:
+    path: '_posts/en'
+    type: 'posts'
+  values:
+    permalink: 'news/:title'
+    language: en
+- scope:
+    path: '_posts/nl'
+    type: 'posts'
+  values:
+    permalink: 'nieuws/:title'
+    language: nl
+</code></pre></div></div>
 
-<p>Nevertheless these cached demo pages still have a mediocre performance score (reported by <a href="https://tools.pingdom.com/">Pingdom</a> and <a href="https://web.dev/">Lighthouse</a>), indicating an even bigger problem. The problem lies in the JavaScript and CSS powering all multi-purpose theme elements. I have analyzed Divi and Avada and they are 10 to 100 times bigger than necessary. These huge amounts of code must not only be transmitted, but also executed. The execution problem can NOT be solved by caching or gzipping. This code is blocking the rendering process by nature. Therefore, the size of the JavaScript and CSS of these multi-purpose themes is solely responsible for the mediocre performance scores. Getting <a href="/blog/how-to-get-a-100-google-lighthouse-score/">a perfect Google Lighthouse Score</a> with the aforementioned multi-purpose themes is simply not possible without some advanced tree shaking. The result: sub-optimal search engine performance.</p>
+<p>header.html:</p>
 
-<h2 id="is-it-all-bad">Is it all bad?</h2>
+<p>layout file:</p>
 
-<p>No, obviously not. Divi and Avada are sold almost a million times. These multi-purpose themes are a good fit for people who do not want or know how to code but still want to develop websites. As long as you keep a close eye on these pitfalls (maintenance costs, design and SEO), you will be able to create good looking websites with decent performance. Some people even manage to get a 70/100 score on Google Lighthouse. That is quite a good score. However, it will probably not bring you a lot of organic traffic or put you on the first page of Google.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ...
 
-<h2 id="conclusion">Conclusion</h2>
+  ...
 
-<p>These multi-purpose themes promise you they will save you time and money during development. However, as argued above, this might be a shortsighted strategy, as you will almost certainly make up for that time in maintenance/support and you will have to pay Google monthly (CPC) to get the same amount of organic traffic. In short: saving money on the short run might cost you, or your client, money on the long run.</p>
+  ...
 
-<h2 id="call-to-action">Call to action</h2>
+  ...
 
-<p>Are you selling multi-purpose themes and does your client want to get more organic leads? Then you might benefit from the lower maintenance costs and the better SEO a single purpose theme can offer. I can rebuild any website into a single purpose theme that gets a (near) <a href="/blog/how-to-get-a-100-google-lighthouse-score/">100% Google Lighthouse Score</a>. We will sell it to your client as Search Engine Optimization. Sounds good? Just <a href="/contact">drop me a line</a>…</p>
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+
+  ...
+</code></pre></div></div>
+
+<p>A demo can be found here: https://endless-flowers.cloudvent.net/</p>
 
 
 
@@ -149,9 +236,9 @@
         
         
             
-            <a id="nextlink" href="/blog/help-my-server-is-down/">next<span class="desktop">: Help, my server is down!</span><span class="mobile"> blog post</span></a>
-            <a id="nextlinktop" href="/blog/help-my-server-is-down/">next post</a>
-            <a id="prevlinktop" href="/blog/multilingual-jekyll-websites/">previous post</a>
+            <a id="nextlink" href="/blog/the-problem-with-multi-purpose-themes/">next<span class="desktop">: The problem with multi-purpose themes</span><span class="mobile"> blog post</span></a>
+            <a id="nextlinktop" href="/blog/the-problem-with-multi-purpose-themes/">next post</a>
+            <a id="prevlinktop" href="/blog/usecues-also-known-as-affordances/">previous post</a>
         
         <a id="scrolltotop" href="#top">Scroll to top</a>
         <a id="lightmode" href="#" onclick="toggleLightmode()" title="change color"></a>
