@@ -96,6 +96,8 @@ h3 {padding-bottom: 0.6em; padding-top: 0.6em;}
 body:not(.home) #content h1 {padding-bottom: .7em;}
 .home #content {width: 60%; text-align: center; padding-bottom: 12vw;}
 #content p, #content ol, #content ul, #content table {padding-bottom: 1.25em;}
+#content pre {max-width: calc(100% - 3rem); overflow: auto; font-size: 55%; margin-bottom: 2em; padding: 1rem; border: 1px solid rgba(255, 255, 255,0.4);}
+.lightmode:not(.bgcolor) #content pre {border-color: rgba(0, 0, 238,0.4);}
 blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35em; padding-left: 2.1vw;}
 .lightmode:not(.bgcolor) blockquote {border-left: 2px solid #00e;}
 #content img {width: 100%; max-width: 100%; margin-bottom: 0.2em;}
@@ -158,6 +160,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
     #scrolldown:before {font-size: 8rem; margin-top: -4rem; margin-left: -1rem;}
 }
 
+
 .mobile {display: none;}
 @media screen and (max-width: 1150px) {
     #logo, #scrolltotop, #lightmode {position: absolute;}
@@ -167,6 +170,9 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
     .post .fullscreen h1 {margin: 0; padding: 2.5em 0 2.7em!important;}
     #nextlink .mobile {display: inline;}
     #nextlink .desktop {display: none;}
+}
+@media screen and (max-width: 828px) {
+    #content {width: calc(100% - 60px);}
 }
 @media screen and (max-width: 750px) {
     .threecols > div .medium {font-size: 60px!important;}
@@ -180,7 +186,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
     .large {font-size: 55px;} /*  0.1*1600  */
     .threecols > div .medium {font-size: 40px!important;}
 
-    #content {padding-left: 15px; padding-right: 15px;}
+    #content {padding-left: 15px; padding-right: 15px; width: calc(100% - 30px);}
     #logo, #nextlink {left: 15px;}
     #scrolltotop, #lightmode {right: 15px;}
     .scrolled:not(.post) #lightmode {left: 15px; right: auto;}

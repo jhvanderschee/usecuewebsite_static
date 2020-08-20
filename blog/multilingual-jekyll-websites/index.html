@@ -109,14 +109,13 @@
 </div>
 <div id="scrolldown"></div>
 
-<p>There are many guides for making multilingual Jekyll websites. Most of them involve plugins, and <a href="https://jekyllcodex.org/without-plugins">I do not like plugins</a>. After trying several approaches, I found a way that is as easy as it is elegant: the perfect solution.</p>
+<p>There are many guides for making multilingual Jekyll websites. Most of them involve plugins, and <a href="https://jekyllcodex.org/without-plugins">I do not like plugins</a>. After trying several approaches, I found a way that is as easy as it is elegant.</p>
 
-<p>Whenever I needed a multilingual Jekyll website in the past, I always copied my complete project and translated it. This is relatively easy, but it made maintenance and adjustments a tedious job. The logical alternative was to use themes. However, I find using themes a bit too complex. I like to keep things simple.</p>
+<p>Whenever I needed a multilingual Jekyll website in the past, I always copied my complete project and translated it. This is relatively easy and keeps the codebase simple, but it made maintenance and adjustments a tedious job. The logical alternative, besides using a plugin, was to use themes. However, I do not like the added complexity of themes either. I like to keep things simple.</p>
 
-<p>Fortunately, I got inspired by <a href="https://www.kooslooijesteijn.net/blog/multilingual-website-with-jekyll-collections">a post from Koos Looijesteijn</a>. He used a smart way of using collections and Jekyll defaults. I have slightly adjusted his solution, so it respects all types of collections and sets the language parameter based on a folder WITHIN each collection. To make it as elegant as possible I use the <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO language code</a> for the folder names. Note that the solution works not only for posts, but for all custom collections.</p>
+<p>Fortunately, I got inspired by <a href="https://www.kooslooijesteijn.net/blog/multilingual-website-with-jekyll-collections">a post from Koos Looijesteijn</a>. He used a smart way of using collections and Jekyll defaults. I have slightly adjusted his solution, so it respects all types of collections and sets the language parameter based on a folder WITHIN each collection. To make it as elegant as possible I use the <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO language code</a> for the folder names. Note that the solution works not only for posts, but for all custom collections and even for pages.</p>
 
-<p>file structure:</p>
-
+<p>The file structure should look like:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>_posts
   en
     2020-01-01-test-post.md
@@ -125,9 +124,7 @@
     2020-01-01-testbericht.md
     2020-01-02-tweede-bericht.md
 </code></pre></div></div>
-
-<p>_config:</p>
-
+<p>The ‘_config.yml’ file should look like:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults:
 - scope:
     path: '_posts/en'
@@ -142,87 +139,17 @@
     permalink: 'nieuws/:title'
     language: nl
 </code></pre></div></div>
-
-<p>header.html:</p>
-
-<p>layout file:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ...
-
+<p>The ‘header.html’ file should start with:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign languageurl = page.language | append: '/' | prepend: '/' %}
+</code></pre></div></div>
+<p>The layout files should loop over the content like:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign siteposts = site.posts | where_exp: 'page','page.path contains languageurl' %}
+{% for item in siteposts %}
   ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
-
-  ...
+{% endfor %}
 </code></pre></div></div>
 
-<p>A demo can be found here: https://endless-flowers.cloudvent.net/</p>
+<p>Sure… your code base will get polluted by if-else statements requesting the correct language, but it is very manageable. I immediately put my money where my mouth was and refactored this website into a single code base. It worked like a charm. Additionally, I got rid of the .nl domain name. I redirected all URL’s to the .com domain, hoping these pages benefit from the .com domains higher page rank. I will keep you posted if that worked for me.</p>
 
 
 
