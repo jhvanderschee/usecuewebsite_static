@@ -50,7 +50,7 @@
 
 <title>Multilingual Jekyll websites | Usecue web development</title>
 
-<meta name="description" content="There are many guides for making multilingual Jekyll websites. Most of them involve plugins, and I do not like plugins. After trying several approaches, I fo...">
+<meta name="description" content="There are many guides for making multilingual Jekyll websites. Most of them involve plugins, and I do not really like plugins. After trying several approache...">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -64,14 +64,14 @@
 <meta property="og:url" content="https://www.usecue.com/blog/multilingual-jekyll-websites/"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="There are many guides for making multilingual Jekyll websites. Most of them involve plugins, and I do not like plugins. After trying several approaches, I fo..."/>
+<meta property="og:description" content="There are many guides for making multilingual Jekyll websites. Most of them involve plugins, and I do not really like plugins. After trying several approache..."/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
 <meta name="twitter:title" content="Multilingual Jekyll websites" />
 
 <meta name="twitter:url" content="https://www.usecue.com/blog/multilingual-jekyll-websites/" />
-<meta name="twitter:description" content="There are many guides for making multilingual Jekyll websites. Most of them involve plugins, and I do not like plugins. After trying several approaches, I fo..." />
+<meta name="twitter:description" content="There are many guides for making multilingual Jekyll websites. Most of them involve plugins, and I do not really like plugins. After trying several approache..." />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
@@ -110,13 +110,15 @@
 </div>
 <div id="scrolldown"></div>
 
-<p>There are many guides for making multilingual Jekyll websites. Most of them involve plugins, and <a href="https://jekyllcodex.org/without-plugins">I do not like plugins</a>. After trying several approaches, I found a way that is as easy as it is elegant.</p>
+<p>There are many guides for making multilingual Jekyll websites. Most of them involve plugins, and <a href="https://jekyllcodex.org/without-plugins">I do not really like plugins</a>. After trying several approaches, I found a way that is as easy as it is elegant.</p>
 
 <p>Whenever I needed a multilingual Jekyll website in the past, I always copied my complete project and translated it. This is relatively easy and keeps the codebase simple, but it made maintenance and adjustments a tedious job. The logical alternative, besides using a plugin, was to use themes. However, I do not like the added complexity of themes either. I like to keep things simple.</p>
 
 <p>Fortunately, I got inspired by <a href="https://www.kooslooijesteijn.net/blog/multilingual-website-with-jekyll-collections">a post from Koos Looijesteijn</a>. He used a smart way of using collections and Jekyll defaults. I have slightly adjusted his solution, so it respects all types of collections and sets the language parameter based on a folder WITHIN each collection. To make it as elegant as possible I use the <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO language code</a> for the folder names. Note that the solution works not only for posts, but for all custom collections and even for pages.</p>
 
-<p>The file structure should look like:</p>
+<h2 id="quick-start-step-by-step">Quick start (step by step)</h2>
+
+<p>Step 1. Create folders with ISO language codes in your collection directory/directories:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>_posts
   en
     2020-01-01-test-post.md
@@ -125,7 +127,7 @@
     2020-01-01-testbericht.md
     2020-01-02-tweede-bericht.md
 </code></pre></div></div>
-<p>The ‘_config.yml’ file should look like:</p>
+<p>Step 2. Adjust the ‘_config.yml’ file to add the appropriate front matter defaults. The following code adds the ‘page.language’ variable to each post and sets the permalink:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults:
 - scope:
     path: '_posts/en'
@@ -140,18 +142,32 @@
     permalink: 'nieuws/:title'
     language: nl
 </code></pre></div></div>
-<p>The layout files should loop over the content like:</p>
+<p>Step 3. Loop over the content (in your layout file), like this:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign siteposts = site.posts | where: 'language',page.language %}
 {% for item in siteposts %}
   ...
 {% endfor %}
-
-{% if page.language == 'en' %}...{% endif %}
-{% if page.language == 'nl' %}...{% endif %}
-
 </code></pre></div></div>
 
-<p>Sure… your code base (layout files) will get polluted by if-else statements requesting the correct language, but it is very manageable.</p>
+<p>Step 4. We have now succesfully seperated our English and Dutch posts. Our layout file, however, is not yet translated. The nicest way to do this is to create a ‘translations.yml’ file with all strings that need to be translated. Place this file in the ‘_data’ directory, and make sure it looks something like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>speed_index:
+  en: Speed index
+  nl: Snelheidsindex
+google_score:
+  en: Google score
+  nl: Google score
+page_weight:
+  en: Page weight
+  nl: Paginagrootte
+</code></pre></div></div>
+
+<p>Step 5. To shorten the code in your layout files, place the following code in your ‘header.html’ file:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign translations = site.data.translations %}
+</code></pre></div></div>
+
+<p>Step 6. Finally, you must replace each English string with something like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{ translations.speed_index[page.language] }}
+</code></pre></div></div>
 
 <h2 id="proof-of-the-pudding">Proof of the pudding</h2>
 
