@@ -79,6 +79,12 @@
   
   
       <url>
+        <loc>https://www.usecue.com/nl/blog/privacy-shield-ongeldig-hoe-nu-verder/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
         <loc>https://www.usecue.com/blog/multilingual-jekyll-websites/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
