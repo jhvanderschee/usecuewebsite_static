@@ -1,0 +1,46 @@
+{
+	
+	"include": [".htaccess"],
+	"exclude": [".sass-cache",".jekyll-cache","gemfiles","Gemfile","Gemfile.lock","node_modules","vendor/bundle/","vendor/cache/","vendor/gems/","vendor/ruby/"],
+	
+	"collections": {"portfolio": {
+				"output": true,
+				"_sort-key": null,
+				"_subtext-key": null,
+				"_image-key": null,
+				"_image-size": null,
+				"_singular-name": null,
+				"_singular-key": null,
+				"_disable-add": null,
+				"_icon": null,
+				"_add-options": null
+			},"posts": {
+				"output": true,
+				"_sort-key": null,
+				"_subtext-key": null,
+				"_image-key": null,
+				"_image-size": null,
+				"_singular-name": null,
+				"_singular-key": null,
+				"_disable-add": null,
+				"_icon": null,
+				"_add-options": null
+			}},
+	
+	
+	"defaults": [{"scope": {"path": ""},"values": {"layout": "page","language": "en"}},{"scope": {"path": "nl"},"values": {"layout": "page","language": "nl"}},{"scope": {"path": "_posts/en"},"values": {"layout": "post","language": "en","permalink": "blog/:title/"}},{"scope": {"path": "_posts/nl"},"values": {"layout": "post","language": "nl","permalink": "nl/blog/:title/"}},{"scope": {"path": "_portfolio/en"},"values": {"layout": "portfolio","language": "en","permalink": "portfolio/:title/","_comments": {"image": "desktop 1236 x 782","mobile_image": "mobile 419 x 703,5"}}},{"scope": {"path": "_portfolio/nl"},"values": {"layout": "portfolio","language": "nl","permalink": "nl/portfolio/:title/","_comments": {"image": "desktop 1236 x 782","mobile_image": "mobile 419 x 703,5"}}}],
+	
+	
+	
+	"paths": {
+		"uploads": null,
+		"plugins": "_plugins",
+		"data": "_data",
+		"collections": "",
+		"includes": "_includes",
+		"layouts": "_layouts"
+	},
+	
+	
+	"source": "/usr/local/__site/src"
+}
