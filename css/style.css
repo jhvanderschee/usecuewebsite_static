@@ -13,8 +13,8 @@
 }
 
 * {margin: 0; padding: 0; font-weight: normal;}
-body {background: #0000ee url(/img/banana.svg) center 0rem / 100% auto no-repeat; background-attachment: fixed; color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
-body {background: #0000ee; background-attachment: fixed; color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
+body {background:url(/img/bananaleft.svg) left 0rem / auto 100% no-repeat, #0000ee url(/img/bananaright.svg) right 0rem / auto 100% no-repeat; background-attachment: fixed; color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
+body {backdground: #0000ee; background-attachment: fixed; color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
 body.lightmode:not(.bgcolor) {color: #0000ee; background-color: #dde;}
 body.bgcolor {color: #fffd;}
 body, html {height: 100%;}
