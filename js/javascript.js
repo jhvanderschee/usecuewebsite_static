@@ -218,3 +218,7 @@ if(document.body.classList.contains('error') && window.location.href.indexOf("/n
         elements[i].style.display = 'none';
     }
 }
+
+document.body.addEventListener('mousemove', function() {
+    document.body.classList.add('loaded');
+});

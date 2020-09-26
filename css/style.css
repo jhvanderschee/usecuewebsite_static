@@ -13,8 +13,10 @@
 }
 
 * {margin: 0; padding: 0; font-weight: normal;}
-body {background:url(/img/bananaleft.svg) left 0rem / auto 100% no-repeat, #0000ee url(/img/bananaright.svg) right 0rem / auto 100% no-repeat; background-attachment: fixed; color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
 body {background: #0000ee; background-attachment: fixed; color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
+#bananaleft, #bananaright {transition: all .7s ease-in-out; transform: translateX(-100%); position: fixed; width: 26%; left: 0; top: calc(100px + 8%); height: calc(92% - 100px); opacity: 0.35; z-index: 9; object-fit: cover; object-position: 100% 0%;}
+#bananaright {left: auto; right: 0; object-position: 0% 0%; transform: translateX(100%);}
+.loaded #bananaleft, .loaded #bananaright {transform: translateX(0%);}
 body.lightmode:not(.bgcolor) {color: #0000ee; background-color: #dde;}
 body.bgcolor {color: #fffd;}
 body, html {height: 100%;}
@@ -28,7 +30,7 @@ body.black a {color: black;}
 #innerbody {position: relative;}
 #innerbody, #content .fullscreen, #splash {align-items: center; display: flex; justify-content: center; min-height: 100%;}
 #darkmodeoverlay {background: #fff2; position: fixed; top: 0; left: 0; z-index: 8; width: 100%; pointer-events: none; opacity: 0; height: 100vh;}
-#splash {background: #0000ee; position: fixed; top: 0; left: 0; z-index: 9; width: 100%; pointer-events: none; color: #dde;
+#splash {background: #0000ee; position: fixed; top: 0; left: 0; z-index: 11; width: 100%; pointer-events: none; color: #dde;
     animation-name: fadeout; 
     animation-delay: 1.3s; 
     animation-duration: 0.3s; 
@@ -79,14 +81,12 @@ h3 {padding-bottom: 0.6em; padding-top: 0.6em;}
 .bgcolor #logo:before, .lightmode #logo:before {content: ""; width: 100%; height: 100%; background: url(/img/icon-196x196-transparent.png) center center / contain no-repeat; position: absolute;}
 .lightmode:not(.bgcolor) #logo:before {background: url(/img/icon-196x196-transparent-blue.png) center center / contain no-repeat;}
 #scrolltotop {top: auto; bottom: 1.7vw; right: 2vw; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; max-width: calc(35% - 30px);}
-#lightmode {top: auto; bottom: 1.7vw; right: 2vw; position: fixed; transition: opacity 0.3s ease-in-out;}
-#nextlink {top: auto; bottom: 1.7vw; left: 2vw; right: auto; position: absolute; max-width: calc(65% - 30px); text-transform: lowercase;}
-#nextlinktop, #prevlinktop {top:50vh; left: 2vw; position: fixed; transition: opacity 0.3s ease-in-out; opacity: 1; transform: rotate(-90deg) translateX(-50%); transform-origin: 0% 0%;}
+#lightmode {top: auto; bottom: 1.7vw; right: 2vw; position: fixed; transition: opacity 0.3s ease-in-out; z-index: 10;}
+#nextlink {top: auto; bottom: 1.7vw; left: 2vw; right: auto; position: absolute; max-width: calc(65% - 30px); text-transform: lowercase; z-index: 10;}
+#nextlinktop, #prevlinktop {top:50vh; left: 2vw; position: fixed; transition: opacity 0.3s ease-in-out; opacity: 1; transform: rotate(-90deg) translateX(-50%); transform-origin: 0% 0%; z-index: 10;}
 #nextlinktop {left: auto; right: 2vw; transform-origin: 100% 0%; transform: rotate(90deg) translateX(50%);}
-.scrolled #lightmode,
-.scrolled #nextlinktop,
-.scrolled #prevlinktop {opacity: 0; pointer-events: none;}
-.scrolled #scrolltotop {opacity: 1; pointer-events: all;}
+.scrolled #lightmode {opacity: 0; pointer-events: none;}
+.scrolled #scrolltotop {opacity: 1; pointer-events: all; z-index: 10;}
 @media screen and (max-width: 1100px) {
     #nextlinktop, #prevlinktop {opacity: 0; pointer-events: none;}
 }
@@ -135,6 +135,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
     .home #content {width: 1250px;} /*  0.6*2000  */
     #content ul {margin-left: 28px;}
     #logo img {width: 67px;}
+    #bananaleft, #bananaright {width: calc(50% - 480px);}
 }
 
 @media screen and (max-width: 1600px) {
@@ -158,6 +159,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
     #scrolltotop, #nextlink, #lightmode {bottom: 25px;}
     #content ul {margin-left: 22px;}
     #scrolldown:before {font-size: 8rem; margin-top: -4rem; margin-left: -1rem;}
+    #bananaleft, #bananaright {width: calc(50% - 384px);}
 }
 
 
