@@ -14,7 +14,7 @@
 
 * {margin: 0; padding: 0; font-weight: normal;}
 body {background: #0000ee; background-attachment: fixed; color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
-#bananaleft, #bananaright {display: none; transition: all .7s ease-in-out; transform: translateX(-100%); position: fixed; width: 26%; left: 0; top: calc(100px + 8%); height: calc(92% - 100px); opacity: 0.35; z-index: 9; object-fit: cover; object-position: 100% 0%;}
+#bananaleft, #bananaright {display: none; transform: translateX(-100%); position: fixed; width: 26%; left: 0; top: calc(100px + 8%); height: calc(92% - 100px); opacity: 0.35; z-index: 9; object-fit: cover; object-position: 100% 0%;}
 #bananaright {left: auto; right: 0; object-position: 0% 0%; transform: translateX(100%);}
 .loaded #bananaleft, .loaded #bananaright {display: block; transform: translateX(0%);}
 body.lightmode:not(.bgcolor) {color: #0000ee; background-color: #dde;}

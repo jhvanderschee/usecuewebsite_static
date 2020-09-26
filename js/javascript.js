@@ -218,7 +218,22 @@ if(document.body.classList.contains('error') && window.location.href.indexOf("/n
         elements[i].style.display = 'none';
     }
 }
-
+var loaded = false;
 document.body.addEventListener('mousemove', function() {
-    document.body.classList.add('loaded');
+    if(loaded==false){
+        var oImg = document.createElement("img");
+        oImg.setAttribute('src', '/img/bananaleft2.svg');
+        oImg.setAttribute('alt', 'bananaleafs');
+        oImg.setAttribute('id', 'bananaleft');
+        oImg.setAttribute('style', 'transition: all .7s ease-in-out;');
+        document.body.appendChild(oImg);
+        var oImg = document.createElement("img");
+        oImg.setAttribute('src', '/img/bananaright2.svg');
+        oImg.setAttribute('alt', 'bananaleafs');
+        oImg.setAttribute('id', 'bananaright');
+        oImg.setAttribute('style', 'transition: all .7s ease-in-out;');
+        document.body.appendChild(oImg);
+        loaded = true;
+        setTimeout(function(){document.body.classList.add('loaded');},0);
+    }
 });
