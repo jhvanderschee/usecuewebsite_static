@@ -14,7 +14,7 @@
 
 * {margin: 0; padding: 0; font-weight: normal;}
 body {background: #0000ee; background-attachment: fixed; color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
-#bananaleft, #bananaright {pointer-events: none; transition: transform 0.7s ease-in-out; transform: translateX(-100%); position: fixed; width: 26%; left: 0; top: calc(100px + 8%); height: calc(92% - 100px); opacity: 0.35; z-index: 9; object-fit: cover; object-position: 100% 0%;}
+#bananaleft, #bananaright {max-width: 650px; pointer-events: none; transition: transform 0.7s ease-in-out; transform: translateX(-100%); position: fixed; width: 24%; left: 0; top: calc(100px + 8%); height: calc(92% - 100px); opacity: 0.35; z-index: 9; object-fit: cover; object-position: 100% 0%;}
 #bananaright {left: auto; right: 0; object-position: 0% 0%; transform: translateX(100%);}
 .loaded #bananaleft, .loaded #bananaright {transform: translateX(0%);}
 .lightmode:not(.bgcolor) #bananaleft, .lightmode:not(.bgcolor) #bananaright {opacity: 0.7; filter: contrast(0%) brightness(50%) sepia(100%) hue-rotate(188deg) saturate(700%);}
@@ -136,7 +136,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
     .home #content {width: 1250px;} /*  0.6*2000  */
     #content ul {margin-left: 28px;}
     #logo img {width: 67px;}
-    #bananaleft, #bananaright {width: calc(50% - 480px);}
+    #bananaleft, #bananaright {width: calc(50% - 520px);}
 }
 
 @media screen and (max-width: 1600px) {
@@ -160,7 +160,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
     #scrolltotop, #nextlink, #lightmode {bottom: 25px;}
     #content ul {margin-left: 22px;}
     #scrolldown:before {font-size: 8rem; margin-top: -4rem; margin-left: -1rem;}
-    #bananaleft, #bananaright {width: calc(50% - 384px);}
+    #bananaleft, #bananaright {width: calc(50% - 424px);}
 }
 
 
