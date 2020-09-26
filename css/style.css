@@ -17,6 +17,7 @@ body {background: #0000ee; background-attachment: fixed; color: #dde; font-famil
 #bananaleft, #bananaright {transition: all 0.7s ease-in-out; transform: translateX(-100%); position: fixed; width: 26%; left: 0; top: calc(100px + 8%); height: calc(92% - 100px); opacity: 0.35; z-index: 9; object-fit: cover; object-position: 100% 0%;}
 #bananaright {left: auto; right: 0; object-position: 0% 0%; transform: translateX(100%);}
 .loaded #bananaleft, .loaded #bananaright {transform: translateX(0%);}
+.lightmode:not(.bgcolor) #bananaleft, .lightmode:not(.bgcolor) #bananaright {opacity: 0.7; filter: contrast(0%) brightness(50%) sepia(100%) hue-rotate(188deg) saturate(700%);}
 body.lightmode:not(.bgcolor) {color: #0000ee; background-color: #dde;}
 body.bgcolor {color: #fffd;}
 body, html {height: 100%;}
