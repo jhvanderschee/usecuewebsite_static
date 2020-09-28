@@ -236,10 +236,22 @@ if (sessionStorage.loaded) {
     writeImages();
 } else {
     var loaded = false;
-    document.body.addEventListener('mousemove', function() {
-        if(loaded==false){
-            writeImages();
-            loaded = true;
-        }
+
+    //An array of DOM events that should be interpreted as
+    //user activity.
+    var activityEvents = [
+        'mousedown', 'mousemove', 'keydown',
+        'scroll', 'touchstart'
+    ];
+ 
+    //add these events to the document.
+    //register the activity function as the listener parameter.
+    activityEvents.forEach(function(eventName) {
+        document.addEventListener(eventName, function() {
+            if(loaded==false){
+                writeImages();
+                loaded = true;
+            }
+        });
     });
 }
