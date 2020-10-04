@@ -79,6 +79,12 @@
   
   
       <url>
+        <loc>https://www.usecue.com/blog/monkey-business-with-banana-leafs/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
         <loc>https://www.usecue.com/nl/blog/100-pagespeed-insights/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -410,12 +416,6 @@
   
       <url>
         <loc>https://www.usecue.com/blog/usecues-also-known-as-affordances/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
-        <loc>https://www.usecue.com/blog/monkey-business-with-banana-leafs/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
