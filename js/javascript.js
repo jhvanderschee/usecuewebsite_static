@@ -222,10 +222,12 @@ function writeImages() {
     var oImg = document.createElement("img");
     oImg.setAttribute('src', '/img/bananaleft2.svg');
     oImg.setAttribute('id', 'bananaleft');
+    oImg.setAttribute('alt', 'Banana leafs left');
     document.body.appendChild(oImg);
     var oImg = document.createElement("img");
     oImg.setAttribute('src', '/img/bananaright2.svg');
     oImg.setAttribute('id', 'bananaright');
+    oImg.setAttribute('alt', 'Banana leafs right');
     document.body.appendChild(oImg);
     if(!sessionStorage.loaded) var delay = 1000;
     else var delay = 0;
