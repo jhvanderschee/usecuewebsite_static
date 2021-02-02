@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" /> 
+
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--    ... ...   ....    ....    ....  ... ...    ....                                       -->
+<!--     ||  ||  ||. '  .|...|| .|   ''  ||  ||  .|...||                                      -->
+<!--     ||  ||  . '|.. ||      ||       ||  ||  ||                                           -->
+<!--     '|..'|. |'..|'  '|...'  '|...'  '|..'|.  '|...'    w e b    d e v e l o p m e n t    -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--    .-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    |                  - = Google Lighthouse Score = -                      |             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    !         Performance:    100            Best Practices:  100           !             -->
+<!--    :         Accessibility:  100            SEO:             100           :             -->
+<!--    :                                                                       :             -->
+<!--    .                                                                       .             -->
+<!--    .                  First Contentful Paint:   1.0 s                      .             -->
+<!--    :                  First Meaningful Paint:   1.0 s                      :             -->
+<!--    :                  Speed Index:              1.8 s                      :             -->
+<!--    !                  First CPU Idle:           1.0 s                      !             -->
+<!--    |                  Time to Interactive:      1.0 s                      |             -->
+<!--    |                  Estimated Input Latency:  10 ms                      |             -->
+<!--    |                                                                       |             -->
+<!--    |                                                                       |             -->
+<!--    `-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'             -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                       Last audit: Apr 2, 2020 7:42 PM                                    -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+<!--                                                                                          -->
+
+<title>Instagram op je website | Usecue web development</title>
+
+<meta name="description" content="Dus je wilt de meest recente post van je Instagram account op je website laten zien? Geen probleem zou je denken… Dat dacht ik ook toen een klant het vroeg, ...">
+
+<link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
+<link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
+<link rel="apple-touch-icon" href="/img/icon-196x196.png" />
+
+<meta id="viewport" name="viewport" content="width=device-width">
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content="Instagram op je website"/>
+
+<meta property="og:url" content="https://www.usecue.com/nl/blog/instagram-op-je-website/"/>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Usecue web development"/>
+<meta property="og:description" content="Dus je wilt de meest recente post van je Instagram account op je website laten zien? Geen probleem zou je denken… Dat dacht ik ook toen een klant het vroeg, ..."/>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@jhvanderschee">
+<meta name="twitter:title" content="Instagram op je website" />
+
+<meta name="twitter:url" content="https://www.usecue.com/nl/blog/instagram-op-je-website/" />
+<meta name="twitter:description" content="Dus je wilt de meest recente post van je Instagram account op je website laten zien? Geen probleem zou je denken… Dat dacht ik ook toen een klant het vroeg, ..." />
+
+<link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
+
+<link rel="canonical" href="https://www.usecue.com/nl/blog/instagram-op-je-website/">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
+
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+
+<body id="top" class="post nl" style="">
+
+  <script>
+    if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
+    if (localStorage.getItem('mode') == 'light') document.getElementById('top').classList.add('lightmode'); 
+  </script>
+
+  
+  
+    <a id="logo" href="/nl/" style=""><img src="/img/icon-196x196.png" alt="Usecue logo" /></a>
+
+    <ul id="menu">
+        
+          <li><a href="/nl/over/">Over</a></li>
+          <li><a href="/nl/portfolio/de-babywegwijzer/">Portfolio</a></li>
+          <li><a href="/nl/blog/">Blog</a></li>
+          <li><a href="/nl/contact/">Contact</a></li>
+        
+    </ul>
+
+    <div id="innerbody">
+        <div id="content">
+
+
+<div class="fullscreen">
+    <h1 class="large"><div id="postdate" class="small">February  1, 2021</div>Instagram op je website</h1>
+</div>
+<div id="scrolldown"></div>
+
+<p>Dus je wilt de meest recente post van je Instagram account op je website laten zien? Geen probleem zou je denken… Dat dacht ik ook toen een klant het vroeg, maar het bleek (zoals altijd) ingewikkelder dan gedacht.</p>
+
+<p>Allereerst leken de meeste oplossingen en plugins die ik online vond het niet (meer) te doen. Aanvankelijk dacht ik dat het te maken had met de updates van Instagram van het afgelopen jaar. Facebook/Instagram heeft namelijk een nieuw principe geintroduceerd om de afbeeldingen van Instagram op te vragen. Je mocht de afbeeldingen altijd gewoon ophalen als je een API key had. Je kreeg dan van Instagram een JSON file met daarin alle gegevens over je afbeeldingen, waaronder de URL. Superhandig. Helaas besloten ze bij Facebook dat ze dat niet langer toe wilden staan. De nieuwe methode vereist dat je je eerst authoriseert, waarop je een token krijgt, dat je kan inwisselen voor een token dat langer geldig is, waarmee je dan een JSON kunt ophalen, waarin tijdelijk geldige links staan naar de afbeeldingen. Deze JSON mag je gedurende een maand kan opvragen en daarna moet je met dit token een nieuw token opvragen, dat op zijn beurt ook weer een maand geldig is. Ik ging er vanuit dat veel oplossingen en plugins deze nieuwe methode te omslachtig vonden en daarom hun software ‘kapot’ hadden laten gaan. Dat bleek echter niet waar! Natuurlijk waren er een paar die niet meer werkte, omdat developers gedemotiveerd waren geraakt door de zoveelste update van Instagram, maar de meeste bleken het gewoon nog te doen. Toen ik dezelfde oplossingen in Chrome laadde deden ze het namelijk wel. Ze deden het dus alleen niet in mijn Firefox! Firefox is redelijk streng wanneer het op Facebook (code) aankomt en wat bleek: ze blokkeren alle oplossingen die hun afbeeldingen direct van Instagram/Facebook halen. Dat is ongeveer tweederde van de oplossingen die ik heb gevonden. Dat dat geblokkeerd wordt is terecht, want het mag niet volgens de wet, ook niet met een cookie banner. Meer info daarover vind je in de uitspraak in de ‘Max Schrems rechtzaak’, waarin ook het <a href="/nl/blog/privacy-shield-ongeldig-hoe-nu-verder/">Privacy Shield ongeldig</a> is verklaard. De overgie oplossingen deed het wel in Firefox, dus deden zij iets anders, maar wat? Na een snelle check bleek dat zij vrijwel allemaal een eigen CDN gebruikten en die CDN’s werden niet geblokkeerd door het Facebook filter van Firefox.</p>
+
+<blockquote>
+  <p>Dat was het punt waarop ik me realiseerde dat het weer eens veel ingewikkelder in elkaar stak dan gedacht… terwijl het inladen van de afbeeldingen van je eigen Instagram profiel toch niet zo moeilijk zou moeten zijn?</p>
+</blockquote>
+
+<p>Samenvattend was ik er dus achter gekomen dat Firefox met zijn ‘Facebook container’ de Instagram plaatjes op je website blokkeert als je ze direct van Facebook haalt. Doe je dat toch, dan loop je het risico dat je plaatjes niet getoond worden en riskeer je een AVG/GDPR boete. De vraag is echter… is die andere oplossing, waarbij de afbeeldingen van een ander CDN worden gehaald dan wel AVG/GDPR-proof? Het korte antwoord is: nee. Het lange antwoord: Dat hangt er van af of het bedrijf achter het CDN Amerikaans is, of de servers (alleen) in Europa staan en of je een verwerkersovereenkomst hebt met deze partij. Theoretisch zou dat dus een legale oplossing KUNNEN zijn, maar in de praktijk is dat vrijwel nooit het geval. Dat was het punt waarop ik me realiseerde dat het weer eens veel ingewikkelder in elkaar stak dan gedacht… terwijl het inladen van de afbeeldingen van je eigen Instagram profiel toch niet zo moeilijk zou moeten zijn</p>
+
+<p>Aangezien ik geen goede AVG/GDPR compliant oplossing kon vinden voor het inladen van een paar simpele Instagram plaatjes, besloot ik het heft in eigen hand te nemen en zelf iets te bouwen. Na wat technische omzwervingen kwam ik erop dat dit (helaas) toch echt via de Facebook/Instagram API moest. Zo gezegd, zo gedaan. Samen met mijn tweelingbroer heb ik het hele authorisatie en token-inwissel-dansje geprogrammeerd en geautomatiseerd. Daardoor konden we met onze nieuwe webapplicatie, die we uiteindelijk <a href="https://profilepageimages.usecue.com/">PPI Loader</a> hebben genoemd, eenvoudig afbeeldingen downloaden en opslaan op onze server. Een mooie oplossing voor onze eigen klanten, die daardoor geen nieuwe verwerkersovereenkomst hoefden te tekenen. Om wat ruchtbaarheid te geven aan onze tool besloot ik een platform specifieke toepassing te bouwen voor Jekyll en WordPress. De Jekyll oplossing heb ik op mijn Jekyll Codex website gepost en de WordPress plugin heb ik opgestuurd naar de WordPress plugin store. Zodoende kunnen ook andere developers (en eindgebruikers) profiteren van mijn harde werk. Het mooie van de WordPress plugin is, dat het mogelijk is om de bestanden op de WordPress server te cachen. Op die manier gaan er helemaal geen requests meer DIRECT van de bezoeker naar onze PPI Loader tool, waardoor we het privacy probleem omzeilen en er ook geen verwerkersovereenkomst nodig is. Helaas is deze oplossing nog niet beschikbaar in de WordPress plugin store, maar je kunt hem al wel downloaden van onze <a href="https://profilepageimages.usecue.com/">PPI Loader website</a>.</p>
+
+<p>Wil jij ook Instagram op je website? En wil je dat op een AVG/GDPR compliant manier? Neem dan <a href="/nl/contact">contact</a>/ op!</p>
+
+
+
+
+
+
+
+
+        </div>
+        
+        
+        
+            
+            <a id="nextlink" href="/nl/blog/100-pagespeed-insights/">volgende<span class="desktop">: 100/100 Pagespeed Insights</span><span class="mobile"> blog post</span></a>
+            <a id="nextlinktop" href="/nl/blog/100-pagespeed-insights/">volgende post</a>
+            <a id="prevlinktop" href="/nl/blog/may-1st-reboot/">vorige post</a>
+        
+        <a id="scrolltotop" href="#top">Scroll naar boven</a>
+        <a id="lightmode" href="#" onclick="toggleLightmode()" title="verander kleur"></a>
+    </div>
+    
+    <div id="darkmodeoverlay"></div>
+
+    <div id="lightbox"></div>
+    <script src="/js/javascript.js"></script>
+
+
+</body>
+
+</html>
