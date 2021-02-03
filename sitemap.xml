@@ -85,6 +85,12 @@
        </url>
   
       <url>
+        <loc>https://www.usecue.com/blog/instagram-on-your-website/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
         <loc>https://www.usecue.com/blog/monkey-business-with-banana-leafs/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
