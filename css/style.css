@@ -194,8 +194,8 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
     .scrolled:not(.post) #lightmode {left: 15px; right: auto;}
     #menu {right: 15px;}
 
-    #content ul {margin-left: 1em}
-    #content ol {margin-left: 1em;}
+    #content ul {margin-left: 1.2em}
+    #content ol {margin-left: 1.2em;}
     #scrolldown:before {font-size: 5rem; margin-top: -2.5rem; margin-left: -0.6rem;}
 }
 
