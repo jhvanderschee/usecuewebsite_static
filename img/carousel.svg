@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg917"
+   width="620.05145"
+   height="619.3562"
+   viewBox="0 0 620.05145 619.3562"
+   sodipodi:docname="carousel.svg"
+   inkscape:version="1.0.2 (394de47547, 2021-03-26)">
+  <metadata
+     id="metadata923">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs921" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3440"
+     inkscape:window-height="1391"
+     id="namedview919"
+     showgrid="false"
+     inkscape:zoom="0.90666667"
+     inkscape:cx="18.619029"
+     inkscape:cy="301.51639"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g925"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g925"
+     transform="translate(-291.87292,-6.3078537)">
+    <rect
+       style="opacity:1;fill:#ffffff;stroke-width:1.00678"
+       id="rect929"
+       width="500.84488"
+       height="500.00461"
+       x="291.87292"
+       y="6.3078537"
+       rx="103.71124" />
+    <path
+       id="rect931"
+       style="opacity:1;fill:#ffffff;stroke-width:0.998894"
+       d="m 852.51225,131.80857 v 297.3457 c 0,75.56384 -60.83264,136.39649 -136.39648,136.39649 H 422.09624 c -0.58969,0 -1.1758,-0.0141 -1.76368,-0.0215 16.78318,35.60473 52.94591,60.13477 95.05469,60.13477 h 291.47852 c 58.20252,0 105.05859,-46.85607 105.05859,-105.0586 V 226.52732 c 0,-41.82464 -24.19675,-77.78957 -59.41211,-94.71875 z" />
+  </g>
+</svg>
