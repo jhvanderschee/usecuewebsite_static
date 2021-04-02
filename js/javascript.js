@@ -2,6 +2,11 @@
 
 function windowScroll() {
     var top = window.pageYOffset || document.documentElement.scrollTop;
+    if (top > 0) {
+        document.body.classList.add('scrollstart');
+    } else {
+        document.body.classList.remove('scrollstart');
+    }
     if (top > 100) {
         document.body.classList.add('scrolled');
     } else {
