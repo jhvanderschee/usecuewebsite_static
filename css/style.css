@@ -21,7 +21,7 @@ body {background: #0000ee; background-attachment: fixed; color: #dde; font-famil
 body.lightmode:not(.bgcolor) {color: #0000ee; background-color: #dde;}
 body.bgcolor {color: #fffd;}
 body, html {height: 100%;}
-html.scrollstart, html.scrollstart body {height: 100vh;}
+body {min-height: 100vh;}
 img {max-width: 100%;}
 html {overflow-y: scroll; scroll-behavior: smooth;}
 a {color: #dde; text-decoration-style: solid; /*solid dotted, dashed, and wavy*/ text-decoration-color: rgba(221,221,221,0.5);}
