@@ -13,24 +13,23 @@
 }
 
 * {margin: 0; padding: 0; font-weight: normal;}
-html, body {background: #0000ee;}
-body {color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
+body {background: #0000ee; background-attachment: fixed; color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
 #bananaleft, #bananaright {max-width: 650px; pointer-events: none; transition: transform 0.7s ease-in-out; transform: translateX(-100%); position: fixed; width: 24%; left: 0; top: calc(100px + 8%); height: calc(92% - 100px); opacity: 0.35; z-index: 9; object-fit: cover; object-position: 100% 0%;}
 #bananaright {left: auto; right: 0; object-position: 0% 0%; transform: translateX(100%);}
 .loaded #bananaleft, .loaded #bananaright {transform: translateX(0%);}
-.lightmode body:not(.bgcolor) #bananaleft, .lightmode body:not(.bgcolor) #bananaright {filter: contrast(0%) brightness(50%) sepia(100%) hue-rotate(188deg) saturate(700%);}
-.lightmode body:not(.bgcolor) {color: #0000ee; background-color: #dde;}
-.lightmode body.bgcolor {color: #fffd;}
-body, html {min-height: 100%;}
+.lightmode:not(.bgcolor) #bananaleft, .lightmode:not(.bgcolor) #bananaright {filter: contrast(0%) brightness(50%) sepia(100%) hue-rotate(188deg) saturate(700%);}
+body.lightmode:not(.bgcolor) {color: #0000ee; background-color: #dde;}
+body.bgcolor {color: #fffd;}
+body, html {height: 100%;}
 img {max-width: 100%;}
 html {overflow-y: scroll; scroll-behavior: smooth;}
 a {color: #dde; text-decoration-style: solid; /*solid dotted, dashed, and wavy*/ text-decoration-color: rgba(221,221,221,0.5);}
-.lightmode body:not(.bgcolor) a {color: #0000ee; text-decoration-color: rgba(0,0,238,0.5);}
-.lightmode .bgcolor a {color: #fffd;}
+.lightmode:not(.bgcolor) a {color: #0000ee; text-decoration-color: rgba(0,0,238,0.5);}
+.bgcolor a {color: #fffd;}
 #splash a {text-decoration-color: #dde; color: #dde;}
 body.black a {color: black;}
 #innerbody {position: relative;}
-#innerbody, #content .fullscreen, #splash {align-items: center; display: flex; justify-content: center; min-height: 100vh;}
+#innerbody, #content .fullscreen, #splash {align-items: center; display: flex; justify-content: center; min-height: 100%;}
 #darkmodeoverlay {background: #fff2; position: fixed; top: 0; left: 0; z-index: 8; width: 100%; pointer-events: none; opacity: 0; height: 100vh;}
 #splash {background: #0000ee; position: fixed; top: 0; left: 0; z-index: 11; width: 100%; pointer-events: none; color: #dde;
     animation-name: fadeout; 
@@ -81,7 +80,7 @@ h3 {padding-bottom: 0.6em; padding-top: 0.6em;}
 .bgcolor #logo {border: 1px solid rgba(255, 255, 255,0.4);}
 .bgcolor #logo img, .lightmode #logo img {opacity: 0;}
 .bgcolor #logo:before, .lightmode #logo:before {content: ""; width: 100%; height: 100%; background: url(/img/icon-196x196-transparent.png) center center / contain no-repeat; position: absolute;}
-.lightmode body:not(.bgcolor) #logo:before {background: url(/img/icon-196x196-transparent-blue.png) center center / contain no-repeat;}
+.lightmode:not(.bgcolor) #logo:before {background: url(/img/icon-196x196-transparent-blue.png) center center / contain no-repeat;}
 #scrolltotop {top: auto; bottom: 1.7vw; right: 2vw; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; max-width: calc(35% - 30px);}
 #lightmode {top: auto; bottom: 1.7vw; right: 2vw; position: fixed; transition: opacity 0.3s ease-in-out; z-index: 10;}
 #nextlink {top: auto; bottom: 1.7vw; left: 2vw; right: auto; position: absolute; max-width: calc(65% - 30px); text-transform: lowercase; z-index: 10;}
@@ -99,9 +98,9 @@ body:not(.home) #content h1 {padding-bottom: .7em;}
 .home #content {width: 60%; text-align: center; padding-bottom: 12vw;}
 #content p, #content ol, #content ul, #content table {padding-bottom: 1.25em;}
 #content pre {max-width: calc(100% - 3rem); overflow: auto; font-size: 55%; margin-bottom: 2em; padding: 1rem; border: 1px solid rgba(255, 255, 255,0.4);}
-.lightmode body:not(.bgcolor) #content pre {border-color: rgba(0, 0, 238,0.4);}
+.lightmode:not(.bgcolor) #content pre {border-color: rgba(0, 0, 238,0.4);}
 blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35em; padding-left: 2.1vw;}
-.lightmode body:not(.bgcolor) blockquote {border-left: 2px solid #00e;}
+.lightmode:not(.bgcolor) blockquote {border-left: 2px solid #00e;}
 #content img {width: 100%; max-width: 100%; margin-bottom: 0.2em;}
 #content ul {margin-left: 2em}
 #content ol {margin-left: 2em;}
@@ -117,7 +116,7 @@ blockquote {margin-top: 0.5em; border-left: 2px solid #dde; margin-bottom: 1.35e
 .portfolio #content .svg svg {width: 100%; height: 100%; position: relative; right: 2vw;}
 #scrolldown {position: absolute; left: 50%; margin-top: -15vh;}
 #scrolldown:before {content: "»"; transform: rotate(90deg); position: absolute; color: #fffd; font-size: 10rem; margin-left: -1.25rem; margin-top: -5rem;}
-.lightmode body:not(.bgcolor) #scrolldown:before {color: #0000ee;}
+.lightmode:not(.bgcolor) #scrolldown:before {color: #0000ee;}
 #postdate {font-style: italic; padding-bottom: 1em;}
 .btn {display: inline-block; padding: 0.35em 1em 0.45em; text-decoration: none; border: 1px solid rgba(255, 255, 255,0.4);}
 
@@ -298,14 +297,14 @@ transform-origin: 50% 50%;
 .darkmode #lightmode::before {content: "feeling blue?";}
 
 body.nl #lightmode::before {content: "auw, mijn ogen!";}
-.lightmode body.nl #lightmode::before {content: "donker graag!";}
-.darkmode body.nl #lightmode::before {content: "helemaal blauw?";}
+body.nl.lightmode #lightmode::before {content: "donker graag!";}
+body.nl.darkmode #lightmode::before {content: "helemaal blauw?";}
 
 
-.darkmode body:not(.bgcolor) img {filter: grayscale(100%);}
-.darkmode body:not(.bgcolor) #logo img {filter: grayscale(100%);}
-.darkmode body:not(.bgcolor) {background-color: #101010;}
-.darkmode body:not(.bgcolor) #darkmodeoverlay {opacity: 1;}
+body.darkmode:not(.bgcolor) img {filter: grayscale(100%);}
+body.darkmode:not(.bgcolor) #logo img {filter: grayscale(100%);}
+body.darkmode:not(.bgcolor) {background-color: #101010;}
+body.darkmode:not(.bgcolor) #darkmodeoverlay {opacity: 1;}
 @media (prefers-color-scheme: dark) {
     #lightmode {pointer-events: none; opacity: 0;}
     body:not(.bgcolor) img {filter: grayscale(100%);}
