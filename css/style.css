@@ -20,7 +20,13 @@ body {background: #0000ee; background-attachment: fixed; color: #dde; font-famil
 .lightmode:not(.bgcolor) #bananaleft, .lightmode:not(.bgcolor) #bananaright {filter: contrast(0%) brightness(50%) sepia(100%) hue-rotate(188deg) saturate(700%);}
 body.lightmode:not(.bgcolor) {color: #0000ee; background-color: #dde;}
 body.bgcolor {color: #fffd;}
-body, html {height: 100%;}
+body, html {
+    height: 100%; 
+    min-height: 100%;
+    min-height: -moz-available;          
+    min-height: -webkit-fill-available;  
+    min-height: fill-available;
+}
 img {max-width: 100%;}
 html {overflow-y: scroll; scroll-behavior: smooth;}
 a {color: #dde; text-decoration-style: solid; /*solid dotted, dashed, and wavy*/ text-decoration-color: rgba(221,221,221,0.5);}
