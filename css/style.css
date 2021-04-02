@@ -19,9 +19,10 @@ body {color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Tim
 #bananaright {left: auto; right: 0; object-position: 0% 0%; transform: translateX(100%);}
 .loaded #bananaleft, .loaded #bananaright {transform: translateX(0%);}
 .lightmode:not(.bgcolor) #bananaleft, .lightmode:not(.bgcolor) #bananaright {filter: contrast(0%) brightness(50%) sepia(100%) hue-rotate(188deg) saturate(700%);}
-body.lightmode:not(.bgcolor) {color: #0000ee; background-color: #dde;}
+.lightmode body:not(.bgcolor) {color: #0000ee; background-color: #dde;}
 body.bgcolor {color: #fffd;}
-body, html {height: calc(100vh - calc(100vh - 100%));}
+html {height: 100%;}
+body, html {min-height: calc(100vh - calc(100vh - 100%));}
 img {max-width: 100%;}
 html {overflow-y: scroll; scroll-behavior: smooth;}
 a {color: #dde; text-decoration-style: solid; /*solid dotted, dashed, and wavy*/ text-decoration-color: rgba(221,221,221,0.5);}
@@ -30,7 +31,7 @@ a {color: #dde; text-decoration-style: solid; /*solid dotted, dashed, and wavy*/
 #splash a {text-decoration-color: #dde; color: #dde;}
 body.black a {color: black;}
 #innerbody {position: relative;}
-#innerbody, #content .fullscreen, #splash {align-items: center; display: flex; justify-content: center; min-height: 100%;}
+#innerbody, #content .fullscreen, #splash {align-items: center; display: flex; justify-content: center; min-height: 100vh;}
 #darkmodeoverlay {background: #fff2; position: fixed; top: 0; left: 0; z-index: 8; width: 100%; pointer-events: none; opacity: 0; height: 100vh;}
 #splash {background: #0000ee; position: fixed; top: 0; left: 0; z-index: 11; width: 100%; pointer-events: none; color: #dde;
     animation-name: fadeout; 
@@ -298,14 +299,14 @@ transform-origin: 50% 50%;
 .darkmode #lightmode::before {content: "feeling blue?";}
 
 body.nl #lightmode::before {content: "auw, mijn ogen!";}
-body.nl.lightmode #lightmode::before {content: "donker graag!";}
-body.nl.darkmode #lightmode::before {content: "helemaal blauw?";}
+.lightmode body.nl #lightmode::before {content: "donker graag!";}
+.darkmode body.nl #lightmode::before {content: "helemaal blauw?";}
 
 
-body.darkmode:not(.bgcolor) img {filter: grayscale(100%);}
-body.darkmode:not(.bgcolor) #logo img {filter: grayscale(100%);}
-body.darkmode:not(.bgcolor) {background-color: #101010;}
-body.darkmode:not(.bgcolor) #darkmodeoverlay {opacity: 1;}
+.darkmode body:not(.bgcolor) img {filter: grayscale(100%);}
+.darkmode body:not(.bgcolor) #logo img {filter: grayscale(100%);}
+.darkmode body:not(.bgcolor) {background-color: #101010;}
+.darkmode body:not(.bgcolor) #darkmodeoverlay {opacity: 1;}
 @media (prefers-color-scheme: dark) {
     #lightmode {pointer-events: none; opacity: 0;}
     body:not(.bgcolor) img {filter: grayscale(100%);}

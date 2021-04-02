@@ -85,8 +85,8 @@
 <body id="top" class="portfolio bgcolor nl" style="background-color: #5b6669;">
 
   <script>
-    if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
-    if (localStorage.getItem('mode') == 'light') document.getElementById('top').classList.add('lightmode'); 
+    if (localStorage.getItem('mode') == 'dark') document.getElementById('top').parentElement.classList.add('darkmode'); 
+    if (localStorage.getItem('mode') == 'light') document.getElementById('top').parentElement.classList.add('lightmode'); 
   </script>
 
   

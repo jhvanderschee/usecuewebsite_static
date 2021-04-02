@@ -185,15 +185,15 @@ external_new_window();
     });
 
 function toggleLightmode() {
-    if(document.getElementById('top').classList.contains('lightmode')){
-        document.getElementById('top').classList.remove('lightmode');
-        document.getElementById('top').classList.add('darkmode');
+    if(document.getElementById('top').parentElement.classList.contains('lightmode')){
+        document.getElementById('top').parentElement.classList.remove('lightmode');
+        document.getElementById('top').parentElement.classList.add('darkmode');
         localStorage.setItem('mode', 'dark'); 
-    } else if (document.getElementById('top').classList.contains('darkmode')) {
-        document.getElementById('top').classList.remove('darkmode');
+    } else if (document.getElementById('top').parentElement.classList.contains('darkmode')) {
+        document.getElementById('top').parentElement.classList.remove('darkmode');
         localStorage.setItem('mode', 'blue'); 
     } else {
-        document.getElementById('top').classList.add('lightmode');
+        document.getElementById('top').parentElement.classList.add('lightmode');
         localStorage.setItem('mode', 'light'); 
     }
     document.getElementById('lightmode').blur();
