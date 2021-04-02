@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" class="portfolio bgcolor nl" style="background-color: #7a8c87;">
 <head>
 <meta charset="utf-8" /> 
 
@@ -82,11 +82,11 @@
 
 </head>
 
-<body id="top" class="portfolio bgcolor nl" style="background-color: #7a8c87;">
+<body id="top">
 
   <script>
-    if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
-    if (localStorage.getItem('mode') == 'light') document.getElementById('top').classList.add('lightmode'); 
+    if (localStorage.getItem('mode') == 'dark') document.getElementById('top').parentElement.classList.add('darkmode'); 
+    if (localStorage.getItem('mode') == 'light') document.getElementById('top').parentElement.classList.add('lightmode'); 
   </script>
 
   

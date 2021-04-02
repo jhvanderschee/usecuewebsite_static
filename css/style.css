@@ -13,16 +13,17 @@
 }
 
 * {margin: 0; padding: 0; font-weight: normal;}
-body {background: #0000ee; background-attachment: fixed; color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
+body {background-attachment: fixed; color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
 #bananaleft, #bananaright {max-width: 650px; pointer-events: none; transition: transform 0.7s ease-in-out; transform: translateX(-100%); position: fixed; width: 24%; left: 0; top: calc(100px + 8%); height: calc(92% - 100px); opacity: 0.35; z-index: 9; object-fit: cover; object-position: 100% 0%;}
 #bananaright {left: auto; right: 0; object-position: 0% 0%; transform: translateX(100%);}
 .loaded #bananaleft, .loaded #bananaright {transform: translateX(0%);}
 .lightmode:not(.bgcolor) #bananaleft, .lightmode:not(.bgcolor) #bananaright {filter: contrast(0%) brightness(50%) sepia(100%) hue-rotate(188deg) saturate(700%);}
-body.lightmode:not(.bgcolor) {color: #0000ee; background-color: #dde;}
+html.lightmode:not(.bgcolor) {background-color: #dde;}
+html.lightmode:not(.bgcolor) body {color: #0000ee;}
 body.bgcolor {color: #fffd;}
 body, html {height: 100%;}
 img {max-width: 100%;}
-html {overflow-y: scroll; scroll-behavior: smooth;}
+html {overflow-y: scroll; scroll-behavior: smooth; background: #0000ee;}
 a {color: #dde; text-decoration-style: solid; /*solid dotted, dashed, and wavy*/ text-decoration-color: rgba(221,221,221,0.5);}
 .lightmode:not(.bgcolor) a {color: #0000ee; text-decoration-color: rgba(0,0,238,0.5);}
 .bgcolor a {color: #fffd;}
@@ -296,19 +297,19 @@ transform-origin: 50% 50%;
 .lightmode #lightmode::before {content: "want it darker?";}
 .darkmode #lightmode::before {content: "feeling blue?";}
 
-body.nl #lightmode::before {content: "auw, mijn ogen!";}
-body.nl.lightmode #lightmode::before {content: "donker graag!";}
-body.nl.darkmode #lightmode::before {content: "helemaal blauw?";}
+html.nl #lightmode::before {content: "auw, mijn ogen!";}
+html.nl.lightmode #lightmode::before {content: "donker graag!";}
+html.nl.darkmode #lightmode::before {content: "helemaal blauw?";}
 
 
-body.darkmode:not(.bgcolor) img {filter: grayscale(100%);}
-body.darkmode:not(.bgcolor) #logo img {filter: grayscale(100%);}
-body.darkmode:not(.bgcolor) {background-color: #101010;}
-body.darkmode:not(.bgcolor) #darkmodeoverlay {opacity: 1;}
+html.darkmode:not(.bgcolor) img {filter: grayscale(100%);}
+html.darkmode:not(.bgcolor) #logo img {filter: grayscale(100%);}
+html.darkmode:not(.bgcolor) {background-color: #101010;}
+html.darkmode:not(.bgcolor) #darkmodeoverlay {opacity: 1;}
 @media (prefers-color-scheme: dark) {
     #lightmode {pointer-events: none; opacity: 0;}
-    body:not(.bgcolor) img {filter: grayscale(100%);}
-    body:not(.bgcolor) #logo img {filter: grayscale(100%);}
-    body:not(.bgcolor) {background-color: #101010;}
+    html:not(.bgcolor) img {filter: grayscale(100%);}
+    html:not(.bgcolor) #logo img {filter: grayscale(100%);}
+    html:not(.bgcolor) {background-color: #101010;}
     #darkmodeoverlay {opacity: 1;}
 }

@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="post en" style="">
 <head>
 <meta charset="utf-8" /> 
 
@@ -82,11 +82,11 @@
 
 </head>
 
-<body id="top" class="post en" style="">
+<body id="top">
 
   <script>
-    if (localStorage.getItem('mode') == 'dark') document.getElementById('top').classList.add('darkmode'); 
-    if (localStorage.getItem('mode') == 'light') document.getElementById('top').classList.add('lightmode'); 
+    if (localStorage.getItem('mode') == 'dark') document.getElementById('top').parentElement.classList.add('darkmode'); 
+    if (localStorage.getItem('mode') == 'light') document.getElementById('top').parentElement.classList.add('lightmode'); 
   </script>
 
   
