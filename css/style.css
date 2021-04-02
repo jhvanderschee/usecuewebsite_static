@@ -20,19 +20,17 @@ body {color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Tim
 .loaded #bananaleft, .loaded #bananaright {transform: translateX(0%);}
 .lightmode body:not(.bgcolor) #bananaleft, .lightmode body:not(.bgcolor) #bananaright {filter: contrast(0%) brightness(50%) sepia(100%) hue-rotate(188deg) saturate(700%);}
 .lightmode body:not(.bgcolor) {color: #0000ee; background-color: #dde;}
-body.bgcolor {color: #fffd;}
-html {height: 100%;}
-body, html {min-height: calc(100vh - calc(100vh - 100%));}
+.lightmode body.bgcolor {color: #fffd;}
+body, html {min-height: 100%;}
 img {max-width: 100%;}
 html {overflow-y: scroll; scroll-behavior: smooth;}
 a {color: #dde; text-decoration-style: solid; /*solid dotted, dashed, and wavy*/ text-decoration-color: rgba(221,221,221,0.5);}
-.lightmode:not(.bgcolor) a {color: #0000ee; text-decoration-color: rgba(0,0,238,0.5);}
-.bgcolor a {color: #fffd;}
+.lightmode body:not(.bgcolor) a {color: #0000ee; text-decoration-color: rgba(0,0,238,0.5);}
+.lightmode .bgcolor a {color: #fffd;}
 #splash a {text-decoration-color: #dde; color: #dde;}
 body.black a {color: black;}
 #innerbody {position: relative;}
 #innerbody, #content .fullscreen, #splash {align-items: center; display: flex; justify-content: center; min-height: 100vh;}
-#content .fullscreen, #splash {min-height: calc(100vh - calc(100vh - 100%));}
 #darkmodeoverlay {background: #fff2; position: fixed; top: 0; left: 0; z-index: 8; width: 100%; pointer-events: none; opacity: 0; height: 100vh;}
 #splash {background: #0000ee; position: fixed; top: 0; left: 0; z-index: 11; width: 100%; pointer-events: none; color: #dde;
     animation-name: fadeout; 
@@ -83,7 +81,7 @@ h3 {padding-bottom: 0.6em; padding-top: 0.6em;}
 .bgcolor #logo {border: 1px solid rgba(255, 255, 255,0.4);}
 .bgcolor #logo img, .lightmode #logo img {opacity: 0;}
 .bgcolor #logo:before, .lightmode #logo:before {content: ""; width: 100%; height: 100%; background: url(/img/icon-196x196-transparent.png) center center / contain no-repeat; position: absolute;}
-.lightmode:not(.bgcolor) #logo:before {background: url(/img/icon-196x196-transparent-blue.png) center center / contain no-repeat;}
+.lightmode body:not(.bgcolor) #logo:before {background: url(/img/icon-196x196-transparent-blue.png) center center / contain no-repeat;}
 #scrolltotop {top: auto; bottom: 1.7vw; right: 2vw; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; max-width: calc(35% - 30px);}
 #lightmode {top: auto; bottom: 1.7vw; right: 2vw; position: fixed; transition: opacity 0.3s ease-in-out; z-index: 10;}
 #nextlink {top: auto; bottom: 1.7vw; left: 2vw; right: auto; position: absolute; max-width: calc(65% - 30px); text-transform: lowercase; z-index: 10;}
