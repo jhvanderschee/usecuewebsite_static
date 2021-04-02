@@ -23,6 +23,7 @@ function windowScroll() {
 function resizeCanvas() {
     var canvasheight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
     document.body.parentElement.style.height = canvasheight+'px';
+    document.body.style.height = canvasheight+'px';
 }
 
 window.addEventListener("scroll",windowScroll);
