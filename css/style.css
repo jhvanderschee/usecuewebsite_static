@@ -20,7 +20,7 @@ body {background-attachment: fixed; color: #dde; font-family: 'times_new_romanre
 .lightmode:not(.bgcolor) #bananaleft, .lightmode:not(.bgcolor) #bananaright {filter: contrast(0%) brightness(50%) sepia(100%) hue-rotate(188deg) saturate(700%);}
 html.lightmode:not(.bgcolor) {background-color: #dde;}
 html.lightmode:not(.bgcolor) body {color: #0000ee;}
-body.bgcolor {color: #fffd;}
+html.bgcolor body {color: #fffd;}
 body, html {height: 100%;}
 img {max-width: 100%;}
 html {overflow-y: scroll; scroll-behavior: smooth; background: #0000ee;}
