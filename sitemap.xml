@@ -79,6 +79,12 @@
   
   
       <url>
+        <loc>https://www.usecue.com/blog/carousel-with-scroll-snap/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
         <loc>https://www.usecue.com/nl/blog/instagram-interface-iconen/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>

@@ -49,9 +49,9 @@
 <!--                                                                                          -->
 <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
-<title>Instagram interface icons | Usecue web development</title>
+<title>Carousel with scroll snap | Usecue web development</title>
 
-<meta name="description" content="I have created a web tool that allows you to easily publish your Instagram feed on your website, called ‘PPI Loader’. To illustrate how this tool works I cre...">
+<meta name="description" content="Scroll snap is a relative new feature in CSS, that recenty got pretty decent support. It is good for nothing, if you believe these folks in the comments, but...">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -60,23 +60,23 @@
 <meta id="viewport" name="viewport" content="width=device-width">
 
 <!-- Facebook and Twitter integration -->
-<meta property="og:title" content="Instagram interface icons"/>
+<meta property="og:title" content="Carousel with scroll snap"/>
 
-<meta property="og:url" content="https://www.usecue.com/blog/instagram-interface-icons/"/>
+<meta property="og:url" content="https://www.usecue.com/blog/carousel-with-scroll-snap/"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="I have created a web tool that allows you to easily publish your Instagram feed on your website, called ‘PPI Loader’. To illustrate how this tool works I cre..."/>
+<meta property="og:description" content="Scroll snap is a relative new feature in CSS, that recenty got pretty decent support. It is good for nothing, if you believe these folks in the comments, but..."/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
-<meta name="twitter:title" content="Instagram interface icons" />
+<meta name="twitter:title" content="Carousel with scroll snap" />
 
-<meta name="twitter:url" content="https://www.usecue.com/blog/instagram-interface-icons/" />
-<meta name="twitter:description" content="I have created a web tool that allows you to easily publish your Instagram feed on your website, called ‘PPI Loader’. To illustrate how this tool works I cre..." />
+<meta name="twitter:url" content="https://www.usecue.com/blog/carousel-with-scroll-snap/" />
+<meta name="twitter:description" content="Scroll snap is a relative new feature in CSS, that recenty got pretty decent support. It is good for nothing, if you believe these folks in the comments, but..." />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
-<link rel="canonical" href="https://www.usecue.com/blog/instagram-interface-icons/">
+<link rel="canonical" href="https://www.usecue.com/blog/carousel-with-scroll-snap/">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
 
 <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -108,29 +108,15 @@
 
 
 <div class="fullscreen">
-    <h1 class="large"><div id="postdate" class="small">April  1, 2021</div>Instagram interface icons</h1>
+    <h1 class="large"><div id="postdate" class="small">April 21, 2021</div>Carousel with scroll snap</h1>
 </div>
 <div id="scrolldown"></div>
 
-<p>I have created a web tool that allows you to easily publish your <a href="https://profilepageimages.usecue.com/">Instagram feed on your website</a>, called ‘PPI Loader’.</p>
+<p>Scroll snap is a relative new feature in CSS, that recenty got <a href="https://caniuse.com/?search=scroll%20snap">pretty decent support</a>. It is good for nothing, if you believe <a href="https://css-tricks.com/introducing-css-scroll-snap-points/">these folks in the comments</a>, but that was five years ago. Three years later, Nolan Lawson built a carousel with scroll snap that got quite some positive attention. I decided to update/improve on his work.</p>
 
-<p>To illustrate how this tool works I created a <a href="https://codepen.io/joosts/pen/bGBByOo">demo</a>. I used the original interface icons from Instagram for this demo, but to my surprise those were PNG images instead of SVG (vector). Strange enough I could not find any vector variants online, so I dedicated some of my time to create them for you.</p>
+<p>Nolan used three components: scroll snap, smooth scroll and pinch to zoom. However, we will be building a standard carousel you often see in website headers, so we do not need pinch to zoom. We also do not need to implement his second component: smooth scroll, as it can be achieved with a single line of CSS these days. Nolan still worried about IE support, but we don’t. We can also just use an anchor link to smooth scroll, instead of javascript, resulting in better performance and degredation.</p>
 
-<p><img src="/img/heart.svg" alt="Instagram interface icon heart like" style="width: 5rem; vertical-align: middle; margin-right: 1rem;" /> Like</p>
-
-<p><img src="/img/video.svg" alt="Instagram interface icon video" style="width: 5rem; vertical-align: middle; margin-right: 1rem;" /> Video</p>
-
-<p><img src="/img/comment.svg" alt="Instagram interface icon comment" style="width: 5rem; vertical-align: middle; margin-right: 1rem;" /> Comment</p>
-
-<p><img src="/img/carousel.svg" alt="Instagram interface icon carousel album" style="width: 5rem; vertical-align: middle; margin-right: 1rem;" /> Carousel</p>
-
-<p><img src="/img/play.svg" alt="Instagram interface icon carousel album" style="width: 5rem; vertical-align: middle; margin-right: 1rem;" /> Play button</p>
-
-<p><img src="/img/igtv.svg" alt="Instagram interface icon carousel album" style="width: 5rem; vertical-align: middle; margin-right: 1rem;" /> IGTV</p>
-
-<p>They weigh around 1.5kb each. From now on I will only use these! Note that they are the intellectual property of Instagram. When you use them solely to <a href="https://profilepageimages.usecue.com/">display your Instagram feed</a> this seems no problem to me.</p>
-
-<p>Happy coding!</p>
+<p>What <a href="https://flickity.metafizzy.co">once</a> required 120kb of javascript, can <a href="https://codepen.io/joosts/pen/MWJBPgo?editors=0010">now</a> be achieved in under 3kb. That is great progress! We have more bandwith and we can build smaller websites. Together with faster javascript engines and faster computers, we can make the impossible possible: <a href="/blog/websites-that-load-instantly">loading a full website in 0.1 seconds</a>.</p>
 
 
 
@@ -144,9 +130,9 @@
         
         
             
-            <a id="nextlink" href="/blog/great-minds-think-alike/">next<span class="desktop">: Great minds think alike</span><span class="mobile"> blog post</span></a>
-            <a id="nextlinktop" href="/blog/great-minds-think-alike/">next post</a>
-            <a id="prevlinktop" href="/blog/carousel-with-scroll-snap/">previous post</a>
+            <a id="nextlink" href="/blog/instagram-interface-icons/">next<span class="desktop">: Instagram interface icons</span><span class="mobile"> blog post</span></a>
+            <a id="nextlinktop" href="/blog/instagram-interface-icons/">next post</a>
+            <a id="prevlinktop" href="/blog/usecues-also-known-as-affordances/">previous post</a>
         
         <a id="scrolltotop" href="#top">Scroll to top</a>
         <a id="lightmode" href="#" onclick="toggleLightmode()" title="change color"></a>
