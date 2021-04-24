@@ -49,9 +49,9 @@
 <!--                                                                                          -->
 <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
-<title>Instagram interface iconen | Usecue web development</title>
+<title>Carousel met scroll snap | Usecue web development</title>
 
-<meta name="description" content="Ik heb een webtool ontwikkelt waarmee je Instagram eenvoudig op je website kunt publiceren, genaamd ‘PPI Loader’. Om te illustreren hoe deze tool werkt, heb ...">
+<meta name="description" content="Scroll snap is een relatief nieuwe feature in CSS, die sindskort ook behoorlijke goed ondersteund wordt. Deze feature was ‘good for nothing’, aldus een angry...">
 
 <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png" />
 <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png" />
@@ -60,23 +60,23 @@
 <meta id="viewport" name="viewport" content="width=device-width">
 
 <!-- Facebook and Twitter integration -->
-<meta property="og:title" content="Instagram interface iconen"/>
+<meta property="og:title" content="Carousel met scroll snap"/>
 
-<meta property="og:url" content="https://www.usecue.com/nl/blog/instagram-interface-iconen/"/>
+<meta property="og:url" content="https://www.usecue.com/nl/blog/carousel-with-scroll-snap/"/>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Usecue web development"/>
-<meta property="og:description" content="Ik heb een webtool ontwikkelt waarmee je Instagram eenvoudig op je website kunt publiceren, genaamd ‘PPI Loader’. Om te illustreren hoe deze tool werkt, heb ..."/>
+<meta property="og:description" content="Scroll snap is een relatief nieuwe feature in CSS, die sindskort ook behoorlijke goed ondersteund wordt. Deze feature was ‘good for nothing’, aldus een angry..."/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jhvanderschee">
-<meta name="twitter:title" content="Instagram interface iconen" />
+<meta name="twitter:title" content="Carousel met scroll snap" />
 
-<meta name="twitter:url" content="https://www.usecue.com/nl/blog/instagram-interface-iconen/" />
-<meta name="twitter:description" content="Ik heb een webtool ontwikkelt waarmee je Instagram eenvoudig op je website kunt publiceren, genaamd ‘PPI Loader’. Om te illustreren hoe deze tool werkt, heb ..." />
+<meta name="twitter:url" content="https://www.usecue.com/nl/blog/carousel-with-scroll-snap/" />
+<meta name="twitter:description" content="Scroll snap is een relatief nieuwe feature in CSS, die sindskort ook behoorlijke goed ondersteund wordt. Deze feature was ‘good for nothing’, aldus een angry..." />
 
 <link rel="publisher" href="https://plus.google.com/+UseCuewebdevelopmentAmsterdam">
 
-<link rel="canonical" href="https://www.usecue.com/nl/blog/instagram-interface-iconen/">
+<link rel="canonical" href="https://www.usecue.com/nl/blog/carousel-with-scroll-snap/">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.usecue.com/sitemap.xml" />
 
 <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -108,29 +108,21 @@
 
 
 <div class="fullscreen">
-    <h1 class="large"><div id="postdate" class="small">April  1, 2021</div>Instagram interface iconen</h1>
+    <h1 class="large"><div id="postdate" class="small">April 21, 2021</div>Carousel met scroll snap</h1>
 </div>
 <div id="scrolldown"></div>
 
-<p>Ik heb een webtool ontwikkelt waarmee je <a href="https://profilepageimages.usecue.com/">Instagram eenvoudig op je website</a> kunt publiceren, genaamd ‘PPI Loader’.</p>
+<p>Scroll snap is een relatief nieuwe feature in CSS, die sindskort ook <a href="https://caniuse.com/?search=scroll%20snap">behoorlijke goed ondersteund wordt</a>. Deze feature was ‘good for nothing’, aldus <a href="https://css-tricks.com/introducing-css-scroll-snap-points/">een angry mob in 2016</a>. Drie jaar later was men echter een stuk enthousiaster over de carousel met scroll snap, gemaakt door Nolan Lawsons.</p>
 
-<p>Om te illustreren hoe deze tool werkt, heb ik een <a href="https://codepen.io/joosts/pen/bGBByOo">demo</a> gemaakt. Voor deze demo gebruikte ik de originele interface iconen van Instagram, maar deze waren tot mijn verbazing in PNG formaat en niet in SVG (vector). Online kon ik gek genoeg ook geen vectorvarianten van deze iconen vinden. Daarom heb ik wat van mijn tijd opgeofferd om ze voor jullie te maken.</p>
+<p>Het was echter niet Nolan, maar de <a href="https://web.dev/2021-scroll-survey/">Google Scroll Survey</a> die mij inspireerde. Een standaard ‘header carousel’ is de perfecte ‘use case’ voor scroll snap. Ik liep tegen Nolans werk aan tijdens mijn onderzoek hiernaar. Nolan <a href="https://nolanlawson.com/2019/02/10/building-a-modern-carousel-with-css-scroll-snap-smooth-scrolling-and-pinch-zoom/">beschrijft</a> drie componenten: ‘scroll snap’, ‘smooth scroll’ en ‘pinch to zoom’. In onze carousel hebben we echter geen pinch to zoom nodig en smooth scroll werkt tegenwoordig met slechts 1 regel CSS. Ik hoefde dus alleen maar scroll snapping te bouwen. Nolan maakte zich nog druk om IE support, maar wij uiteraard niet meer. Daardoor kon ik anchor links gebruiken in plaats van javscript voor smooth scroll, wat resulteerde in betere prestaties en betere ‘degradering’ (graceful degredation).</p>
 
-<p><img src="/img/heart.svg" alt="Instagram interface icon heart like" style="width: 5rem; vertical-align: middle; margin-right: 1rem;" /> Like</p>
+<p>Benieuwd naar het resultaat? Check mijn <a href="https://codepen.io/joosts/pen/MWJBPgo?editors=0010">carousel met native scroll en touch ondersteuning</a> op Codepen. De carousel scrollt supersoepel, ‘degradeert’ mooi en is slechts 3kb groot.</p>
 
-<p><img src="/img/video.svg" alt="Instagram interface icon video" style="width: 5rem; vertical-align: middle; margin-right: 1rem;" /> Video</p>
+<p>Fantastisch! Maar wat betekent dat in een groter perspectief? Moderne technologie maakt het mogelijk om lichtere websites te bouwen, omdat HTML en CSS steeds krachtiger worden. Wat <a href="https://flickity.metafizzy.co">ooit</a> 120kb javascript vereiste, kan nu in minder dan 3kb gerealiseerd worden. We hebben ook <a href="https://www.nngroup.com/articles/law-of-bandwidth/">meer bandbreedte</a> en snellere computers tot onze beschikking. Wat onmogelijk leek en slechts <a href="/blog/websites-that-load-instantly">een grappige reclame</a> was in 2008, is nu binnen handbereik: <a href="/blog/websites-that-load-instantly">het laden van een volledige website in 0.1 seconde</a>.</p>
 
-<p><img src="/img/comment.svg" alt="Instagram interface icon comment" style="width: 5rem; vertical-align: middle; margin-right: 1rem;" /> Comment</p>
+<p>Hoewel <a href="/blog/websites-that-load-instantly">direct ladende websites</a> beter bereik, meer conversie en een betere gebruikservaring hebben, gaat de wereld niet die kant op. Gemiddeld worden website steeds <a href="https://httparchive.org/reports/page-weight">zwaarder</a>, wat mogelijk wordt gemaakt door de <a href="https://www.nngroup.com/articles/law-of-bandwidth/">toenemende bandbreedte</a>. Maar, zoals verwacht, neemt ook <a href="https://httparchive.org/reports/page-weight">de variatie</a> toe. Dit betekent dat je tegenwoordig een keuze hebt. Wil je dat je volgende website traag en zwaar is of een razendsnel en vederlicht wonder van moderne techniek?</p>
 
-<p><img src="/img/carousel.svg" alt="Instagram interface icon carousel album" style="width: 5rem; vertical-align: middle; margin-right: 1rem;" /> Carousel</p>
-
-<p><img src="/img/play.svg" alt="Instagram interface icon play button" style="width: 5rem; vertical-align: middle; margin-right: 1rem;" /> Play button</p>
-
-<p><img src="/img/igtv.svg" alt="Instagram interface icon IGTV" style="width: 5rem; vertical-align: middle; margin-right: 1rem;" /> IGTV</p>
-
-<p>Ze zijn ongeveer 1,5kb per stuk. Vanaf nu gebruik ik alleen nog deze! Het intellectuele eigendom ligt uiteraard bij Instagram, maar wanneer je ze alleen gebruikt voor het <a href="/nl/blog/instagram-op-je-website/">weergeven van je Instagram feed</a> lijkt me dat geen probleem.</p>
-
-<p>Happy coding!</p>
+<p>Geïnteresseerd? <a href="/contact">Neem contact op!</a></p>
 
 
 
@@ -144,9 +136,9 @@
         
         
             
-            <a id="nextlink" href="/nl/blog/een-simpele-website-bouwen/">volgende<span class="desktop">: Een simpele website (her)bouwen</span><span class="mobile"> blog post</span></a>
-            <a id="nextlinktop" href="/nl/blog/een-simpele-website-bouwen/">volgende post</a>
-            <a id="prevlinktop" href="/nl/blog/carousel-with-scroll-snap/">vorige post</a>
+            <a id="nextlink" href="/nl/blog/instagram-interface-iconen/">volgende<span class="desktop">: Instagram interface iconen</span><span class="mobile"> blog post</span></a>
+            <a id="nextlinktop" href="/nl/blog/instagram-interface-iconen/">volgende post</a>
+            <a id="prevlinktop" href="/nl/blog/may-1st-reboot/">vorige post</a>
         
         <a id="scrolltotop" href="#top">Scroll naar boven</a>
         <a id="lightmode" href="#" onclick="toggleLightmode()" title="verander kleur"></a>
