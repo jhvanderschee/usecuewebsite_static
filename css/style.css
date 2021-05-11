@@ -68,7 +68,7 @@ h3 {padding-bottom: 0.6em; padding-top: 0.6em;}
 .large {font-size: 10vw;}
 
 
-#scrolltotop, #logo, #menu, #nextlink, #lightmode {position: fixed; top: 1.5vw; z-index: 2;}
+#scrolltotop, #logo, #menu, #nextlink, #lightmode {position: fixed; top: 1.5vw; z-index: -1;}
 #scrolltotop, #logo, #menu, #lightmode {text-transform: lowercase;}
 #menu {right: 2vw; position: absolute;}
 #menu li {list-style: none; display: inline;}
