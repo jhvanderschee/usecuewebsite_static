@@ -32,7 +32,7 @@ body.black a {color: black;}
 #innerbody {position: relative;}
 #innerbody, #content .fullscreen, #splash {align-items: center; display: flex; justify-content: center; min-height: 100%;}
 #darkmodeoverlay {background: #fff2; position: fixed; top: 0; left: 0; z-index: 8; width: 100%; pointer-events: none; opacity: 0; height: 100vh;}
-#splash {background: #0000ee; position: fixed; top: 0; left: 0; z-index: 11; width: 100%; pointer-events: none; color: #dde;
+#splash {background: #0000ee; position: fixed; top: 0; left: 0; z-index: 20; width: 100%; pointer-events: none; color: #dde;
     animation-name: fadeout; 
     animation-delay: 1.3s; 
     animation-duration: 0.3s; 
@@ -94,7 +94,7 @@ h3 {padding-bottom: 0.6em; padding-top: 0.6em;}
 }
 .scrolled #scrolltotop {opacity: 1; pointer-events: all;}
 #content {width: 48%; text-align: left; margin: 0 auto; padding: 12vw 2vw 17vw;}
-#content h1 {text-align: center;}
+#content h1 {text-align: center; position: relative; z-index: 15;}
 body:not(.home) #content h1 {padding-bottom: .7em;}
 .home #content {width: 60%; text-align: center; padding-bottom: 12vw;}
 #content p, #content ol, #content ul, #content table {padding-bottom: 1.25em;}
