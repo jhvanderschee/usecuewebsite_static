@@ -548,12 +548,6 @@
        </url>
   
       <url>
-        <loc>https://www.usecue.com/portfolio/zonmw/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
         <loc>https://www.usecue.com/nl/portfolio/de-babywegwijzer/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -615,12 +609,6 @@
   
       <url>
         <loc>https://www.usecue.com/nl/portfolio/usecue/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
-        <loc>https://www.usecue.com/nl/portfolio/zonmw/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
