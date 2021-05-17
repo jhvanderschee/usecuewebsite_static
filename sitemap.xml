@@ -506,6 +506,12 @@
        </url>
   
       <url>
+        <loc>https://www.usecue.com/portfolio/infographic/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
         <loc>https://www.usecue.com/portfolio/joopvdschee/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -567,6 +573,12 @@
   
       <url>
         <loc>https://www.usecue.com/nl/portfolio/felgen-wie-neu/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
+        <loc>https://www.usecue.com/nl/portfolio/infographic/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
