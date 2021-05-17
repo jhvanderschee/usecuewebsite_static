@@ -536,6 +536,12 @@
        </url>
   
       <url>
+        <loc>https://www.usecue.com/portfolio/stemnjr/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
         <loc>https://www.usecue.com/portfolio/studio-inhout/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -603,6 +609,12 @@
   
       <url>
         <loc>https://www.usecue.com/nl/portfolio/petervermaat/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
+        <loc>https://www.usecue.com/nl/portfolio/stemnjr/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
