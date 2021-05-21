@@ -584,6 +584,12 @@
        </url>
   
       <url>
+        <loc>https://www.usecue.com/nl/portfolio/enovice/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+      <url>
         <loc>https://www.usecue.com/nl/portfolio/felgen-wie-neu/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
