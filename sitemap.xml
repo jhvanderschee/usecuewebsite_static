@@ -13,7 +13,23 @@
   
   
       <url>
+        <loc>https://www.usecue.com/about/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+  
+  
+      <url>
         <loc>https://www.usecue.com/blog/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  
+  
+  
+      <url>
+        <loc>https://www.usecue.com/nl/over/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
@@ -37,23 +53,7 @@
   
   
       <url>
-        <loc>https://www.usecue.com/nl/over/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-  
-  
-      <url>
         <loc>https://www.usecue.com/nl/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-  
-  
-      <url>
-        <loc>https://www.usecue.com/about/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
@@ -77,6 +77,12 @@
   
   
   
+  
+      <url>
+        <loc>https://www.usecue.com/nl/blog/supersnelle-websites-met-hugo/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
   
       <url>
         <loc>https://www.usecue.com/blog/elon-musk-has-been-warned/</loc>
